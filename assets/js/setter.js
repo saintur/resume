@@ -1,5 +1,12 @@
-const setter = function() {
-  if (screen.orientation.type === 'portrait-primary') {
+const detectMob = function() {
+  return ( window.innerWidth <= 800 );
+}
+const isMobile = function() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
+const setter = function () {
+  if (isMobile() && detectMob()) {
     document.body.classList.add('mobile');
   } else {
     document.body.classList.remove('mobile');
