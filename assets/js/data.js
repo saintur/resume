@@ -11,7 +11,7 @@ const user = {
 };
 const experiences = [
   {
-    as: 'Senior Full-Stack Architect',
+    as: 'Senior Full-Stack Developer',
     where: 'Novelsoft LLC',
     from: 'Dec/2019',
     to: 'Apr/2022',
@@ -21,7 +21,7 @@ const experiences = [
     tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'RabbitMQ', 'Kafka', 'Ream-Time']
   },
   {
-    as: 'Senior Full-Stack Developer',
+    as: 'Senior Software Developer',
     where: 'IT Zone LLC',
     from: 'Oct/2018',
     to: 'Dec/2019',
