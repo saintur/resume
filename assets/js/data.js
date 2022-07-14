@@ -83,14 +83,11 @@ const educations = [
 const skills = [
   'java',
   'spring framework',
-  'typescript',
-  'microservices',
-  'kafka',
-  'rabbit mq',
-  'react',
-  'native android',
-  'native swift',
-  'docker'
+  'angular framework',
+  'micro-services',
+  'kafka message broker',
+  'rabbitMQ',
+  'docker knowledge'
 ];
 
 
