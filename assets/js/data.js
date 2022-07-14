@@ -81,7 +81,7 @@ const educations = [
   }
 ];
 const skills = [
-  'java',
+  'java programming',
   'spring framework',
   'angular framework',
   'micro-services',
