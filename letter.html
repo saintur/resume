@@ -18,31 +18,31 @@
   <link rel="stylesheet/less" type="text/css" href="./assets/css/style.less" />
   <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
   <script src="./assets/js/data.js"></script>
-  <script src="./assets/js/setter.js"></script>
+  <script src="./assets/js/letter.js"></script>
 </head>
 
 <body>
   <div class="body">
     <div class="content">
+      <div class="back">
+        <a href="/"><span>&larr;</span> Back</a>
+      </div>
       <div class="profile">
-        <div class="avatar">
-          <img src="./assets//images/unnamed.jpeg" alt="Saintur Batkhuu" />
-        </div>
         <div class="info">
-          <div id="fullname">
+          <div id="ownerName">
           </div>
-          <div id="position">
+          <div id="ownerPosition">
           </div>
         </div>
       </div>
-      <h4 class="title">Experiences</h4>
-      <div id="experiences"></div>
-      <hr />
-      <h4 class="title">Educations</h4>
-      <div id="educations"></div>
-      <hr />
-      <h4 class="title">Certificates</h4>
-      <div id="certificates"></div>
+      <h4 class="title">To whome it may concern:</h4>
+      <div id="letterContent">
+      </div>
+      <div>
+        <div><label>Contact me</label></div>
+        <div><strong id="ownerPhone"></strong></div>
+        <div><strong id="ownerEmail"></strong></div>
+      </div>
     </div>
     <div class="sidebar">
       <h4>About me</h4>
@@ -82,7 +82,7 @@
   <script type="text/javascript">
     window.addEventListener('load',
       function () {
-        setter();
+        letter();
       }
       , false);
   </script>

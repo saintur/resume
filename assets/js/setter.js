@@ -5,6 +5,11 @@ const isMobile = function() {
   try{ document.createEvent("TouchEvent"); return true; }
   catch(e){ return false; }
 }
+const appender = (parent, elementName, innerHTML) => {
+  let child = document.createElement(elementName);
+  child.innerHTML = innerHTML;
+  parent.appendChild(child);
+}
 const setter = function () {
   if (isMobile() && detectMob()) {
     document.body.classList.add('mobile');
@@ -27,30 +32,18 @@ const setter = function () {
   experiences.forEach(e => {
     const card = document.createElement('div');
     card.className = 'experiences';
-    const title = document.createElement('h4');
-    title.innerText = e.as;
-    card.appendChild(title);
-    const second = document.createElement('span');
-    second.innerText = `${e.from} - ${e.to}`;
-    card.appendChild(second);
-    const description = document.createElement('p');
-    description.innerText = e.description;
-    card.appendChild(description);
-    const anchor = document.createElement('a');
-    anchor.innerHTML = `&rarr; View experience`;
-    card.appendChild(anchor);
+    appender(card, 'h4', e.as);
+    appender(card, 'span', `${e.from} - ${e.to}`);
+    appender(card, 'p', e.description);
+    appender(card, 'a', `&rarr; View experience`);
     experiencesHTML.appendChild(card);
   });
   const certificatesHTML = document.getElementById('certificates');
   certificates.forEach(e => {
     const card = document.createElement('div');
     card.className = 'certificates';
-    const title = document.createElement('h4');
-    title.innerText = e.description;
-    card.appendChild(title);
-    const tags = document.createElement('span');
-    tags.innerText = e.tags.join(', ');
-    card.appendChild(tags);
+    appender(card, 'h4', `${e.description} ${e.year}`);
+    appender(card, 'span', e.tags.join(', '));
     certificatesHTML.appendChild(card);
   });
 
@@ -58,21 +51,11 @@ const setter = function () {
   educations.forEach(e => {
     const card = document.createElement('div');
     card.className = 'educations';
-    const title = document.createElement('h4');
-    title.innerText = `${e.where} of ${e.as} in ${e.location}`;
-    card.appendChild(title);
-    const second = document.createElement('span');
-    second.innerText = `${e.from} - ${e.to}`;
-    card.appendChild(second);
-    const description = document.createElement('p');
-    description.innerText = e.description ? e.description : 'Description';
-    card.appendChild(description);
+    appender(card, 'h4',  `${e.where} of ${e.as} in ${e.location}`);
+    appender(card, 'span',  `${e.from} - ${e.to}`);
+    appender(card, 'p',  e.description ? e.description : 'Description');
     educationsHTML.appendChild(card);
   });
   const skillsHTML = document.getElementById('skills');
-  skills.forEach(e => {
-    const item = document.createElement('li');
-    item.innerText = e;
-    skillsHTML.appendChild(item)
-  });
+  skills.forEach(e => appender(skillsHTML, 'li', e));
 }

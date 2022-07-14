@@ -40,14 +40,17 @@ const experiences = [
 const certificates = [
   {
     description: 'Java programming Certificate',
+    year: '2013',
     tags: ['Java', 'Object oriented programming', 'Web app']
   },
   {
     description: 'Programming Technique Certificate',
+    year: '2013',
     tags: ['HTML', 'Javascript', 'Web development', 'Algorithm']
   },
   {
     description: 'Microsoft Office Certificate',
+    year: '2013',
     tags: ['Office', 'Windows 7']
   },
 ];
@@ -90,3 +93,31 @@ const skills = [
   'docker'
 ];
 
+
+const letters = [
+{
+  id: 1,
+  ownerName: 'Tseeesuren Batsuuri',
+  ownerPosition: 'CEO of Novelsoft LLC',
+  ownerPhone: '+976 80808080',
+  ownerEmail: 'tseesuren.b@novelsoft.mn',
+  paragraphs: [
+    'I have known him for the last 5 years. I have been managing the software development team and data team. It is my great pleasure to inform you that he is one of the key software developers in our company.',
+    'He is a brilliant engineer who picks up things so fast and put them into implementation with very good quality. He is well organized, very creative, and dependable. He has shown great leadership skills as he was appointed by me as the Chief Technology Architect in the company. Professionally he is responsible and has a great ability for critical thinking.',
+    'As mentioned, he is the chief technology architect of my company. He has excellent programming skills in Java and JavaScript along with my modern technologies including Spring framework, Microservice, event-driven architecture, DevOps, and all. He was the key engineer and architect in many past projects including our parking system solution for Shangri-la shopping mall, document management system for Trade and Development Bank (the second-biggest bank), the first online insurance system for Tenger Daatgal (www.edaatgal.mn), and the core system of Social Insurance Genera Authority of Mongolia so on so forth.',
+    'In conclusion, I would highly recommend Saintur for the position of Software Developer. I strongly believe that he will live up to your job’s expectations.'
+  ]
+},
+{
+  id: 2,
+  ownerName: 'Tuguldur Tumenbayar',
+  ownerPosition: 'Current Vice President of Novelsoft LLC, Former Head of Development of ITZone LLC',
+  ownerPhone: '+976 80808080',
+  ownerEmail: 'tuguldur.t@novelsoft.mn',
+  paragraphs: [
+    'It is with great sadness that I recommend Saintur Batkhuu to you as an excellent Software Developer. I have known him for the past 5 years and I feel that he is a deserving candidate for the position of Software Developer.',
+    'Saintur joined our company in 2017 as a Front-end Developer; with the immense learning ability and skills he collected in the first few projects, he gained his position as a Full-stack Software Developer in the software branch in just one year. And soon he was promoted to be a Senior Software Developer, he has been proving his excellent leadership qualities. He has been led a software team to complete many projects including government tender development. He has a strong dedication and takes incredible initiative to do work effectively and efficiently',
+    'I believe that Saintur has all the abilities and qualities which are required for the position of a software developer. I highly recommend Saintur Batkhuu for the responsible post of software developer and hope that you will carefully consider this letter of recommendation.'
+  ]
+}
+]

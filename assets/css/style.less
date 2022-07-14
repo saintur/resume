@@ -40,12 +40,13 @@
   font-weight: 200;
   font-display: swap;
 }
-
+@color: #3d3838;
+@secondary: #8d8d8d;
 body,
 html {
   padding: 0;
   margin: 0;
-  background-color: #181818;
+  background-color: @color;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -63,6 +64,24 @@ h4 {
     }
   }
 }
+.back {
+  font-weight: 500;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  a {
+    span {
+      transition: all 0.3s linear;
+      display: inline-block;
+    }
+  }
+  a:hover {
+    span {
+      transform: translateX(-4px);
+    }
+  }
+}
 .body {
   max-width: 1366px;
   height: 100%;
@@ -70,13 +89,20 @@ h4 {
   display: grid;
   grid-template-columns: auto 400px;
   overflow: hidden;
+  background-color: #ffffff;
+  background-image: url('../images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100%;
 
   .content {
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(26px);
     overflow-x: hidden;
     overflow-y: auto;
     color: #181818;
     padding: 32px 84px;
+
 
     .profile {
       display: inline-flex;
@@ -90,17 +116,28 @@ h4 {
           overflow: hidden;
           border-radius: 24px;
           margin-right: 32px;
-          box-shadow: -3px 0px 23px #464646
+          box-shadow: -3px 0px 23px #8d6741;
         }
       }
-      .info #fullname {
+      .info #fullname,
+      .info #ownerName {
         font-size: 18px;
         font-weight: 700;
+        color: @color;
       }
-      .info #position {
+      .info #position,
+      .info #ownerPosition {
         font-size: 16px;
         font-weight: 500;
+        color: @color;
       }
+    }
+    label {
+      color: @secondary;
+      font-weight: 500;
+    }
+    strong{
+      font-weight: 600;
     }
   }
 
@@ -110,7 +147,7 @@ h4 {
     overflow-y: auto;
     padding: 32px;
     h4 {
-      color: #646464;
+      color: @secondary;
     }
     a {
       text-decoration: none;
@@ -126,14 +163,14 @@ h4 {
 
 .experiences, .certificates, .educations {
   h4 {
-    color: #181818;
+    color: @color;
     margin: 32px 0 12px;
   }
   p {
     color: #2a2a2a;
   }
   span {
-    color: #7e7e7e;
+    color: @secondary;
     width: 100%;
     margin: 0;
     font-weight: 500;
@@ -150,7 +187,7 @@ h4 {
 }
 
 a {
-  color: #181818;
+  color: @color;
   text-decoration: none;
   cursor: pointer;
 }
@@ -165,12 +202,12 @@ hr {
 }
 
 .title {
-  color: #9b9b9b;
+  color: @secondary;
   font-weight: 600;
 }
 .references {
   span {
-    color: #7e7e7e;
+    color: @secondary;
   }
 }
 .display-inline-flex {
