@@ -24,6 +24,9 @@ window.onload = function () {
     const description = document.createElement('p');
     description.innerText = e.description;
     card.appendChild(description);
+    const anchor = document.createElement('a');
+    anchor.innerHTML = `&rarr; View experience`;
+    card.appendChild(anchor);
     experiencesHTML.appendChild(card);
   });
   const certificatesHTML = document.getElementById('certificates');

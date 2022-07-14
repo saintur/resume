@@ -49,7 +49,11 @@ html {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  font-size: 14px;
   font-family: 'SFProText', Arial, Helvetica, sans-serif;
+}
+h4 {
+  font-size: 16px;
 }
 
 .body {
@@ -95,17 +99,19 @@ html {
 
   .sidebar {
     height: 100%;
-    background-color: #181818;
+    background-color: #101010;
     overflow-x: hidden;
     overflow-y: auto;
-    color: rgb(201, 201, 201);
     padding: 32px;
-
+    h4 {
+      color: #646464;
+    }
     a {
-      color:rgb(201, 201, 201);
       text-decoration: none;
     }
-    
+    div, a {
+      color: white;
+    }
   }
 }
 
@@ -122,7 +128,6 @@ html {
     width: 100%;
     margin: 0;
     font-weight: 500;
-    font-size: 14px;
   }
 }
 
@@ -136,6 +141,9 @@ a {
   color: #181818;
   text-decoration: none;
   cursor: pointer;
+}
+a:hover {
+  text-decoration: underline
 }
 
 hr {

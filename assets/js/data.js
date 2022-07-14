@@ -11,10 +11,10 @@ const user = {
 };
 const experiences = [
   {
-    as: 'Cheif Technology Architect',
+    as: 'Senior Full-Stack Architect',
     where: 'Novelsoft LLC',
     from: 'Dec/2019',
-    to: 'Present',
+    to: 'Apr/2022',
     description: 'Managed multiple development team in the company\n' +
     'Mainly focused on web application development using Micro-services architecture\n' +
     'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
