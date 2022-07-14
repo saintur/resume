@@ -53,7 +53,7 @@ window.onload = function () {
     const card = document.createElement('div');
     card.className = 'educations';
     const title = document.createElement('h4');
-    title.innerText = `${e.where} of ${e.as}`;
+    title.innerText = `${e.where} of ${e.as} in ${e.location}`;
     card.appendChild(title);
     const second = document.createElement('span');
     second.innerText = `${e.from} - ${e.to}`;

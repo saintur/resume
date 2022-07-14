@@ -55,6 +55,7 @@ const educations = [
   {
     as: 'Software Development',
     where: 'Maharishi International Univesity',
+    location: 'USA 🇺🇸',
     from: 'Apr/2022',
     to: 'Currently studying',
     tags: ['Java development', 'Fullstack', 'System automation']
@@ -62,13 +63,15 @@ const educations = [
   {
     as: 'Information system',
     where: 'Mongolian University of Science and Technology',
+    location: 'Mongolia 🇲🇳',
     from: 'Jan/2013',
     to: 'Jan/2017',
     tags: ['3.36 GPA', 'Java development', 'Android', 'System automation']
   },
   {
     as: 'Certified Software Engineer',
-    where: 'Aptech Education, Bangalore India',
+    where: 'Aptech Education',
+    location: 'India 🇮🇳',
     from: 'Aug/2012',
     to: 'Jul/2013',
     tags: ['Java', 'Javascript', 'Microsoft office', 'Web', 'Windows 7']
