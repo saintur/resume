@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": ".",
+    "site": "esaintor-cv",
+    "ignore": [
+      "firebase.json",
+      "**/.*"
+    ]
+  }
+}
