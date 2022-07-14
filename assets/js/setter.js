@@ -18,10 +18,14 @@ const setter = function () {
   }
   Object.keys(user).forEach((key) => {
     if (document.getElementById(key)) {
-      if (key === 'web') {
+      if (key === 'email') {
+        document.getElementById(key).href = `mailto:${user[key]}?subject=Contact us&body=Contact me with this number`;
+        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+      } else if (key === 'phone') {
+        document.getElementById(key).href = `tel:${user[key]}`;
+        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+      } else if (key === 'web') {
         document.getElementById(key).href = user[key];
-      }
-      if (['web', 'phone', 'email'].includes(key)) {
         document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
       } else {
         document.getElementById(key).innerText = user[key];
