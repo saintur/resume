@@ -1,4 +1,10 @@
 window.onload = function () {
+  console.log(screen.orientation.type)
+  if (screen.orientation.type === 'portrait-primary') {
+    document.body.classList.add('mobile');
+  } else {
+    document.body.classList.remove('mobile');
+  }
   Object.keys(user).forEach((key) => {
     if (document.getElementById(key)) {
       if (key === 'web') {
