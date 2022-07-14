@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Heavy.ttf');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Bold.ttf')  format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Semibold.ttf')  format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText-Light.ttf') format("truetype");
+  font-weight: 200;
+  font-display: swap;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #181818;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'SFProText', Arial, Helvetica, sans-serif;
+}
+
+.body {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 400px;
+  overflow: hidden;
+
+  .content {
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #181818;
+    padding: 32px 84px;
+
+    .profile {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+      .avatar {
+        display: flex;
+        img {
+          height: 48px;
+          width: 48px;
+          overflow: hidden;
+          border-radius: 24px;
+          margin-right: 32px;
+          box-shadow: -3px 0px 23px #464646
+        }
+      }
+      .info #fullname {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .info #position {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .sidebar {
+    height: 100%;
+    background-color: #181818;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: rgb(201, 201, 201);
+    padding: 32px;
+
+    a {
+      color:rgb(201, 201, 201);
+      text-decoration: none;
+    }
+    
+  }
+}
+
+.experiences, .certificates, .educations {
+  h4 {
+    color: #181818;
+    margin: 32px 0 12px;
+  }
+  p {
+    color: #2a2a2a;
+  }
+  span {
+    color: #7e7e7e;
+    width: 100%;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+#skills {
+  list-style-type: none;
+  padding-left: 0;
+  text-transform: capitalize;
+}
+
+a {
+  color: #181818;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border: 0.5px solid silver;
+}
+
+.title {
+  color: #9b9b9b;
+  font-weight: 600;
+}
