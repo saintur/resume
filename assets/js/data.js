@@ -60,7 +60,6 @@ const projects = [
       'https://storage.googleapis.com/cms-storage-bucket/c823e53b3a1a7b0d36a9.png'
     ], 
     responsibilities: [
-      'https://assets.exitcertified.com/assets/Uploads/MICROSERVICES_Logo.png',
       'Designed micro-services architecture for core services that communicates with Kafka, RabbitMQ',
       'Contributed as a Senior level full-stack developer',
       'Developed mobile application using the latest Flutter framework',
