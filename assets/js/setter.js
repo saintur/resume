@@ -1,9 +1,9 @@
-const detectMob = function() {
-  return ( window.innerWidth <= 800 );
+const detectMob = function () {
+  return (window.innerWidth <= 800);
 }
-const isMobile = function() {
-  try{ document.createEvent("TouchEvent"); return true; }
-  catch(e){ return false; }
+const isMobile = function () {
+  try { document.createEvent("TouchEvent"); return true; }
+  catch (e) { return false; }
 }
 const appender = (parent, elementName, innerHTML) => {
   let child = document.createElement(elementName);
@@ -39,15 +39,28 @@ const setter = function () {
     appender(card, 'h4', e.as);
     appender(card, 'span', `${e.from} - ${e.to}`);
     appender(card, 'p', e.description);
-    appender(card, 'a', `&rarr; View experience`);
+    const tags = document.createElement('div');
+    tags.className = 'tags';
+    appender(tags, 'i', e.tags.map(t => `#${t}`).join(', '));
+    card.appendChild(tags);
+    const link = document.createElement('div');
+    link.className = 'forward'
+    const anchor = document.createElement('a');
+    anchor.href=`/experience.html?id=${e.id}`
+    anchor.innerHTML = `View experience <span>&rarr;</span>`;
+    link.appendChild(anchor);
+    card.appendChild(link);
     experiencesHTML.appendChild(card);
   });
   const certificatesHTML = document.getElementById('certificates');
   certificates.forEach(e => {
     const card = document.createElement('div');
     card.className = 'certificates';
-    appender(card, 'h4', `${e.description} ${e.year}`);
-    appender(card, 'span', e.tags.join(', '));
+    appender(card, 'h4', `${e.description} `);
+    appender(card, 'span', `Since ${e.year}`);
+    const tags = document.createElement('div');
+    appender(tags, 'i', e.tags.map(t => `#${t}`).join(', '));
+    card.appendChild(tags);
     certificatesHTML.appendChild(card);
   });
 
@@ -55,9 +68,12 @@ const setter = function () {
   educations.forEach(e => {
     const card = document.createElement('div');
     card.className = 'educations';
-    appender(card, 'h4',  `${e.where} of ${e.as} in ${e.location}`);
-    appender(card, 'span',  `${e.from} - ${e.to}`);
-    appender(card, 'p',  e.description ? e.description : 'Description');
+    appender(card, 'h4', `${e.where} of ${e.as} in ${e.location}`);
+    appender(card, 'span', `${e.from} - ${e.to}`);
+    const tags = document.createElement('div');
+    tags.className = 'tags';
+    appender(tags, 'i', e.tags.map(t => `#${t}`).join(', '));
+    card.appendChild(tags);
     educationsHTML.appendChild(card);
   });
   const skillsHTML = document.getElementById('skills');

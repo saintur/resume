@@ -11,6 +11,7 @@ const user = {
 };
 const experiences = [
   {
+    id: 1,
     as: 'Senior Full-Stack Developer',
     where: 'Novelsoft LLC',
     from: 'Dec/2019',
@@ -21,6 +22,7 @@ const experiences = [
     tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'RabbitMQ', 'Kafka', 'Ream-Time']
   },
   {
+    id: 2,
     as: 'Senior Software Developer',
     where: 'IT Zone LLC',
     from: 'Oct/2018',
@@ -29,6 +31,7 @@ const experiences = [
     tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'Dahua Technology', 'Tesseract']
   },
   {
+    id: 3,
     as: 'Front-end Developer',
     where: 'IT Zone LLC',
     from: 'Feb/2017',
@@ -37,20 +40,165 @@ const experiences = [
     tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'C#', 'AmChart', 'D3.js']
   }
 ];
+const projects = [
+  {
+    expid: 1,
+    name: 'Home Social',
+    image: '/assets/images/homesocial.png',
+    client: 'Homebook Team',
+    duration: '8 months',
+    position: 'Technology Architect',
+    where: 'Novelsoft LLC',
+    logo: 'https://c.na207.content.force.com/servlet/servlet.ImageServer?id=0150h000005670cAAA&oid=00DE0000000c48tMAA',
+    technologies: [
+      'https://assets.exitcertified.com/assets/Uploads/MICROSERVICES_Logo.png',
+      'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg',
+      'https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png',
+      'https://upload.wikimedia.org/wikipedia/commons/5/53/Apache_kafka_wordtype.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/7/71/RabbitMQ_logo.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg',
+      'https://storage.googleapis.com/cms-storage-bucket/c823e53b3a1a7b0d36a9.png'
+    ], 
+    responsibilities: [
+      'https://assets.exitcertified.com/assets/Uploads/MICROSERVICES_Logo.png',
+      'Designed micro-services architecture for core services that communicates with Kafka, RabbitMQ',
+      'Contributed as a Senior level full-stack developer',
+      'Developed mobile application using the latest Flutter framework',
+      'Developed real-time chat web application using Angular framework',
+    ],
+  },
+  {
+    expid: 1,
+    name: 'Department of National Social Insurance',
+    image: '/assets/images/ndaatgal.png',
+    client: 'Government',
+    duration: '13 months',
+    position: 'Senior Full-stack Developer',
+    where: 'Novelsoft LLC',
+    logo: 'https://c.na207.content.force.com/servlet/servlet.ImageServer?id=0150h000005670cAAA&oid=00DE0000000c48tMAA',
+    technologies: [
+      'https://assets.exitcertified.com/assets/Uploads/MICROSERVICES_Logo.png',
+      'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg',
+      'https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png',
+      'https://upload.wikimedia.org/wikipedia/commons/5/53/Apache_kafka_wordtype.svg',
+      'https://cdn.worldvectorlogo.com/logos/angular-3.svg'
+    ], 
+    responsibilities: [
+      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Contributed as a Senior level full-stack developer',
+    ] 
+  },
+  {
+    expid: 2,
+    name: 'Docmine - Document Management System',
+    image: '/assets/images/ndaatgal.png',
+    client: 'Government',
+    duration: '13 months',
+    position: 'Senior Full-stack Developer',
+    where: 'Novelsoft LLC',
+    logo: 'https://c.na207.content.force.com/servlet/servlet.ImageServer?id=0150h000005670cAAA&oid=00DE0000000c48tMAA',
+    technologies: [
+      'https://assets.exitcertified.com/assets/Uploads/MICROSERVICES_Logo.png',
+      'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg',
+      'https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png',
+      'https://cdn.worldvectorlogo.com/logos/angular-3.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/7/78/Tesseract_OCR_logo_%28Google%29.png'
+    ], 
+    responsibilities: [
+      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Contributed as a Senior level full-stack developer',
+    ] 
+  },
+  {
+    expid: 2,
+    name: 'Parking System',
+    image: '/assets/images/ndaatgal.png',
+    client: 'Shangri-la Center',
+    duration: '13 months',
+    position: 'Senior Full-stack Developer',
+    where: 'Novelsoft LLC',
+    logo: 'https://c.na207.content.force.com/servlet/servlet.ImageServer?id=0150h000005670cAAA&oid=00DE0000000c48tMAA',
+    technologies: [
+      'https://assets.exitcertified.com/assets/Uploads/MICROSERVICES_Logo.png',
+      'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg',
+      'https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png',
+      'https://cdn.worldvectorlogo.com/logos/angular-3.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Dahua_Technology_logo.svg'
+    ], 
+    responsibilities: [
+      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Contributed as a Senior level full-stack developer',
+    ] 
+  },
+  {
+    expid: 2,
+    name: 'edaatgal',
+    image: '/assets/images/ndaatgal.png',
+    client: 'Tenger Daatgal',
+    duration: '13 months',
+    position: 'Full-stack Developer',
+    where: 'ITZone LLC',
+    logo: 'https://itzone.mn/image/logo.svg',
+    technologies: [
+      'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg',
+      'https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png',
+      'https://cdn.worldvectorlogo.com/logos/angular-3.svg'
+    ], 
+    responsibilities: [
+      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Contributed as a Senior level full-stack developer',
+    ] 
+  },
+  {
+    expid: 3,
+    name: 'OT Drive',
+    image: '/assets/images/ndaatgal.png',
+    client: 'Oyu-tolgoi LLC',
+    duration: '13 months',
+    position: 'Front-end Developer',
+    where: 'ITZone LLC',
+    logo: 'https://itzone.mn/image/logo.svg',
+    technologies: [
+      'https://www.amcharts.com/wp-content/uploads/2017/10/amcharts_light_transparent.png',
+      'https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'
+    ], 
+    responsibilities: [
+      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Contributed as a Senior level full-stack developer',
+    ] 
+  },
+  {
+    expid: 3,
+    name: 'Compassmate',
+    image: '/assets/images/ndaatgal.png',
+    client: 'Software Team',
+    duration: '13 months',
+    position: 'Front-end Developer',
+    where: 'ITZone LLC',
+    logo: 'https://itzone.mn/image/logo.svg',
+    technologies: [
+      'http://pulseinfotech.com/images/extjs.jpg'
+    ], 
+    responsibilities: [
+      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Contributed as a Senior level full-stack developer',
+    ] 
+  }
+]
 const certificates = [
   {
     description: 'Java programming Certificate',
-    year: '2013',
+    year: 'Oct/2012',
     tags: ['Java', 'Object oriented programming', 'Web app']
   },
   {
     description: 'Programming Technique Certificate',
-    year: '2013',
+    year: 'Feb/2013',
     tags: ['HTML', 'Javascript', 'Web development', 'Algorithm']
   },
   {
     description: 'Microsoft Office Certificate',
-    year: '2013',
+    year: 'July/2013',
     tags: ['Office', 'Windows 7']
   },
 ];
@@ -61,7 +209,7 @@ const educations = [
     location: 'USA 🇺🇸',
     from: 'Apr/2022',
     to: 'Currently studying',
-    tags: ['Java development', 'Fullstack', 'System automation']
+    tags: ['Spring Framework', 'Angular Framework', 'React JS Framework', 'Google Cloud K8s', 'AWS S3, EC2', 'Kubernetes', 'Docker']
   },
   {
     as: 'Information system',
@@ -69,7 +217,7 @@ const educations = [
     location: 'Mongolia 🇲🇳',
     from: 'Jan/2013',
     to: 'Jan/2017',
-    tags: ['3.36 GPA', 'Java development', 'Android', 'System automation']
+    tags: ['GPA 3.3', 'Java development', 'Android', 'System automation']
   },
   {
     as: 'Certified Software Engineer',
@@ -84,10 +232,13 @@ const skills = [
   'java programming',
   'spring framework',
   'angular framework',
-  'micro-services',
+  'react framework',
+  'flutter framework',
+  'micro-services design',
   'kafka message broker',
   'rabbitMQ',
-  'docker knowledge'
+  'docker environment',
+  'kubernetes environment',
 ];
 
 
