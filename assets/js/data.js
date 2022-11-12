@@ -43,7 +43,7 @@ const experiences = [
 const projects = [
   {
     expid: 1,
-    name: 'Home Social',
+    name: 'Hoome Platform',
     image: '/assets/images/homesocial.png',
     client: 'Homebook Team',
     duration: '8 months',
@@ -64,6 +64,8 @@ const projects = [
       'Contributed as a Senior level full-stack developer',
       'Developed mobile application using the latest Flutter framework',
       'Developed real-time chat web application using Angular framework',
+      'Improved previously developed Document Management System',
+      'Accomplished the employee of the year 2021',
     ],
   },
   {
@@ -84,7 +86,10 @@ const projects = [
     ], 
     responsibilities: [
       'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
+      'Introduced a developer’s policy in the company to improve our development process',
+      'Mentored over 20 developers in the company',
       'Contributed as a Senior level full-stack developer',
+      'Automated software deployment in company version control system',
     ] 
   },
   {
@@ -106,6 +111,7 @@ const projects = [
     responsibilities: [
       'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
       'Contributed as a Senior level full-stack developer',
+      'Promoted from front end developer to senior software developer',
     ] 
   },
   {
@@ -126,7 +132,8 @@ const projects = [
     ], 
     responsibilities: [
       'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
-      'Contributed as a Senior level full-stack developer',
+      'Contributed as a Senior level full-stack developer in this project',
+      'Introduced a new tool to improve development process by 30%',
     ] 
   },
   {
@@ -144,8 +151,8 @@ const projects = [
       'https://cdn.worldvectorlogo.com/logos/angular-3.svg'
     ], 
     responsibilities: [
-      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
-      'Contributed as a Senior level full-stack developer',
+      'Designed flexible form data storing structure in the RDBMs',
+      'Contributed as a Full stack developer in this project',
     ] 
   },
   {
@@ -162,8 +169,7 @@ const projects = [
       'https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'
     ], 
     responsibilities: [
-      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
-      'Contributed as a Senior level full-stack developer',
+      'Participated Data visualization team to improve useful charts for client',
     ] 
   },
   {
@@ -179,8 +185,7 @@ const projects = [
       'http://pulseinfotech.com/images/extjs.jpg'
     ], 
     responsibilities: [
-      'Designed micro-services architecture for core services and developed flexible form structure that is easily changeable',
-      'Contributed as a Senior level full-stack developer',
+      'Developed web application for Location Tracking system using ExtJS',
     ] 
   }
 ]
