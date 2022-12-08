@@ -19,7 +19,7 @@ const experiences = [
     description: 'Managed multiple development team in the company\n' +
     'Mainly focused on web application development using Micro-services architecture\n' +
     'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
-    tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'RabbitMQ', 'Kafka', 'Ream-Time']
+    tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'RabbitMQ', 'Kafka', 'Real-Time']
   },
   {
     id: 2,
