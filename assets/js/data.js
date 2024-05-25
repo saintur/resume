@@ -6,16 +6,25 @@ const user = {
   email: 'saintur.batkhuu@gmail.com',
   web: 'https://www.linkedin.com/in/saintur',
   phone: '+1(646)238-8558',
-  position: 'Software Developer 5+ years',
+  position: 'Software Developer 6+ years',
   detail: 'Experienced Web Developer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Proficient in an assortment of technologies, including Java, Angular, Kafka, and Micro-services architecture.'
 };
 const experiences = [
+  {
+    id: 4,
+    as: 'Software Engineer',
+    where: 'John Deere via Beacon Hill Staffing Group',
+    from: 'Apr/2023',
+    to: 'Present',
+    description: 'Working on an effort to modernize existing financial related systems with cutting-edge technologies. ',
+    tags: ['Javascript', 'NextJS', 'NodeJS', 'AWS Lambda', 'AWS Services', 'Kafka', 'Real-Time']
+  },
   {
     id: 1,
     as: 'Senior Full-Stack Developer',
     where: 'Novelsoft LLC',
     from: 'Dec/2019',
-    to: 'Apr/2022',
+    to: 'Apr/2023',
     description: 'Managed multiple development team in the company\n' +
     'Mainly focused on web application development using Micro-services architecture\n' +
     'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
@@ -187,7 +196,29 @@ const projects = [
     responsibilities: [
       'Developed web application for Location Tracking system using ExtJS',
     ] 
-  }
+  },
+  {
+    expid: 4,
+    name: 'John Deere Financial',
+    image: '/assets/images/homesocial.png',
+    client: 'Spotted Cows',
+    duration: '...',
+    position: 'Software Engineer',
+    where: 'John Deere Financial',
+    logo: 'https://1000logos.net/wp-content/uploads/2017/03/John-Deere-Logo.png',
+    technologies: [
+     
+    ], 
+    responsibilities: [
+      'Developing and implementing front web application using React JS, HTML5, CSS, SASS, SCSS, Javascript, NodeJS, Express with version control like Bitbucket, GitHub, Gitlab, IDEs like Visual Studio Code and Linux terminal interface. ',
+      'Understanding state management patterns like Redux, Hooks and other patterns related to Javascript Frameworks',
+      'Implementing Test Driven Programming using Chai, Jasmine, Jest, Mocha, Junit, and writing source code using tools like SonarQube, lint. ',
+      'Assisting teams in development and resolving the issues in ReactJS and NodeJS in both ends.',
+      'Developing new features as per business requirements, designing software architectures, integrating and improving current state of software development with agile methodology.',
+      'Being involved in sprint planning and provide guideline to plan, estimate product backlogs using given tools such as Jira. ',
+      'Reviewing codes using Pull Request technique and following the coding guideline and standards for the following frameworks: ReactJS, NodeJS, Spring Boot, any new frameworks that the team implementing in the future. ',
+    ],
+  },
 ]
 const certificates = [
   {

@@ -40,26 +40,31 @@
   font-weight: 200;
   font-display: swap;
 }
-@color: #3d3838;
-@secondary: #918675;
-@silver: #888888;
+@color: #3e454b;
+@secondary: #98a1a9;
+@silver: #536473;
 body,
 html {
   padding: 0;
   margin: 0;
-  background-color: @color;
-  overflow: hidden;
   height: 100%;
   width: 100%;
   font-size: 14px;
+  color: @color;
+  font-weight: 300;
   font-family: "SFProText", Arial, Helvetica, sans-serif;
 }
 h4 {
   font-size: 16px;
+  font-weight: 500;
+}
+.paragraphs {
+  color: @secondary
 }
 .mobile {
   .body {
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     .content {
       padding: 32px;
     }
@@ -68,6 +73,7 @@ h4 {
 ul li {
   line-height: 20px;
   margin-bottom: 2px;
+  color: @secondary;
 }
 .back {
   font-weight: 500;
@@ -90,8 +96,11 @@ ul li {
 #detail {
   line-height: 20px;
 }
+.mh-4 {
+  margin: 4px 0;
+}
 .forward {
-  font-weight: 500;
+  font-weight: 400;
   height: 36px;
   display: inline-flex;
   align-items: center;
@@ -120,27 +129,23 @@ p {
   margin: auto;
   display: grid;
   grid-template-columns: auto 400px;
-  overflow: hidden;
   background-color: #ffffff;
-  background-image: url("../images/bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100%;
 
   .content {
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(26px);
-    -webkit-backdrop-filter: blur(26px);
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate3d(0, 0, 0);
-    transform: translateZ(0);
-    overflow-x: hidden;
-    overflow-y: auto;
+    // backdrop-filter: blur(26px);
+    // -webkit-backdrop-filter: blur(26px);
+    // -webkit-backface-visibility: hidden;
+    // -webkit-perspective: 1000;
+    // -webkit-transform: translate3d(0, 0, 0);
+    // -webkit-transform: translateZ(0);
+    // backface-visibility: hidden;
+    // perspective: 1000;
+    // transform: translate3d(0, 0, 0);
+    // transform: translateZ(0);
     color: #181818;
     padding: 32px 84px;
 
@@ -156,7 +161,7 @@ p {
           overflow: hidden;
           border-radius: 24px;
           margin-right: 32px;
-          box-shadow: -3px 0px 23px #8d6741;
+          box-shadow: -3px 0px 23px #8098ca9e;
         }
       }
       .info #fullname,
@@ -182,22 +187,26 @@ p {
   }
 
   .sidebar {
-    background-color: #101010;
-    overflow-x: hidden;
-    overflow-y: auto;
+    background-color: #f6f6f6;
+    // overflow-x: hidden;
+    // overflow-y: auto;
     padding: 0 32px;
+    font-size: 13px;
     h4 {
       color: @silver;
+      font-weight: 500;
+      font-size: 14px;
+      margin: 12px 0;
     }
-    a {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    // a {
+    //   text-decoration: none;
+    // }
+    // a:hover {
+    //   text-decoration: underline;
+    // }
     div,
     a {
-      color: white;
+      color: @silver;
     }
   }
 }
@@ -207,26 +216,25 @@ p {
 .educations {
   h4 {
     color: @color;
-    margin: 32px 0 12px;
+    margin: 16px 0 4px;
   }
   p {
+    font-size: 13px;
     color: #2a2a2a;
   }
   span {
-    color: @silver;
+    color: @secondary;
     width: 100%;
     margin: 0;
-    font-weight: 500;
-    padding-bottom: 8px;
+    font-weight: 300;
   }
   .tags {
     margin-top: 8px;
   }
   i {
-    font-size: 13px;
-    font-weight: 500;
-    color: #ba892e;
-    line-height: 24px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #2e68ba;
     font-style: normal;
   }
 }
@@ -236,31 +244,35 @@ p {
   padding-left: 0;
   text-transform: capitalize;
   font-size: 12px;
+  margin: 0;
   li {
-    margin: 2px 0;
+    margin: 0;
+    color: @silver
   }
 }
 
 a {
+  font-size: 13px;
   color: @color;
-  text-decoration: none;
   cursor: pointer;
 }
-a:hover {
-  text-decoration: underline;
-}
+// a:hover {
+//   text-decoration: underline;
+// }
 
 hr {
   margin-block-start: 2em;
   margin-block-end: 2em;
-  border: 0.5px solid silver;
+  border: 0.5px solid @silver;
 }
 
 .title {
   color: @secondary;
-  font-weight: 600;
 }
 .references {
+  strong {
+    font-weight: 400;
+  }
   span {
     color: @silver;
   }
@@ -291,14 +303,14 @@ hr {
 }
 .project .project-footer {
   padding: 24px;
-  background: linear-gradient(0deg, #fff5d9, #f3efdba8, transparent);
+  background: linear-gradient(0deg, #e7e9ec, #edeeefa8, transparent);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
 .responsibilities, .technologies {
   margin-top: 12px;
   font-weight: 600;
-  color: @secondary;
+  color: @color;
 }
 .technologies {
   display: inline-flex;
@@ -315,4 +327,7 @@ hr {
 }
 .footer-logo img{
   max-height: 18px;
+}
+#email, #phone, #web {
+  text-decoration: none;
 }

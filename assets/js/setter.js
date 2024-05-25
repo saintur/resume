@@ -47,7 +47,7 @@ const setter = function () {
     link.className = 'forward'
     const anchor = document.createElement('a');
     anchor.href=`/experience.html?id=${e.id}`
-    anchor.innerHTML = `View experience <span>&rarr;</span>`;
+    anchor.innerHTML = `View more <span>&rarr;</span>`;
     link.appendChild(anchor);
     card.appendChild(link);
     experiencesHTML.appendChild(card);

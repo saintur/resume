@@ -60,15 +60,8 @@ const experience = function () {
 
     const footer = document.createElement('div');
     footer.className = 'project-footer';
-    // footerLogo = document.createElement('div');
     appender(footer, 'div', `<img src="${e.logo}" />`, 'footer-logo');
     appender(footer, 'div', `As ${e.position}`);
-    // footer.appendChild(footerLogo)
-    // footerContent = document.createElement('div');
-    // appender(footerContent, 'strong', e.where);
- 
-    // footer.appendChild(footerContent)
-
     card.appendChild(footer);
     projectsHTML.appendChild(card);
   });
