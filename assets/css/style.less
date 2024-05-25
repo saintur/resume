@@ -104,6 +104,7 @@ ul li {
   display: inline-flex;
   align-items: center;
   width: 100%;
+  margin-bottom: 8px;
   a {
     width: 100%;
     span {
@@ -152,6 +153,7 @@ p {
       display: inline-flex;
       align-items: center;
       margin-bottom: 12px;
+      width: 100%;
       .avatar {
         display: flex;
         img {
@@ -217,14 +219,20 @@ p {
     color: @color;
     margin: 16px 0 4px;
   }
+  strong {
+    font-size: 13px;
+    font-weight: 500;
+    color: @color;
+    margin-right: 4px;
+  }
   p {
     font-size: 13px;
     color: #2a2a2a;
   }
   span {
-    color: @secondary;
     width: 100%;
     margin: 0;
+    font-size: 13px;
     font-weight: 300;
   }
   .tags {
@@ -275,7 +283,9 @@ hr {
   font-weight: 400;
 }
 .title {
-  color: @secondary;
+  font-size: 15px;
+  font-weight: 600;
+  color: @color;
 }
 .references {
   strong {
@@ -305,10 +315,21 @@ hr {
 }
 .project .project-content {
   padding: 24px 24px 0 24px;
+  li {
+    font-size: 13px;
+  }
 }
-.project .project-content h4 {
+.project .project-content span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.project .project-content strong {
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
 }
+
 .project .project-footer {
   padding: 24px;
   background: linear-gradient(0deg, #e7e9ec, #edeeefa8, transparent);
@@ -316,8 +337,10 @@ hr {
   border-bottom-right-radius: 12px;
 }
 .responsibilities, .technologies {
-  margin-top: 12px;
-  font-weight: 600;
+  color: #536473;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 12px 0 0;
   color: @color;
 }
 .technologies {

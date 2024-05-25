@@ -33,7 +33,6 @@ const letter = function () {
 
   const params = new URLSearchParams(location.search);
   const letter = letters.find(l => l.id == params.get('letter'));
-  console.log(letter)
   
   Object.keys(letter).forEach((key) => {
     if (document.getElementById(key)) {

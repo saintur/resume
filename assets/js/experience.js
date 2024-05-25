@@ -33,14 +33,18 @@ const experience = function () {
   });
 
   const projectsHTML = document.getElementById('projects');
-   const params = new URLSearchParams(location.search);
-  projects.filter(p => p.expid === +params.get('id')).forEach(e => {
+  const params = new URLSearchParams(location.search);
+
+  const detail = document.createElement('p')
+  const id = +params.get('id')
+  const exp = experiences.find(e => e.id === id)
+  detail.textContent = appender(projectsHTML, 'p', exp.description)
+
+  projects.filter(p => p.expid === id).forEach(e => {
   
     const content = document.createElement('div');
     content.className = 'project-content';
-    appender(content, 'h4', `${e.name} `);
-    appender(content, 'strong', `${e.client}`)
-
+    appender(content, 'strong', `${e.name} `);
     const techs = document.createElement('div');
     techs.className = 'technologies';
     appender(content, 'div', 'Technologies:', 'responsibilities');

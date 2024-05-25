@@ -36,7 +36,7 @@ const setter = function () {
   experiences.forEach(e => {
     const card = document.createElement('div');
     card.className = 'experiences';
-    appender(card, 'h4', e.as);
+    appender(card, 'strong', e.as);
     appender(card, 'span', `${e.from} - ${e.to}`);
     appender(card, 'p', e.description);
     const tags = document.createElement('div');
@@ -52,17 +52,17 @@ const setter = function () {
     card.appendChild(link);
     experiencesHTML.appendChild(card);
   });
-  const certificatesHTML = document.getElementById('certificates');
-  certificates.forEach(e => {
-    const card = document.createElement('div');
-    card.className = 'education';
-    appender(card, 'strong', `${e.description} `);
-    appender(card, 'span', `${e.year}`);
-    // const tags = document.createElement('div');
-    // appender(tags, 'i', e.tags.map(t => `#${t}`).join(', '));
-    // card.appendChild(tags);
-    certificatesHTML.appendChild(card);
-  });
+  // const certificatesHTML = document.getElementById('certificates');
+  // certificates.forEach(e => {
+  //   const card = document.createElement('div');
+  //   card.className = 'education';
+  //   appender(card, 'strong', `${e.description} `);
+  //   appender(card, 'span', `${e.year}`);
+  //   const tags = document.createElement('div');
+  //   appender(tags, 'i', e.tags.map(t => `#${t}`).join(', '));
+  //   card.appendChild(tags);
+  //   certificatesHTML.appendChild(card);
+  // });
 
   const educationsHTML = document.getElementById('educations');
   educations.forEach(e => {
