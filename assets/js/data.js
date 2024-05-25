@@ -240,28 +240,28 @@ const certificates = [
 const educations = [
   {
     as: 'Software Development',
-    where: 'Maharishi International Univesity',
-    location: 'USA 🇺🇸',
+    where: 'Master of Software Development at MIU',
+    location: 'USA ',
     from: 'Apr/2022',
-    to: 'Currently studying',
+    to: 'Dec/2024',
     tags: ['Spring Framework', 'Angular Framework', 'React JS Framework', 'Google Cloud K8s', 'AWS S3, EC2', 'Kubernetes', 'Docker']
   },
   {
     as: 'Information system',
-    where: 'Mongolian University of Science and Technology',
-    location: 'Mongolia 🇲🇳',
+    where: 'Bachelor of Information System at MUST',
+    location: 'Mongolia ',
     from: 'Jan/2013',
     to: 'Jan/2017',
     tags: ['GPA 3.3', 'Java development', 'Android', 'System automation']
   },
-  {
-    as: 'Certified Software Engineer',
-    where: 'Aptech Education',
-    location: 'India 🇮🇳',
-    from: 'Aug/2012',
-    to: 'Jul/2013',
-    tags: ['Java', 'Javascript', 'Microsoft office', 'Web', 'Windows 7']
-  }
+  // {
+  //   as: 'Certified Software Engineer',
+  //   where: 'Aptech Education',
+  //   location: 'India ',
+  //   from: 'Aug/2012',
+  //   to: 'Jul/2013',
+  //   tags: ['Java', 'Javascript', 'Microsoft office', 'Web', 'Windows 7']
+  // }
 ];
 const skills = [
   'java programming',
