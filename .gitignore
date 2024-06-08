@@ -1,5 +1,5 @@
  .firebase
  .firebaserc
- .idea
+ /.idea
  *.xml
-/.idea/workspace.xml
+/.idea/*.xml
