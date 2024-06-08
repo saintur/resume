@@ -162,12 +162,13 @@ p {
       .avatar {
         display: flex;
         img {
-          height: 48px;
-          width: 48px;
+          height: 54px;
+          width: 54px;
           overflow: hidden;
-          border-radius: 24px;
           margin-right: 32px;
-          box-shadow: -3px 0px 23px #8098ca9e;
+          border-radius: 50%;
+          box-shadow: 3px 8px 16px #8098ca9e;
+          border: 0.5px solid #8098ca57;
         }
       }
       .info #fullname,
@@ -178,7 +179,7 @@ p {
       }
       .info #position,
       .info #ownerPosition {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 300;
         color: @secondary;
       }
@@ -266,8 +267,15 @@ p {
   font-size: 12px;
   margin: 0;
   li {
-    margin: 0;
-    color: @silver
+    margin: 0 5px 5px 0;
+    color: @silver;
+    display: inline-block;
+    background: white;
+    padding: 0 8px;
+    border: 1px solid @secondary;
+    border-radius: 12px;
+    font-size: 10px;
+    font-family: "Menlo", monospace;
   }
 }
 
@@ -283,7 +291,7 @@ a {
 hr {
   margin-block-start: 2em;
   margin-block-end: 2em;
-  border: 0.5px solid @silver;
+  border: 0.5px solid @secondary;
 }
 .head, .contact {
   color: @color;
@@ -366,6 +374,6 @@ hr {
 .footer-logo img{
   max-height: 18px;
 }
-#email, #phone, #web {
-  text-decoration: none;
+.phone {
+  margin-left: 12px;
 }

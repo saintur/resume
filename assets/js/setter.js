@@ -17,13 +17,13 @@ const setter = function () {
     document.body.classList.remove('mobile');
   }
   Object.keys(user).forEach((key) => {
-    if (document.getElementById(key)) {
+    if (document.querySelector(`.${key}`) || document.querySelector(`#${key}`)) {
       if (key === 'email') {
-        document.getElementById(key).href = `mailto:${user[key]}?subject=Contact us&body=Contact me with this number`;
-        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+        document.querySelector(`.${key}`).href = `mailto:${user[key]}?subject=Contact us&body=Contact me with this number`;
+        document.querySelector(`.${key}`).innerHTML = `${user[key]}`;
       } else if (key === 'phone') {
-        document.getElementById(key).href = `tel:${user[key]}`;
-        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+        document.querySelector(`.${key}`).href = `tel:${user[key]}`;
+        document.querySelector(`.${key}`).innerHTML = `${user[key]}`;
       } else if (key === 'web') {
         document.getElementById(key).href = user[key];
         document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;

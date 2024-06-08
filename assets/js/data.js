@@ -6,14 +6,14 @@ const user = {
   email: 'saintur.batkhuu@gmail.com',
   web: 'https://www.linkedin.com/in/saintur',
   phone: '+1(646)238-8558',
-  position: 'Software Developer 6+ years',
-  detail: 'Experienced Web Developer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Proficient in an assortment of technologies, including Java, Angular, Kafka, and Micro-services architecture.'
+  position: 'Software Engineer 6+ years',
+  detail: 'Experienced Software Engineer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Proficient in an assortment of technologies, including Java, Angular, Kafka, and Micro-services architecture.'
 };
 const experiences = [
   {
     id: 4,
     as: 'Software Engineer',
-    where: 'John Deere via Beacon Hill Staffing Group',
+    where: 'John Deere via BHSG',
     from: 'Apr/2023',
     to: 'Present',
     description: 'Working on an effort to modernize existing financial related systems with cutting-edge technologies. ',
@@ -264,16 +264,21 @@ const educations = [
   // }
 ];
 const skills = [
-  'java programming',
-  'spring framework',
-  'angular framework',
-  'react framework',
-  'flutter framework',
-  'micro-services design',
-  'kafka message broker',
+  'java',
+  'spring boot',
+  'angular',
+  'reactjs',
+  'nextjs',
+  'nestjs',
+  'node.js',
+  'flutter',
+  'aws',
+  'micro-services',
+  'kafka',
   'rabbitMQ',
-  'docker environment',
-  'kubernetes environment',
+  'docker',
+  'terraform',
+  'kubernetes',
 ];
 
 
