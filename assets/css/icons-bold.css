@@ -1,0 +1,5374 @@
+@font-face {
+    font-family: "icons-bold";
+    src: url("../fonts/icons-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 🔧 Estilos base */
+[class^="isb-"],
+[class*=" isb-"] {
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🎨 Estilos comunes de paths */
+[class^="isb-"] [class^="path"]:before,
+[class*=" isb-"] [class^="path"]:before,
+[class^="isb-"]:before,
+[class*=" isb-"]:before {
+    font-family: "icons-bold" !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 🔹 Icono archive */
+.isb-archive:before {
+    content: "\E000";
+}
+
+/* 🔹 Icono archive */
+.isb-archive:before {
+    content: "\E001";
+}
+
+/* 🔹 Icono archive */
+.isb-archive:before {
+    content: "\E002";
+}
+
+/* 🔹 Icono archive-add */
+.isb-archive-add:before {
+    content: "\E003";
+}
+
+/* 🔹 Icono archive-minus */
+.isb-archive-minus:before {
+    content: "\E004";
+}
+
+/* 🔹 Icono archive-slash */
+.isb-archive-slash:before {
+    content: "\E005";
+}
+
+/* 🔹 Icono archive-tick */
+.isb-archive-tick:before {
+    content: "\E006";
+}
+
+/* 🔹 Icono book-saved */
+.isb-book-saved:before {
+    content: "\E007";
+}
+
+/* 🔹 Icono book-square */
+.isb-book-square:before {
+    content: "\E008";
+}
+
+/* 🔹 Icono receipt-square */
+.isb-receipt-square:before {
+    content: "\E009";
+}
+
+/* 🔹 Icono save-2 */
+.isb-save-2:before {
+    content: "\E00A";
+}
+
+/* 🔹 Icono save-add */
+.isb-save-add:before {
+    content: "\E00B";
+}
+
+/* 🔹 Icono save-minus */
+.isb-save-minus:before {
+    content: "\E00C";
+}
+
+/* 🔹 Icono save-remove */
+.isb-save-remove:before {
+    content: "\E00D";
+}
+
+/* 🔹 Icono arrange-circle */
+.isb-arrange-circle:before {
+    content: "\E00E";
+}
+
+/* 🔹 Icono arrange-circle-2 */
+.isb-arrange-circle-2:before {
+    content: "\E00F";
+}
+
+/* 🔹 Icono arrange-square */
+.isb-arrange-square:before {
+    content: "\E010";
+}
+
+/* 🔹 Icono arrange-square-2 */
+.isb-arrange-square-2:before {
+    content: "\E011";
+}
+
+/* 🔹 Icono arrow-2 */
+.isb-arrow-2:before {
+    content: "\E012";
+}
+
+/* 🔹 Icono arrow-3 */
+.isb-arrow-3:before {
+    content: "\E013";
+}
+
+/* 🔹 Icono arrow-back */
+.isb-arrow-back:before {
+    content: "\E014";
+}
+
+/* 🔹 Icono arrow-bottom */
+.isb-arrow-bottom:before {
+    content: "\E015";
+}
+
+/* 🔹 Icono arrow-circle-down */
+.isb-arrow-circle-down:before {
+    content: "\E016";
+}
+
+/* 🔹 Icono arrow-circle-left */
+.isb-arrow-circle-left:before {
+    content: "\E017";
+}
+
+/* 🔹 Icono arrow-circle-right */
+.isb-arrow-circle-right:before {
+    content: "\E018";
+}
+
+/* 🔹 Icono arrow-circle-up */
+.isb-arrow-circle-up:before {
+    content: "\E019";
+}
+
+/* 🔹 Icono arrow-down */
+.isb-arrow-down:before {
+    content: "\E01A";
+}
+
+/* 🔹 Icono arrow-down-01 */
+.isb-arrow-down-01:before {
+    content: "\E01B";
+}
+
+/* 🔹 Icono arrow-down-02 */
+.isb-arrow-down-02:before {
+    content: "\E01C";
+}
+
+/* 🔹 Icono arrow-down-03 */
+.isb-arrow-down-03:before {
+    content: "\E01D";
+}
+
+/* 🔹 Icono arrow-down-04 */
+.isb-arrow-down-04:before {
+    content: "\E01E";
+}
+
+/* 🔹 Icono arrow-down-1 */
+.isb-arrow-down-1:before {
+    content: "\E01F";
+}
+
+/* 🔹 Icono arrow-down-2 */
+.isb-arrow-down-2:before {
+    content: "\E020";
+}
+
+/* 🔹 Icono arrow-forward */
+.isb-arrow-forward:before {
+    content: "\E021";
+}
+
+/* 🔹 Icono arrow-left */
+.isb-arrow-left:before {
+    content: "\E022";
+}
+
+/* 🔹 Icono arrow-left-01 */
+.isb-arrow-left-01:before {
+    content: "\E023";
+}
+
+/* 🔹 Icono arrow-left-02 */
+.isb-arrow-left-02:before {
+    content: "\E024";
+}
+
+/* 🔹 Icono arrow-left-03 */
+.isb-arrow-left-03:before {
+    content: "\E025";
+}
+
+/* 🔹 Icono arrow-left-04 */
+.isb-arrow-left-04:before {
+    content: "\E026";
+}
+
+/* 🔹 Icono arrow-left-1 */
+.isb-arrow-left-1:before {
+    content: "\E027";
+}
+
+/* 🔹 Icono arrow-left-2 */
+.isb-arrow-left-2:before {
+    content: "\E028";
+}
+
+/* 🔹 Icono arrow-left-3 */
+.isb-arrow-left-3:before {
+    content: "\E029";
+}
+
+/* 🔹 Icono arrow-right */
+.isb-arrow-right:before {
+    content: "\E02A";
+}
+
+/* 🔹 Icono arrow-right-01 */
+.isb-arrow-right-01:before {
+    content: "\E02B";
+}
+
+/* 🔹 Icono arrow-right-02 */
+.isb-arrow-right-02:before {
+    content: "\E02C";
+}
+
+/* 🔹 Icono arrow-right-03 */
+.isb-arrow-right-03:before {
+    content: "\E02D";
+}
+
+/* 🔹 Icono arrow-right-04 */
+.isb-arrow-right-04:before {
+    content: "\E02E";
+}
+
+/* 🔹 Icono arrow-right-1 */
+.isb-arrow-right-1:before {
+    content: "\E02F";
+}
+
+/* 🔹 Icono arrow-right-2 */
+.isb-arrow-right-2:before {
+    content: "\E030";
+}
+
+/* 🔹 Icono arrow-right-3 */
+.isb-arrow-right-3:before {
+    content: "\E031";
+}
+
+/* 🔹 Icono arrow-square-down */
+.isb-arrow-square-down:before {
+    content: "\E032";
+}
+
+/* 🔹 Icono arrow-square-left */
+.isb-arrow-square-left:before {
+    content: "\E033";
+}
+
+/* 🔹 Icono arrow-square-right */
+.isb-arrow-square-right:before {
+    content: "\E034";
+}
+
+/* 🔹 Icono arrow-square-up */
+.isb-arrow-square-up:before {
+    content: "\E035";
+}
+
+/* 🔹 Icono arrow-swap */
+.isb-arrow-swap:before {
+    content: "\E036";
+}
+
+/* 🔹 Icono arrow-swap-01 */
+.isb-arrow-swap-01:before {
+    content: "\E037";
+}
+
+/* 🔹 Icono arrow-swap-02 */
+.isb-arrow-swap-02:before {
+    content: "\E038";
+}
+
+/* 🔹 Icono arrow-swap-03 */
+.isb-arrow-swap-03:before {
+    content: "\E039";
+}
+
+/* 🔹 Icono arrow-swap-horizontal */
+.isb-arrow-swap-horizontal:before {
+    content: "\E03A";
+}
+
+/* 🔹 Icono arrow-transfer-01 */
+.isb-arrow-transfer-01:before {
+    content: "\E03B";
+}
+
+/* 🔹 Icono arrow-transfer-02 */
+.isb-arrow-transfer-02:before {
+    content: "\E03C";
+}
+
+/* 🔹 Icono arrow-up */
+.isb-arrow-up:before {
+    content: "\E03D";
+}
+
+/* 🔹 Icono arrow-up-01 */
+.isb-arrow-up-01:before {
+    content: "\E03E";
+}
+
+/* 🔹 Icono arrow-up-02 */
+.isb-arrow-up-02:before {
+    content: "\E03F";
+}
+
+/* 🔹 Icono arrow-up-03 */
+.isb-arrow-up-03:before {
+    content: "\E040";
+}
+
+/* 🔹 Icono arrow-up-04 */
+.isb-arrow-up-04:before {
+    content: "\E041";
+}
+
+/* 🔹 Icono arrow-up-1 */
+.isb-arrow-up-1:before {
+    content: "\E042";
+}
+
+/* 🔹 Icono arrow-up-2 */
+.isb-arrow-up-2:before {
+    content: "\E043";
+}
+
+/* 🔹 Icono arrow-up-3 */
+.isb-arrow-up-3:before {
+    content: "\E044";
+}
+
+/* 🔹 Icono back-square */
+.isb-back-square:before {
+    content: "\E045";
+}
+
+/* 🔹 Icono convert */
+.isb-convert:before {
+    content: "\E046";
+}
+
+/* 🔹 Icono convert-arrow */
+.isb-convert-arrow:before {
+    content: "\E047";
+}
+
+/* 🔹 Icono export-2 */
+.isb-export-2:before {
+    content: "\E048";
+}
+
+/* 🔹 Icono export-arrow-01 */
+.isb-export-arrow-01:before {
+    content: "\E049";
+}
+
+/* 🔹 Icono export-arrow-02 */
+.isb-export-arrow-02:before {
+    content: "\E04A";
+}
+
+/* 🔹 Icono export-circle */
+.isb-export-circle:before {
+    content: "\E04B";
+}
+
+/* 🔹 Icono export-circle-01 */
+.isb-export-circle-01:before {
+    content: "\E04C";
+}
+
+/* 🔹 Icono export-circle-02 */
+.isb-export-circle-02:before {
+    content: "\E04D";
+}
+
+/* 🔹 Icono export-circle-1 */
+.isb-export-circle-1:before {
+    content: "\E04E";
+}
+
+/* 🔹 Icono export-square */
+.isb-export-square:before {
+    content: "\E04F";
+}
+
+/* 🔹 Icono forward-square */
+.isb-forward-square:before {
+    content: "\E050";
+}
+
+/* 🔹 Icono import-1 */
+.isb-import-1:before {
+    content: "\E051";
+}
+
+/* 🔹 Icono import-arrow-01 */
+.isb-import-arrow-01:before {
+    content: "\E052";
+}
+
+/* 🔹 Icono import-arrow-02 */
+.isb-import-arrow-02:before {
+    content: "\E053";
+}
+
+/* 🔹 Icono import-circle */
+.isb-import-circle:before {
+    content: "\E054";
+}
+
+/* 🔹 Icono import-circle-01 */
+.isb-import-circle-01:before {
+    content: "\E055";
+}
+
+/* 🔹 Icono import-circle-02 */
+.isb-import-circle-02:before {
+    content: "\E056";
+}
+
+/* 🔹 Icono import-circle-1 */
+.isb-import-circle-1:before {
+    content: "\E057";
+}
+
+/* 🔹 Icono import-square */
+.isb-import-square:before {
+    content: "\E058";
+}
+
+/* 🔹 Icono login */
+.isb-login:before {
+    content: "\E059";
+}
+
+/* 🔹 Icono login-01 */
+.isb-login-01:before {
+    content: "\E05A";
+}
+
+/* 🔹 Icono login-02 */
+.isb-login-02:before {
+    content: "\E05B";
+}
+
+/* 🔹 Icono login-1 */
+.isb-login-1:before {
+    content: "\E05C";
+}
+
+/* 🔹 Icono logout */
+.isb-logout:before {
+    content: "\E05D";
+}
+
+/* 🔹 Icono logout-01 */
+.isb-logout-01:before {
+    content: "\E05E";
+}
+
+/* 🔹 Icono logout-02 */
+.isb-logout-02:before {
+    content: "\E05F";
+}
+
+/* 🔹 Icono logout-2 */
+.isb-logout-2:before {
+    content: "\E060";
+}
+
+/* 🔹 Icono receive-square */
+.isb-receive-square:before {
+    content: "\E061";
+}
+
+/* 🔹 Icono receive-square-01 */
+.isb-receive-square-01:before {
+    content: "\E062";
+}
+
+/* 🔹 Icono receive-square-02 */
+.isb-receive-square-02:before {
+    content: "\E063";
+}
+
+/* 🔹 Icono receive-square-2 */
+.isb-receive-square-2:before {
+    content: "\E064";
+}
+
+/* 🔹 Icono received */
+.isb-received:before {
+    content: "\E065";
+}
+
+/* 🔹 Icono redo */
+.isb-redo:before {
+    content: "\E066";
+}
+
+/* 🔹 Icono redo-arrow */
+.isb-redo-arrow:before {
+    content: "\E067";
+}
+
+/* 🔹 Icono refresh */
+.isb-refresh:before {
+    content: "\E068";
+}
+
+/* 🔹 Icono refresh-2 */
+.isb-refresh-2:before {
+    content: "\E069";
+}
+
+/* 🔹 Icono refresh-arrow-01 */
+.isb-refresh-arrow-01:before {
+    content: "\E06A";
+}
+
+/* 🔹 Icono refresh-arrow-02 */
+.isb-refresh-arrow-02:before {
+    content: "\E06B";
+}
+
+/* 🔹 Icono refresh-circle */
+.isb-refresh-circle:before {
+    content: "\E06C";
+}
+
+/* 🔹 Icono refresh-left */
+.isb-refresh-left:before {
+    content: "\E06D";
+}
+
+/* 🔹 Icono refresh-left-square */
+.isb-refresh-left-square:before {
+    content: "\E06E";
+}
+
+/* 🔹 Icono refresh-right */
+.isb-refresh-right:before {
+    content: "\E06F";
+}
+
+/* 🔹 Icono refresh-right-square */
+.isb-refresh-right-square:before {
+    content: "\E070";
+}
+
+/* 🔹 Icono refresh-square */
+.isb-refresh-square:before {
+    content: "\E071";
+}
+
+/* 🔹 Icono refresh-square-2 */
+.isb-refresh-square-2:before {
+    content: "\E072";
+}
+
+/* 🔹 Icono repeat */
+.isb-repeat:before {
+    content: "\E073";
+}
+
+/* 🔹 Icono repeat-arrow */
+.isb-repeat-arrow:before {
+    content: "\E074";
+}
+
+/* 🔹 Icono repeat-circle */
+.isb-repeat-circle:before {
+    content: "\E075";
+}
+
+/* 🔹 Icono rotate-left */
+.isb-rotate-left:before {
+    content: "\E076";
+}
+
+/* 🔹 Icono rotate-left */
+.isb-rotate-left:before {
+    content: "\E077";
+}
+
+/* 🔹 Icono rotate-right */
+.isb-rotate-right:before {
+    content: "\E078";
+}
+
+/* 🔹 Icono rotate-right */
+.isb-rotate-right:before {
+    content: "\E079";
+}
+
+/* 🔹 Icono send */
+.isb-send:before {
+    content: "\E07A";
+}
+
+/* 🔹 Icono send */
+.isb-send:before {
+    content: "\E07B";
+}
+
+/* 🔹 Icono send-square */
+.isb-send-square:before {
+    content: "\E07C";
+}
+
+/* 🔹 Icono send-square-01 */
+.isb-send-square-01:before {
+    content: "\E07D";
+}
+
+/* 🔹 Icono send-square-02 */
+.isb-send-square-02:before {
+    content: "\E07E";
+}
+
+/* 🔹 Icono send-square-2 */
+.isb-send-square-2:before {
+    content: "\E07F";
+}
+
+/* 🔹 Icono swap-horizontal-01 */
+.isb-swap-horizontal-01:before {
+    content: "\E080";
+}
+
+/* 🔹 Icono swap-horizontal-02 */
+.isb-swap-horizontal-02:before {
+    content: "\E081";
+}
+
+/* 🔹 Icono swap-horizontal-03 */
+.isb-swap-horizontal-03:before {
+    content: "\E082";
+}
+
+/* 🔹 Icono undo */
+.isb-undo:before {
+    content: "\E083";
+}
+
+/* 🔹 Icono undo-arrow */
+.isb-undo-arrow:before {
+    content: "\E084";
+}
+
+/* 🔹 Icono aquarius */
+.isb-aquarius:before {
+    content: "\E085";
+}
+
+/* 🔹 Icono gemini */
+.isb-gemini:before {
+    content: "\E086";
+}
+
+/* 🔹 Icono gemini-2 */
+.isb-gemini-2:before {
+    content: "\E087";
+}
+
+/* 🔹 Icono man */
+.isb-man:before {
+    content: "\E088";
+}
+
+/* 🔹 Icono sagittarius */
+.isb-sagittarius:before {
+    content: "\E089";
+}
+
+/* 🔹 Icono woman */
+.isb-woman:before {
+    content: "\E08A";
+}
+
+/* 🔹 Icono building */
+.isb-building:before {
+    content: "\E08C";
+}
+
+/* 🔹 Icono building-3 */
+.isb-building-3:before {
+    content: "\E08D";
+}
+
+/* 🔹 Icono building-4 */
+.isb-building-4:before {
+    content: "\E08E";
+}
+
+/* 🔹 Icono building-5 */
+.isb-building-5:before {
+    content: "\E08F";
+}
+
+/* 🔹 Icono buildings */
+.isb-buildings:before {
+    content: "\E090";
+}
+
+/* 🔹 Icono buildings-2 */
+.isb-buildings-2:before {
+    content: "\E091";
+}
+
+/* 🔹 Icono courthouse */
+.isb-courthouse:before {
+    content: "\E092";
+}
+
+/* 🔹 Icono hospital */
+.isb-hospital:before {
+    content: "\E093";
+}
+
+/* 🔹 Icono house */
+.isb-house:before {
+    content: "\E094";
+}
+
+/* 🔹 Icono house-2 */
+.isb-house-2:before {
+    content: "\E095";
+}
+
+/* 🔹 Icono activity */
+.isb-activity:before {
+    content: "\E096";
+}
+
+/* 🔹 Icono chart */
+.isb-chart:before {
+    content: "\E097";
+}
+
+/* 🔹 Icono chart */
+.isb-chart:before {
+    content: "\E098";
+}
+
+/* 🔹 Icono chart-2 */
+.isb-chart-2:before {
+    content: "\E099";
+}
+
+/* 🔹 Icono chart-3 */
+.isb-chart-3:before {
+    content: "\E09A";
+}
+
+/* 🔹 Icono chart-fail */
+.isb-chart-fail:before {
+    content: "\E09B";
+}
+
+/* 🔹 Icono chart-square */
+.isb-chart-square:before {
+    content: "\E09C";
+}
+
+/* 🔹 Icono chart-square */
+.isb-chart-square:before {
+    content: "\E09D";
+}
+
+/* 🔹 Icono chart-success */
+.isb-chart-success:before {
+    content: "\E09E";
+}
+
+/* 🔹 Icono diagram */
+.isb-diagram:before {
+    content: "\E09F";
+}
+
+/* 🔹 Icono favorite-chart */
+.isb-favorite-chart:before {
+    content: "\E0A0";
+}
+
+/* 🔹 Icono graph */
+.isb-graph:before {
+    content: "\E0A1";
+}
+
+/* 🔹 Icono hashtag */
+.isb-hashtag:before {
+    content: "\E0A2";
+}
+
+/* 🔹 Icono hashtag */
+.isb-hashtag:before {
+    content: "\E0A3";
+}
+
+/* 🔹 Icono health */
+.isb-health:before {
+    content: "\E0A4";
+}
+
+/* 🔹 Icono home-hashtag */
+.isb-home-hashtag:before {
+    content: "\E0A5";
+}
+
+/* 🔹 Icono home-trend-down */
+.isb-home-trend-down:before {
+    content: "\E0A6";
+}
+
+/* 🔹 Icono home-trend-up */
+.isb-home-trend-up:before {
+    content: "\E0A7";
+}
+
+/* 🔹 Icono personalcard */
+.isb-personalcard:before {
+    content: "\E0A8";
+}
+
+/* 🔹 Icono presention-chart */
+.isb-presention-chart:before {
+    content: "\E0A9";
+}
+
+/* 🔹 Icono status-up */
+.isb-status-up:before {
+    content: "\E0AA";
+}
+
+/* 🔹 Icono trend-down */
+.isb-trend-down:before {
+    content: "\E0AB";
+}
+
+/* 🔹 Icono trend-up */
+.isb-trend-up:before {
+    content: "\E0AC";
+}
+
+/* 🔹 Icono call */
+.isb-call:before {
+    content: "\E0AD";
+}
+
+/* 🔹 Icono call-add */
+.isb-call-add:before {
+    content: "\E0AE";
+}
+
+/* 🔹 Icono call-calling */
+.isb-call-calling:before {
+    content: "\E0AF";
+}
+
+/* 🔹 Icono call-incoming */
+.isb-call-incoming:before {
+    content: "\E0B0";
+}
+
+/* 🔹 Icono call-minus */
+.isb-call-minus:before {
+    content: "\E0B1";
+}
+
+/* 🔹 Icono call-outgoing */
+.isb-call-outgoing:before {
+    content: "\E0B2";
+}
+
+/* 🔹 Icono call-received */
+.isb-call-received:before {
+    content: "\E0B3";
+}
+
+/* 🔹 Icono call-remove */
+.isb-call-remove:before {
+    content: "\E0B4";
+}
+
+/* 🔹 Icono call-slash */
+.isb-call-slash:before {
+    content: "\E0B5";
+}
+
+/* 🔹 Icono airplane */
+.isb-airplane:before {
+    content: "\E0B6";
+}
+
+/* 🔹 Icono airplane-square */
+.isb-airplane-square:before {
+    content: "\E0B7";
+}
+
+/* 🔹 Icono bus */
+.isb-bus:before {
+    content: "\E0B8";
+}
+
+/* 🔹 Icono car */
+.isb-car:before {
+    content: "\E0B9";
+}
+
+/* 🔹 Icono driving */
+.isb-driving:before {
+    content: "\E0BA";
+}
+
+/* 🔹 Icono gas-station */
+.isb-gas-station:before {
+    content: "\E0BB";
+}
+
+/* 🔹 Icono ship */
+.isb-ship:before {
+    content: "\E0BC";
+}
+
+/* 🔹 Icono smart-car */
+.isb-smart-car:before {
+    content: "\E0BD";
+}
+
+/* 🔹 Icono airdrop */
+.isb-airdrop:before {
+    content: "\E0BE";
+}
+
+/* 🔹 Icono airpod */
+.isb-airpod:before {
+    content: "\E0BF";
+}
+
+/* 🔹 Icono airpods */
+.isb-airpods:before {
+    content: "\E0C0";
+}
+
+/* 🔹 Icono bluetooth */
+.isb-bluetooth:before {
+    content: "\E0C1";
+}
+
+/* 🔹 Icono bluetooth-2 */
+.isb-bluetooth-2:before {
+    content: "\E0C2";
+}
+
+/* 🔹 Icono bluetooth-circle */
+.isb-bluetooth-circle:before {
+    content: "\E0C3";
+}
+
+/* 🔹 Icono bluetooth-rectangle */
+.isb-bluetooth-rectangle:before {
+    content: "\E0C4";
+}
+
+/* 🔹 Icono clock */
+.isb-clock:before {
+    content: "\E0C5";
+}
+
+/* 🔹 Icono clock */
+.isb-clock:before {
+    content: "\E0C6";
+}
+
+/* 🔹 Icono cloud-add */
+.isb-cloud-add:before {
+    content: "\E0C7";
+}
+
+/* 🔹 Icono cloud-change */
+.isb-cloud-change:before {
+    content: "\E0C8";
+}
+
+/* 🔹 Icono cloud-connection */
+.isb-cloud-connection:before {
+    content: "\E0C9";
+}
+
+/* 🔹 Icono cloud-remove */
+.isb-cloud-remove:before {
+    content: "\E0CA";
+}
+
+/* 🔹 Icono cpu */
+.isb-cpu:before {
+    content: "\E0CB";
+}
+
+/* 🔹 Icono cpu-charge */
+.isb-cpu-charge:before {
+    content: "\E0CC";
+}
+
+/* 🔹 Icono cpu-setting */
+.isb-cpu-setting:before {
+    content: "\E0CD";
+}
+
+/* 🔹 Icono devices */
+.isb-devices:before {
+    content: "\E0CE";
+}
+
+/* 🔹 Icono devices */
+.isb-devices:before {
+    content: "\E0CF";
+}
+
+/* 🔹 Icono driver */
+.isb-driver:before {
+    content: "\E0D0";
+}
+
+/* 🔹 Icono driver-2 */
+.isb-driver-2:before {
+    content: "\E0D1";
+}
+
+/* 🔹 Icono driver-refresh */
+.isb-driver-refresh:before {
+    content: "\E0D2";
+}
+
+/* 🔹 Icono electricity */
+.isb-electricity:before {
+    content: "\E0D3";
+}
+
+/* 🔹 Icono external-drive */
+.isb-external-drive:before {
+    content: "\E0D4";
+}
+
+/* 🔹 Icono folder-connection */
+.isb-folder-connection:before {
+    content: "\E0D5";
+}
+
+/* 🔹 Icono game */
+.isb-game:before {
+    content: "\E0D6";
+}
+
+/* 🔹 Icono gameboy */
+.isb-gameboy:before {
+    content: "\E0D7";
+}
+
+/* 🔹 Icono headphone */
+.isb-headphone:before {
+    content: "\E0D8";
+}
+
+/* 🔹 Icono headphones */
+.isb-headphones:before {
+    content: "\E0D9";
+}
+
+/* 🔹 Icono keyboard */
+.isb-keyboard:before {
+    content: "\E0DA";
+}
+
+/* 🔹 Icono keyboard-open */
+.isb-keyboard-open:before {
+    content: "\E0DB";
+}
+
+/* 🔹 Icono lamp */
+.isb-lamp:before {
+    content: "\E0DC";
+}
+
+/* 🔹 Icono lamp */
+.isb-lamp:before {
+    content: "\E0DD";
+}
+
+/* 🔹 Icono mirroring-screen */
+.isb-mirroring-screen:before {
+    content: "\E0DE";
+}
+
+/* 🔹 Icono mobile */
+.isb-mobile:before {
+    content: "\E0DF";
+}
+
+/* 🔹 Icono monitor */
+.isb-monitor:before {
+    content: "\E0E0";
+}
+
+/* 🔹 Icono monitor-mobile */
+.isb-monitor-mobile:before {
+    content: "\E0E1";
+}
+
+/* 🔹 Icono monitor-recorder */
+.isb-monitor-recorder:before {
+    content: "\E0E2";
+}
+
+/* 🔹 Icono mouse */
+.isb-mouse:before {
+    content: "\E0E3";
+}
+
+/* 🔹 Icono mouse */
+.isb-mouse:before {
+    content: "\E0E4";
+}
+
+/* 🔹 Icono music-play */
+.isb-music-play:before {
+    content: "\E0E5";
+}
+
+/* 🔹 Icono printer */
+.isb-printer:before {
+    content: "\E0E6";
+}
+
+/* 🔹 Icono printer-slash */
+.isb-printer-slash:before {
+    content: "\E0E7";
+}
+
+/* 🔹 Icono ram */
+.isb-ram:before {
+    content: "\E0E8";
+}
+
+/* 🔹 Icono ram-2 */
+.isb-ram-2:before {
+    content: "\E0E9";
+}
+
+/* 🔹 Icono simcard */
+.isb-simcard:before {
+    content: "\E0EA";
+}
+
+/* 🔹 Icono simcard-1 */
+.isb-simcard-1:before {
+    content: "\E0EB";
+}
+
+/* 🔹 Icono simcard-2 */
+.isb-simcard-2:before {
+    content: "\E0EC";
+}
+
+/* 🔹 Icono speaker */
+.isb-speaker:before {
+    content: "\E0ED";
+}
+
+/* 🔹 Icono telescope */
+.isb-telescope:before {
+    content: "\E0EE";
+}
+
+/* 🔹 Icono watch */
+.isb-watch:before {
+    content: "\E0EF";
+}
+
+/* 🔹 Icono watch-status */
+.isb-watch-status:before {
+    content: "\E0F0";
+}
+
+/* 🔹 Icono weight */
+.isb-weight:before {
+    content: "\E0F1";
+}
+
+/* 🔹 Icono weight */
+.isb-weight:before {
+    content: "\E0F2";
+}
+
+/* 🔹 Icono archive-book */
+.isb-archive-book:before {
+    content: "\E0F3";
+}
+
+/* 🔹 Icono bill */
+.isb-bill:before {
+    content: "\E0F4";
+}
+
+/* 🔹 Icono clipboard-close */
+.isb-clipboard-close:before {
+    content: "\E0F5";
+}
+
+/* 🔹 Icono clipboard-export */
+.isb-clipboard-export:before {
+    content: "\E0F6";
+}
+
+/* 🔹 Icono clipboard-import */
+.isb-clipboard-import:before {
+    content: "\E0F7";
+}
+
+/* 🔹 Icono clipboard-text */
+.isb-clipboard-text:before {
+    content: "\E0F8";
+}
+
+/* 🔹 Icono clipboard-tick */
+.isb-clipboard-tick:before {
+    content: "\E0F9";
+}
+
+/* 🔹 Icono copyright */
+.isb-copyright:before {
+    content: "\E0FA";
+}
+
+/* 🔹 Icono creative-commons */
+.isb-creative-commons:before {
+    content: "\E0FB";
+}
+
+/* 🔹 Icono document */
+.isb-document:before {
+    content: "\E0FC";
+}
+
+/* 🔹 Icono document */
+.isb-document:before {
+    content: "\E0FD";
+}
+
+/* 🔹 Icono document-cloud */
+.isb-document-cloud:before {
+    content: "\E0FE";
+}
+
+/* 🔹 Icono document-copy */
+.isb-document-copy:before {
+    content: "\E0FF";
+}
+
+/* 🔹 Icono document-download */
+.isb-document-download:before {
+    content: "\E100";
+}
+
+/* 🔹 Icono document-favorite */
+.isb-document-favorite:before {
+    content: "\E101";
+}
+
+/* 🔹 Icono document-filter */
+.isb-document-filter:before {
+    content: "\E102";
+}
+
+/* 🔹 Icono document-forward */
+.isb-document-forward:before {
+    content: "\E103";
+}
+
+/* 🔹 Icono document-like */
+.isb-document-like:before {
+    content: "\E104";
+}
+
+/* 🔹 Icono document-normal */
+.isb-document-normal:before {
+    content: "\E105";
+}
+
+/* 🔹 Icono document-previous */
+.isb-document-previous:before {
+    content: "\E106";
+}
+
+/* 🔹 Icono document-sketch */
+.isb-document-sketch:before {
+    content: "\E107";
+}
+
+/* 🔹 Icono document-text */
+.isb-document-text:before {
+    content: "\E108";
+}
+
+/* 🔹 Icono document-text-2 */
+.isb-document-text-2:before {
+    content: "\E109";
+}
+
+/* 🔹 Icono document-upload */
+.isb-document-upload:before {
+    content: "\E10A";
+}
+
+/* 🔹 Icono edit */
+.isb-edit:before {
+    content: "\E10B";
+}
+
+/* 🔹 Icono edit-2 */
+.isb-edit-2:before {
+    content: "\E10C";
+}
+
+/* 🔹 Icono menu-board */
+.isb-menu-board:before {
+    content: "\E10D";
+}
+
+/* 🔹 Icono note */
+.isb-note:before {
+    content: "\E10E";
+}
+
+/* 🔹 Icono note */
+.isb-note:before {
+    content: "\E10F";
+}
+
+/* 🔹 Icono note-1 */
+.isb-note-1:before {
+    content: "\E110";
+}
+
+/* 🔹 Icono note-add */
+.isb-note-add:before {
+    content: "\E111";
+}
+
+/* 🔹 Icono note-favorite */
+.isb-note-favorite:before {
+    content: "\E112";
+}
+
+/* 🔹 Icono note-remove */
+.isb-note-remove:before {
+    content: "\E113";
+}
+
+/* 🔹 Icono note-text */
+.isb-note-text:before {
+    content: "\E114";
+}
+
+/* 🔹 Icono stickynote */
+.isb-stickynote:before {
+    content: "\E115";
+}
+
+/* 🔹 Icono task */
+.isb-task:before {
+    content: "\E116";
+}
+
+/* 🔹 Icono task-square */
+.isb-task-square:before {
+    content: "\E117";
+}
+
+/* 🔹 Icono aave-(aave) */
+.isb-aave-(aave):before {
+    content: "\E118";
+}
+
+/* 🔹 Icono android */
+.isb-android:before {
+    content: "\E119";
+}
+
+/* 🔹 Icono ankr-(ankr) */
+.isb-ankr-(ankr):before {
+    content: "\E11A";
+}
+
+/* 🔹 Icono apple */
+.isb-apple:before {
+    content: "\E11B";
+}
+
+/* 🔹 Icono augur-(rep) */
+.isb-augur-(rep):before {
+    content: "\E11C";
+}
+
+/* 🔹 Icono autonio-(niox) */
+.isb-autonio-(niox):before {
+    content: "\E11D";
+}
+
+/* 🔹 Icono avalanche-avax */
+.isb-avalanche-avax:before {
+    content: "\E11E";
+}
+
+/* 🔹 Icono behance */
+.isb-behance:before {
+    content: "\E11F";
+}
+
+/* 🔹 Icono binance-coin-(bnb) */
+.isb-binance-coin-(bnb):before {
+    content: "\E120";
+}
+
+/* 🔹 Icono binance-usd-busd */
+.isb-binance-usd-busd:before {
+    content: "\E121";
+}
+
+/* 🔹 Icono bitcoin-(btc) */
+.isb-bitcoin-(btc):before {
+    content: "\E122";
+}
+
+/* 🔹 Icono blogger */
+.isb-blogger:before {
+    content: "\E123";
+}
+
+/* 🔹 Icono bootstrap */
+.isb-bootstrap:before {
+    content: "\E124";
+}
+
+/* 🔹 Icono cardano-(ada) */
+.isb-cardano-(ada):before {
+    content: "\E125";
+}
+
+/* 🔹 Icono celo-celo */
+.isb-celo-celo:before {
+    content: "\E126";
+}
+
+/* 🔹 Icono celsius-(cel)- */
+.isb-celsius-(cel)-:before {
+    content: "\E127";
+}
+
+/* 🔹 Icono chainlink-(link) */
+.isb-chainlink-(link):before {
+    content: "\E128";
+}
+
+/* 🔹 Icono civic-cvc */
+.isb-civic-cvc:before {
+    content: "\E129";
+}
+
+/* 🔹 Icono dai-(dai) */
+.isb-dai-(dai):before {
+    content: "\E12A";
+}
+
+/* 🔹 Icono dash-dash-navigation-control-speed-transportation-route */
+.isb-dash-dash-navigation-control-speed-transportation-route:before {
+    content: "\E12B";
+}
+
+/* 🔹 Icono decred-(dcr) */
+.isb-decred-(dcr):before {
+    content: "\E12C";
+}
+
+/* 🔹 Icono dent-dental-care-toothbrush-oral-hygiene-checkup-smile */
+.isb-dent-dental-care-toothbrush-oral-hygiene-checkup-smile:before {
+    content: "\E12D";
+}
+
+/* 🔹 Icono dribbble */
+.isb-dribbble:before {
+    content: "\E12E";
+}
+
+/* 🔹 Icono dropbox */
+.isb-dropbox:before {
+    content: "\E12F";
+}
+
+/* 🔹 Icono educare-(ekt) */
+.isb-educare-(ekt):before {
+    content: "\E130";
+}
+
+/* 🔹 Icono emercoin-(emc) */
+.isb-emercoin-(emc):before {
+    content: "\E131";
+}
+
+/* 🔹 Icono enjin-coin-(enj) */
+.isb-enjin-coin-(enj):before {
+    content: "\E132";
+}
+
+/* 🔹 Icono eos-(eos) */
+.isb-eos-(eos):before {
+    content: "\E133";
+}
+
+/* 🔹 Icono ethereum-(eth) */
+.isb-ethereum-(eth):before {
+    content: "\E134";
+}
+
+/* 🔹 Icono ethereum-classic-(etc) */
+.isb-ethereum-classic-(etc):before {
+    content: "\E135";
+}
+
+/* 🔹 Icono facebook */
+.isb-facebook:before {
+    content: "\E136";
+}
+
+/* 🔹 Icono figma */
+.isb-figma:before {
+    content: "\E137";
+}
+
+/* 🔹 Icono figma-circle */
+.isb-figma-circle:before {
+    content: "\E138";
+}
+
+/* 🔹 Icono framer */
+.isb-framer:before {
+    content: "\E139";
+}
+
+/* 🔹 Icono ftx-token-(ftt) */
+.isb-ftx-token-(ftt):before {
+    content: "\E13A";
+}
+
+/* 🔹 Icono google */
+.isb-google:before {
+    content: "\E13B";
+}
+
+/* 🔹 Icono google-drive */
+.isb-google-drive:before {
+    content: "\E13C";
+}
+
+/* 🔹 Icono google-play */
+.isb-google-play:before {
+    content: "\E13D";
+}
+
+/* 🔹 Icono harmony-(one) */
+.isb-harmony-(one):before {
+    content: "\E13E";
+}
+
+/* 🔹 Icono hedera-hashgraph-(hbar) */
+.isb-hedera-hashgraph-(hbar):before {
+    content: "\E13F";
+}
+
+/* 🔹 Icono html-3 */
+.isb-html-3:before {
+    content: "\E144";
+}
+
+/* 🔹 Icono html-5 */
+.isb-html-5:before {
+    content: "\E145";
+}
+
+/* 🔹 Icono huobi-token-(ht) */
+.isb-huobi-token-(ht):before {
+    content: "\E146";
+}
+
+/* 🔹 Icono icon-(icx) */
+.isb-icon-(icx):before {
+    content: "\E147";
+}
+
+/* 🔹 Icono illustrator */
+.isb-illustrator:before {
+    content: "\E148";
+}
+
+/* 🔹 Icono iost-iost */
+.isb-iost-iost:before {
+    content: "\E149";
+}
+
+/* 🔹 Icono javascript */
+.isb-javascript:before {
+    content: "\E14A";
+}
+
+/* 🔹 Icono js */
+.isb-js:before {
+    content: "\E14B";
+}
+
+/* 🔹 Icono kyber-network-(knc) */
+.isb-kyber-network-(knc):before {
+    content: "\E14C";
+}
+
+/* 🔹 Icono litecoin(ltc) */
+.isb-litecoin(ltc):before {
+    content: "\E14D";
+}
+
+/* 🔹 Icono maker-(mkr) */
+.isb-maker-(mkr):before {
+    content: "\E14E";
+}
+
+/* 🔹 Icono messenger */
+.isb-messenger:before {
+    content: "\E14F";
+}
+
+/* 🔹 Icono monero-(xmr) */
+.isb-monero-(xmr):before {
+    content: "\E150";
+}
+
+/* 🔹 Icono nebulas-(nas) */
+.isb-nebulas-(nas):before {
+    content: "\E151";
+}
+
+/* 🔹 Icono nem-(xem) */
+.isb-nem-(xem):before {
+    content: "\E152";
+}
+
+/* 🔹 Icono nexo-nexo */
+.isb-nexo-nexo:before {
+    content: "\E153";
+}
+
+/* 🔹 Icono ocean-protocol-ocean */
+.isb-ocean-protocol-ocean:before {
+    content: "\E154";
+}
+
+/* 🔹 Icono ok-app */
+.isb-ok-app:before {
+    content: "\E155";
+}
+
+/* 🔹 Icono okb-(okb) */
+.isb-okb-(okb):before {
+    content: "\E156";
+}
+
+/* 🔹 Icono ontology-knowledge-structure-concept-map-semantics-information */
+.isb-ontology-knowledge-structure-concept-map-semantics-information:before {
+    content: "\E157";
+}
+
+/* 🔹 Icono paypal */
+.isb-paypal:before {
+    content: "\E158";
+}
+
+/* 🔹 Icono photoshop */
+.isb-photoshop:before {
+    content: "\E159";
+}
+
+/* 🔹 Icono polkadot-(dot) */
+.isb-polkadot-(dot):before {
+    content: "\E15A";
+}
+
+/* 🔹 Icono polygon-(matic) */
+.isb-polygon-(matic):before {
+    content: "\E15B";
+}
+
+/* 🔹 Icono polyswarm-(nct) */
+.isb-polyswarm-(nct):before {
+    content: "\E15C";
+}
+
+/* 🔹 Icono python */
+.isb-python:before {
+    content: "\E15D";
+}
+
+/* 🔹 Icono quant-(qnt) */
+.isb-quant-(qnt):before {
+    content: "\E15E";
+}
+
+/* 🔹 Icono shutterstock */
+.isb-shutterstock:before {
+    content: "\E15F";
+}
+
+/* 🔹 Icono siacoin-(sc) */
+.isb-siacoin-(sc):before {
+    content: "\E160";
+}
+
+/* 🔹 Icono slack */
+.isb-slack:before {
+    content: "\E161";
+}
+
+/* 🔹 Icono snapchat */
+.isb-snapchat:before {
+    content: "\E162";
+}
+
+/* 🔹 Icono solana-(sol) */
+.isb-solana-(sol):before {
+    content: "\E163";
+}
+
+/* 🔹 Icono spotify */
+.isb-spotify:before {
+    content: "\E164";
+}
+
+/* 🔹 Icono stacks-stx */
+.isb-stacks-stx:before {
+    content: "\E165";
+}
+
+/* 🔹 Icono stellar-(xlm) */
+.isb-stellar-(xlm):before {
+    content: "\E166";
+}
+
+/* 🔹 Icono tenx-(pay) */
+.isb-tenx-(pay):before {
+    content: "\E167";
+}
+
+/* 🔹 Icono tether-usdt */
+.isb-tether-usdt:before {
+    content: "\E168";
+}
+
+/* 🔹 Icono the-graph-(grt) */
+.isb-the-graph-(grt):before {
+    content: "\E169";
+}
+
+/* 🔹 Icono theta-(theta) */
+.isb-theta-(theta):before {
+    content: "\E16A";
+}
+
+/* 🔹 Icono thorchain-(rune) */
+.isb-thorchain-(rune):before {
+    content: "\E16B";
+}
+
+/* 🔹 Icono trello */
+.isb-trello:before {
+    content: "\E16C";
+}
+
+/* 🔹 Icono triangle */
+.isb-triangle:before {
+    content: "\E16D";
+}
+
+/* 🔹 Icono triangle */
+.isb-triangle:before {
+    content: "\E16E";
+}
+
+/* 🔹 Icono trontron-(trx) */
+.isb-trontron-(trx):before {
+    content: "\E16F";
+}
+
+/* 🔹 Icono twitch */
+.isb-twitch:before {
+    content: "\E170";
+}
+
+/* 🔹 Icono ui8 */
+.isb-ui8:before {
+    content: "\E171";
+}
+
+/* 🔹 Icono usd-coin-(usdc) */
+.isb-usd-coin-(usdc):before {
+    content: "\E172";
+}
+
+/* 🔹 Icono velas-(vlx) */
+.isb-velas-(vlx):before {
+    content: "\E173";
+}
+
+/* 🔹 Icono vibe-(vibe) */
+.isb-vibe-(vibe):before {
+    content: "\E174";
+}
+
+/* 🔹 Icono vuesax */
+.isb-vuesax:before {
+    content: "\E175";
+}
+
+/* 🔹 Icono wanchain-(wan) */
+.isb-wanchain-(wan):before {
+    content: "\E176";
+}
+
+/* 🔹 Icono wanchain-(wan)-1 */
+.isb-wanchain-(wan)-1:before {
+    content: "\E177";
+}
+
+/* 🔹 Icono whatsapp */
+.isb-whatsapp:before {
+    content: "\E178";
+}
+
+/* 🔹 Icono windows */
+.isb-windows:before {
+    content: "\E179";
+}
+
+/* 🔹 Icono wing-wing-fly-flight-aircraft-aerodynamics-wingspan */
+.isb-wing-wing-fly-flight-aircraft-aerodynamics-wingspan:before {
+    content: "\E17A";
+}
+
+/* 🔹 Icono xd */
+.isb-xd:before {
+    content: "\E17B";
+}
+
+/* 🔹 Icono xiaomi */
+.isb-xiaomi:before {
+    content: "\E17C";
+}
+
+/* 🔹 Icono xrp-(xrp) */
+.isb-xrp-(xrp):before {
+    content: "\E17D";
+}
+
+/* 🔹 Icono youtube */
+.isb-youtube:before {
+    content: "\E17E";
+}
+
+/* 🔹 Icono zel-(zel) */
+.isb-zel-(zel):before {
+    content: "\E17F";
+}
+
+/* 🔹 Icono zoom */
+.isb-zoom:before {
+    content: "\E180";
+}
+
+/* 🔹 Icono bitcoin-card */
+.isb-bitcoin-card:before {
+    content: "\E181";
+}
+
+/* 🔹 Icono bitcoin-convert */
+.isb-bitcoin-convert:before {
+    content: "\E182";
+}
+
+/* 🔹 Icono bitcoin-refresh */
+.isb-bitcoin-refresh:before {
+    content: "\E183";
+}
+
+/* 🔹 Icono buy-crypto */
+.isb-buy-crypto:before {
+    content: "\E184";
+}
+
+/* 🔹 Icono trade */
+.isb-trade:before {
+    content: "\E186";
+}
+
+/* 🔹 Icono 3d-cube-scan */
+.isb-3d-cube-scan:before {
+    content: "\E187";
+}
+
+/* 🔹 Icono 3d-rotate */
+.isb-3d-rotate:before {
+    content: "\E188";
+}
+
+/* 🔹 Icono 3d-square */
+.isb-3d-square:before {
+    content: "\E189";
+}
+
+/* 🔹 Icono box */
+.isb-box:before {
+    content: "\E18A";
+}
+
+/* 🔹 Icono box-2 */
+.isb-box-2:before {
+    content: "\E18B";
+}
+
+/* 🔹 Icono box-2 */
+.isb-box-2:before {
+    content: "\E18C";
+}
+
+/* 🔹 Icono box-add */
+.isb-box-add:before {
+    content: "\E18D";
+}
+
+/* 🔹 Icono box-remove */
+.isb-box-remove:before {
+    content: "\E18E";
+}
+
+/* 🔹 Icono box-search */
+.isb-box-search:before {
+    content: "\E18F";
+}
+
+/* 🔹 Icono box-tick */
+.isb-box-tick:before {
+    content: "\E190";
+}
+
+/* 🔹 Icono box-time */
+.isb-box-time:before {
+    content: "\E191";
+}
+
+/* 🔹 Icono convert-3d-cube */
+.isb-convert-3d-cube:before {
+    content: "\E192";
+}
+
+/* 🔹 Icono truck */
+.isb-truck:before {
+    content: "\E193";
+}
+
+/* 🔹 Icono truck-fast */
+.isb-truck-fast:before {
+    content: "\E194";
+}
+
+/* 🔹 Icono truck-remove */
+.isb-truck-remove:before {
+    content: "\E195";
+}
+
+/* 🔹 Icono truck-tick */
+.isb-truck-tick:before {
+    content: "\E196";
+}
+
+/* 🔹 Icono truck-time */
+.isb-truck-time:before {
+    content: "\E197";
+}
+
+/* 🔹 Icono add-item */
+.isb-add-item:before {
+    content: "\E198";
+}
+
+/* 🔹 Icono backward-item */
+.isb-backward-item:before {
+    content: "\E199";
+}
+
+/* 🔹 Icono bezier */
+.isb-bezier:before {
+    content: "\E19A";
+}
+
+/* 🔹 Icono blend */
+.isb-blend:before {
+    content: "\E19B";
+}
+
+/* 🔹 Icono blend-2 */
+.isb-blend-2:before {
+    content: "\E19C";
+}
+
+/* 🔹 Icono blur */
+.isb-blur:before {
+    content: "\E19D";
+}
+
+/* 🔹 Icono brush */
+.isb-brush:before {
+    content: "\E19E";
+}
+
+/* 🔹 Icono brush-square */
+.isb-brush-square:before {
+    content: "\E19F";
+}
+
+/* 🔹 Icono bucket */
+.isb-bucket:before {
+    content: "\E1A0";
+}
+
+/* 🔹 Icono bucket-circle */
+.isb-bucket-circle:before {
+    content: "\E1A1";
+}
+
+/* 🔹 Icono bucket-square */
+.isb-bucket-square:before {
+    content: "\E1A2";
+}
+
+/* 🔹 Icono color-swatch */
+.isb-color-swatch:before {
+    content: "\E1A3";
+}
+
+/* 🔹 Icono colorfilter */
+.isb-colorfilter:before {
+    content: "\E1A4";
+}
+
+/* 🔹 Icono colors-square */
+.isb-colors-square:before {
+    content: "\E1A5";
+}
+
+/* 🔹 Icono component */
+.isb-component:before {
+    content: "\E1A6";
+}
+
+/* 🔹 Icono copy */
+.isb-copy:before {
+    content: "\E1A7";
+}
+
+/* 🔹 Icono copy-success */
+.isb-copy-success:before {
+    content: "\E1A8";
+}
+
+/* 🔹 Icono designtools */
+.isb-designtools:before {
+    content: "\E1A9";
+}
+
+/* 🔹 Icono eraser */
+.isb-eraser:before {
+    content: "\E1AA";
+}
+
+/* 🔹 Icono eraser */
+.isb-eraser:before {
+    content: "\E1AB";
+}
+
+/* 🔹 Icono flash-circle */
+.isb-flash-circle:before {
+    content: "\E1AC";
+}
+
+/* 🔹 Icono flash-circle */
+.isb-flash-circle:before {
+    content: "\E1AD";
+}
+
+/* 🔹 Icono forward-item */
+.isb-forward-item:before {
+    content: "\E1AE";
+}
+
+/* 🔹 Icono glass */
+.isb-glass:before {
+    content: "\E1AF";
+}
+
+/* 🔹 Icono glass */
+.isb-glass:before {
+    content: "\E1B0";
+}
+
+/* 🔹 Icono layer */
+.isb-layer:before {
+    content: "\E1B1";
+}
+
+/* 🔹 Icono lifebuoy */
+.isb-lifebuoy:before {
+    content: "\E1B2";
+}
+
+/* 🔹 Icono magicpen */
+.isb-magicpen:before {
+    content: "\E1B3";
+}
+
+/* 🔹 Icono main-component */
+.isb-main-component:before {
+    content: "\E1B4";
+}
+
+/* 🔹 Icono mask */
+.isb-mask:before {
+    content: "\E1B5";
+}
+
+/* 🔹 Icono mask-1 */
+.isb-mask-1:before {
+    content: "\E1B6";
+}
+
+/* 🔹 Icono mask-2 */
+.isb-mask-2:before {
+    content: "\E1B7";
+}
+
+/* 🔹 Icono omega-circle */
+.isb-omega-circle:before {
+    content: "\E1B8";
+}
+
+/* 🔹 Icono omega-square */
+.isb-omega-square:before {
+    content: "\E1B9";
+}
+
+/* 🔹 Icono paint-brush */
+.isb-paint-brush:before {
+    content: "\E1BA";
+}
+
+/* 🔹 Icono paint-brush-2 */
+.isb-paint-brush-2:before {
+    content: "\E1BB";
+}
+
+/* 🔹 Icono paint-roller */
+.isb-paint-roller:before {
+    content: "\E1BC";
+}
+
+/* 🔹 Icono paintbucket */
+.isb-paintbucket:before {
+    content: "\E1BD";
+}
+
+/* 🔹 Icono path */
+.isb-path:before {
+    content: "\E1BE";
+}
+
+/* 🔹 Icono path-2 */
+.isb-path-2:before {
+    content: "\E1BF";
+}
+
+/* 🔹 Icono path-square */
+.isb-path-square:before {
+    content: "\E1C0";
+}
+
+/* 🔹 Icono pen-add */
+.isb-pen-add:before {
+    content: "\E1C1";
+}
+
+/* 🔹 Icono pen-close */
+.isb-pen-close:before {
+    content: "\E1C2";
+}
+
+/* 🔹 Icono pen-remove */
+.isb-pen-remove:before {
+    content: "\E1C3";
+}
+
+/* 🔹 Icono pen-tool */
+.isb-pen-tool:before {
+    content: "\E1C4";
+}
+
+/* 🔹 Icono pen-tool-2 */
+.isb-pen-tool-2:before {
+    content: "\E1C5";
+}
+
+/* 🔹 Icono recovery-convert */
+.isb-recovery-convert:before {
+    content: "\E1C6";
+}
+
+/* 🔹 Icono ruler */
+.isb-ruler:before {
+    content: "\E1C7";
+}
+
+/* 🔹 Icono ruler-pen */
+.isb-ruler-pen:before {
+    content: "\E1C8";
+}
+
+/* 🔹 Icono scissor */
+.isb-scissor:before {
+    content: "\E1C9";
+}
+
+/* 🔹 Icono scissor */
+.isb-scissor:before {
+    content: "\E1CA";
+}
+
+/* 🔹 Icono shapes */
+.isb-shapes:before {
+    content: "\E1CB";
+}
+
+/* 🔹 Icono shapes-1 */
+.isb-shapes-1:before {
+    content: "\E1CC";
+}
+
+/* 🔹 Icono size */
+.isb-size:before {
+    content: "\E1CD";
+}
+
+/* 🔹 Icono chatbox */
+.isb-chatbox:before {
+    content: "\E1CE";
+}
+
+/* 🔹 Icono conversation-box */
+.isb-conversation-box:before {
+    content: "\E1CF";
+}
+
+/* 🔹 Icono device-message */
+.isb-device-message:before {
+    content: "\E1D0";
+}
+
+/* 🔹 Icono direct */
+.isb-direct:before {
+    content: "\E1D1";
+}
+
+/* 🔹 Icono direct-inbox */
+.isb-direct-inbox:before {
+    content: "\E1D2";
+}
+
+/* 🔹 Icono direct-normal */
+.isb-direct-normal:before {
+    content: "\E1D3";
+}
+
+/* 🔹 Icono direct-notification */
+.isb-direct-notification:before {
+    content: "\E1D4";
+}
+
+/* 🔹 Icono direct-send */
+.isb-direct-send:before {
+    content: "\E1D5";
+}
+
+/* 🔹 Icono directbox-default */
+.isb-directbox-default:before {
+    content: "\E1D6";
+}
+
+/* 🔹 Icono directbox-notif */
+.isb-directbox-notif:before {
+    content: "\E1D7";
+}
+
+/* 🔹 Icono directbox-receive */
+.isb-directbox-receive:before {
+    content: "\E1D8";
+}
+
+/* 🔹 Icono directbox-send */
+.isb-directbox-send:before {
+    content: "\E1D9";
+}
+
+/* 🔹 Icono message-add */
+.isb-message-add:before {
+    content: "\E1DA";
+}
+
+/* 🔹 Icono message-add-1 */
+.isb-message-add-1:before {
+    content: "\E1DB";
+}
+
+/* 🔹 Icono message-bubble */
+.isb-message-bubble:before {
+    content: "\E1DC";
+}
+
+/* 🔹 Icono message-circle */
+.isb-message-circle:before {
+    content: "\E1DD";
+}
+
+/* 🔹 Icono message-edit */
+.isb-message-edit:before {
+    content: "\E1DE";
+}
+
+/* 🔹 Icono message-favorite */
+.isb-message-favorite:before {
+    content: "\E1DF";
+}
+
+/* 🔹 Icono message-minus */
+.isb-message-minus:before {
+    content: "\E1E0";
+}
+
+/* 🔹 Icono message-notif */
+.isb-message-notif:before {
+    content: "\E1E1";
+}
+
+/* 🔹 Icono message-remove */
+.isb-message-remove:before {
+    content: "\E1E2";
+}
+
+/* 🔹 Icono message-search */
+.isb-message-search:before {
+    content: "\E1E3";
+}
+
+/* 🔹 Icono message-square */
+.isb-message-square:before {
+    content: "\E1E4";
+}
+
+/* 🔹 Icono message-text */
+.isb-message-text:before {
+    content: "\E1E5";
+}
+
+/* 🔹 Icono message-text-1 */
+.isb-message-text-1:before {
+    content: "\E1E6";
+}
+
+/* 🔹 Icono message-tick */
+.isb-message-tick:before {
+    content: "\E1E7";
+}
+
+/* 🔹 Icono message-time */
+.isb-message-time:before {
+    content: "\E1E8";
+}
+
+/* 🔹 Icono messages */
+.isb-messages:before {
+    content: "\E1E9";
+}
+
+/* 🔹 Icono messages-2 */
+.isb-messages-2:before {
+    content: "\E1EA";
+}
+
+/* 🔹 Icono messages-bubbles-2 */
+.isb-messages-bubbles-2:before {
+    content: "\E1EB";
+}
+
+/* 🔹 Icono sms */
+.isb-sms:before {
+    content: "\E1EC";
+}
+
+/* 🔹 Icono sms-edit */
+.isb-sms-edit:before {
+    content: "\E1ED";
+}
+
+/* 🔹 Icono sms-notification */
+.isb-sms-notification:before {
+    content: "\E1EE";
+}
+
+/* 🔹 Icono sms-search */
+.isb-sms-search:before {
+    content: "\E1EF";
+}
+
+/* 🔹 Icono sms-star */
+.isb-sms-star:before {
+    content: "\E1F0";
+}
+
+/* 🔹 Icono sms-tracking */
+.isb-sms-tracking:before {
+    content: "\E1F1";
+}
+
+/* 🔹 Icono 3dcube */
+.isb-3dcube:before {
+    content: "\E1F2";
+}
+
+/* 🔹 Icono add */
+.isb-add:before {
+    content: "\E1F3";
+}
+
+/* 🔹 Icono add-circle */
+.isb-add-circle:before {
+    content: "\E1F4";
+}
+
+/* 🔹 Icono add-square */
+.isb-add-square:before {
+    content: "\E1F5";
+}
+
+/* 🔹 Icono autobrightness */
+.isb-autobrightness:before {
+    content: "\E1F6";
+}
+
+/* 🔹 Icono battery-2bars */
+.isb-battery-2bars:before {
+    content: "\E1F7";
+}
+
+/* 🔹 Icono battery-charging */
+.isb-battery-charging:before {
+    content: "\E1F8";
+}
+
+/* 🔹 Icono battery-disable */
+.isb-battery-disable:before {
+    content: "\E1F9";
+}
+
+/* 🔹 Icono battery-empty */
+.isb-battery-empty:before {
+    content: "\E1FA";
+}
+
+/* 🔹 Icono battery-empty-1 */
+.isb-battery-empty-1:before {
+    content: "\E1FB";
+}
+
+/* 🔹 Icono battery-full */
+.isb-battery-full:before {
+    content: "\E1FC";
+}
+
+/* 🔹 Icono broom */
+.isb-broom:before {
+    content: "\E1FD";
+}
+
+/* 🔹 Icono bubble */
+.isb-bubble:before {
+    content: "\E1FE";
+}
+
+/* 🔹 Icono cake */
+.isb-cake:before {
+    content: "\E1FF";
+}
+
+/* 🔹 Icono cd */
+.isb-cd:before {
+    content: "\E200";
+}
+
+/* 🔹 Icono chrome */
+.isb-chrome:before {
+    content: "\E201";
+}
+
+/* 🔹 Icono close-circle */
+.isb-close-circle:before {
+    content: "\E202";
+}
+
+/* 🔹 Icono close-square */
+.isb-close-square:before {
+    content: "\E203";
+}
+
+/* 🔹 Icono coffee */
+.isb-coffee:before {
+    content: "\E204";
+}
+
+/* 🔹 Icono computing */
+.isb-computing:before {
+    content: "\E205";
+}
+
+/* 🔹 Icono crown */
+.isb-crown:before {
+    content: "\E206";
+}
+
+/* 🔹 Icono crown-1 */
+.isb-crown-1:before {
+    content: "\E207";
+}
+
+/* 🔹 Icono cup */
+.isb-cup:before {
+    content: "\E208";
+}
+
+/* 🔹 Icono danger */
+.isb-danger:before {
+    content: "\E209";
+}
+
+/* 🔹 Icono diamonds */
+.isb-diamonds:before {
+    content: "\E20A";
+}
+
+/* 🔹 Icono discover */
+.isb-discover:before {
+    content: "\E20B";
+}
+
+/* 🔹 Icono discover */
+.isb-discover:before {
+    content: "\E20C";
+}
+
+/* 🔹 Icono emoji-happy */
+.isb-emoji-happy:before {
+    content: "\E20D";
+}
+
+/* 🔹 Icono emoji-normal */
+.isb-emoji-normal:before {
+    content: "\E20E";
+}
+
+/* 🔹 Icono emoji-sad */
+.isb-emoji-sad:before {
+    content: "\E20F";
+}
+
+/* 🔹 Icono filter */
+.isb-filter:before {
+    content: "\E210";
+}
+
+/* 🔹 Icono filter-add */
+.isb-filter-add:before {
+    content: "\E211";
+}
+
+/* 🔹 Icono filter-edit */
+.isb-filter-edit:before {
+    content: "\E212";
+}
+
+/* 🔹 Icono filter-remove */
+.isb-filter-remove:before {
+    content: "\E213";
+}
+
+/* 🔹 Icono filter-search */
+.isb-filter-search:before {
+    content: "\E214";
+}
+
+/* 🔹 Icono filter-square */
+.isb-filter-square:before {
+    content: "\E215";
+}
+
+/* 🔹 Icono filter-tick */
+.isb-filter-tick:before {
+    content: "\E216";
+}
+
+/* 🔹 Icono flag */
+.isb-flag:before {
+    content: "\E217";
+}
+
+/* 🔹 Icono flag-2 */
+.isb-flag-2:before {
+    content: "\E218";
+}
+
+/* 🔹 Icono flash */
+.isb-flash:before {
+    content: "\E219";
+}
+
+/* 🔹 Icono flash */
+.isb-flash:before {
+    content: "\E21A";
+}
+
+/* 🔹 Icono flash-slash */
+.isb-flash-slash:before {
+    content: "\E21B";
+}
+
+/* 🔹 Icono forbidden */
+.isb-forbidden:before {
+    content: "\E21C";
+}
+
+/* 🔹 Icono forbidden-2 */
+.isb-forbidden-2:before {
+    content: "\E21D";
+}
+
+/* 🔹 Icono ghost */
+.isb-ghost:before {
+    content: "\E21E";
+}
+
+/* 🔹 Icono happy */
+.isb-happy:before {
+    content: "\E21F";
+}
+
+/* 🔹 Icono happyemoji */
+.isb-happyemoji:before {
+    content: "\E220";
+}
+
+/* 🔹 Icono home */
+.isb-home:before {
+    content: "\E221";
+}
+
+/* 🔹 Icono home-2 */
+.isb-home-2:before {
+    content: "\E222";
+}
+
+/* 🔹 Icono home-3 */
+.isb-home-3:before {
+    content: "\E223";
+}
+
+/* 🔹 Icono home-wifi */
+.isb-home-wifi:before {
+    content: "\E224";
+}
+
+/* 🔹 Icono info-circle */
+.isb-info-circle:before {
+    content: "\E225";
+}
+
+/* 🔹 Icono information */
+.isb-information:before {
+    content: "\E226";
+}
+
+/* 🔹 Icono instagram */
+.isb-instagram:before {
+    content: "\E227";
+}
+
+/* 🔹 Icono judge */
+.isb-judge:before {
+    content: "\E228";
+}
+
+/* 🔹 Icono level */
+.isb-level:before {
+    content: "\E229";
+}
+
+/* 🔹 Icono menu */
+.isb-menu:before {
+    content: "\E22A";
+}
+
+/* 🔹 Icono menu */
+.isb-menu:before {
+    content: "\E22B";
+}
+
+/* 🔹 Icono milk */
+.isb-milk:before {
+    content: "\E22C";
+}
+
+/* 🔹 Icono minus */
+.isb-minus:before {
+    content: "\E22D";
+}
+
+/* 🔹 Icono minus-circle */
+.isb-minus-circle:before {
+    content: "\E22E";
+}
+
+/* 🔹 Icono minus-square */
+.isb-minus-square:before {
+    content: "\E22F";
+}
+
+/* 🔹 Icono mirror */
+.isb-mirror:before {
+    content: "\E230";
+}
+
+/* 🔹 Icono more-circle */
+.isb-more-circle:before {
+    content: "\E231";
+}
+
+/* 🔹 Icono more-square */
+.isb-more-square:before {
+    content: "\E232";
+}
+
+/* 🔹 Icono mouse-circle */
+.isb-mouse-circle:before {
+    content: "\E233";
+}
+
+/* 🔹 Icono mouse-square */
+.isb-mouse-square:before {
+    content: "\E234";
+}
+
+/* 🔹 Icono pet */
+.isb-pet:before {
+    content: "\E235";
+}
+
+/* 🔹 Icono ranking */
+.isb-ranking:before {
+    content: "\E236";
+}
+
+/* 🔹 Icono ranking */
+.isb-ranking:before {
+    content: "\E237";
+}
+
+/* 🔹 Icono reserve */
+.isb-reserve:before {
+    content: "\E238";
+}
+
+/* 🔹 Icono safe-home */
+.isb-safe-home:before {
+    content: "\E239";
+}
+
+/* 🔹 Icono send-2 */
+.isb-send-2:before {
+    content: "\E23A";
+}
+
+/* 🔹 Icono share */
+.isb-share:before {
+    content: "\E23B";
+}
+
+/* 🔹 Icono signpost */
+.isb-signpost:before {
+    content: "\E23C";
+}
+
+/* 🔹 Icono slash */
+.isb-slash:before {
+    content: "\E23D";
+}
+
+/* 🔹 Icono slider */
+.isb-slider:before {
+    content: "\E23E";
+}
+
+/* 🔹 Icono smart-home */
+.isb-smart-home:before {
+    content: "\E23F";
+}
+
+/* 🔹 Icono sort */
+.isb-sort:before {
+    content: "\E240";
+}
+
+/* 🔹 Icono sound */
+.isb-sound:before {
+    content: "\E241";
+}
+
+/* 🔹 Icono speedometer */
+.isb-speedometer:before {
+    content: "\E242";
+}
+
+/* 🔹 Icono status */
+.isb-status:before {
+    content: "\E243";
+}
+
+/* 🔹 Icono sticker */
+.isb-sticker:before {
+    content: "\E244";
+}
+
+/* 🔹 Icono story */
+.isb-story:before {
+    content: "\E245";
+}
+
+/* 🔹 Icono tag-cross */
+.isb-tag-cross:before {
+    content: "\E246";
+}
+
+/* 🔹 Icono tag-right */
+.isb-tag-right:before {
+    content: "\E247";
+}
+
+/* 🔹 Icono tick-circle */
+.isb-tick-circle:before {
+    content: "\E248";
+}
+
+/* 🔹 Icono tick-square */
+.isb-tick-square:before {
+    content: "\E249";
+}
+
+/* 🔹 Icono trash */
+.isb-trash:before {
+    content: "\E24A";
+}
+
+/* 🔹 Icono trash-square */
+.isb-trash-square:before {
+    content: "\E24B";
+}
+
+/* 🔹 Icono tree */
+.isb-tree:before {
+    content: "\E24C";
+}
+
+/* 🔹 Icono verify */
+.isb-verify:before {
+    content: "\E24D";
+}
+
+/* 🔹 Icono warning-2 */
+.isb-warning-2:before {
+    content: "\E24E";
+}
+
+/* 🔹 Icono wifi */
+.isb-wifi:before {
+    content: "\E24F";
+}
+
+/* 🔹 Icono wifi-square */
+.isb-wifi-square:before {
+    content: "\E250";
+}
+
+/* 🔹 Icono folder */
+.isb-folder:before {
+    content: "\E251";
+}
+
+/* 🔹 Icono folder-2 */
+.isb-folder-2:before {
+    content: "\E252";
+}
+
+/* 🔹 Icono folder-add */
+.isb-folder-add:before {
+    content: "\E253";
+}
+
+/* 🔹 Icono folder-cloud */
+.isb-folder-cloud:before {
+    content: "\E254";
+}
+
+/* 🔹 Icono folder-cross */
+.isb-folder-cross:before {
+    content: "\E255";
+}
+
+/* 🔹 Icono folder-favorite */
+.isb-folder-favorite:before {
+    content: "\E256";
+}
+
+/* 🔹 Icono folder-minus */
+.isb-folder-minus:before {
+    content: "\E257";
+}
+
+/* 🔹 Icono folder-open */
+.isb-folder-open:before {
+    content: "\E258";
+}
+
+/* 🔹 Icono 3square */
+.isb-3square:before {
+    content: "\E259";
+}
+
+/* 🔹 Icono align-bottom */
+.isb-align-bottom:before {
+    content: "\E25A";
+}
+
+/* 🔹 Icono align-horizontally */
+.isb-align-horizontally:before {
+    content: "\E25B";
+}
+
+/* 🔹 Icono align-left */
+.isb-align-left:before {
+    content: "\E25C";
+}
+
+/* 🔹 Icono align-left-2 */
+.isb-align-left-2:before {
+    content: "\E25D";
+}
+
+/* 🔹 Icono align-right */
+.isb-align-right:before {
+    content: "\E25E";
+}
+
+/* 🔹 Icono align-top */
+.isb-align-top:before {
+    content: "\E25F";
+}
+
+/* 🔹 Icono align-top-2 */
+.isb-align-top-2:before {
+    content: "\E260";
+}
+
+/* 🔹 Icono align-vertically */
+.isb-align-vertically:before {
+    content: "\E261";
+}
+
+/* 🔹 Icono convertshape */
+.isb-convertshape:before {
+    content: "\E262";
+}
+
+/* 🔹 Icono convertshape-2 */
+.isb-convertshape-2:before {
+    content: "\E263";
+}
+
+/* 🔹 Icono crop */
+.isb-crop:before {
+    content: "\E264";
+}
+
+/* 🔹 Icono format-circle */
+.isb-format-circle:before {
+    content: "\E265";
+}
+
+/* 🔹 Icono format-square */
+.isb-format-square:before {
+    content: "\E266";
+}
+
+/* 🔹 Icono grid-1 */
+.isb-grid-1:before {
+    content: "\E267";
+}
+
+/* 🔹 Icono grid-2 */
+.isb-grid-2:before {
+    content: "\E268";
+}
+
+/* 🔹 Icono grid-3 */
+.isb-grid-3:before {
+    content: "\E269";
+}
+
+/* 🔹 Icono grid-4 */
+.isb-grid-4:before {
+    content: "\E26A";
+}
+
+/* 🔹 Icono grid-5 */
+.isb-grid-5:before {
+    content: "\E26B";
+}
+
+/* 🔹 Icono grid-6 */
+.isb-grid-6:before {
+    content: "\E26C";
+}
+
+/* 🔹 Icono grid-7 */
+.isb-grid-7:before {
+    content: "\E26D";
+}
+
+/* 🔹 Icono grid-8 */
+.isb-grid-8:before {
+    content: "\E26E";
+}
+
+/* 🔹 Icono grid-9 */
+.isb-grid-9:before {
+    content: "\E26F";
+}
+
+/* 🔹 Icono grid-add */
+.isb-grid-add:before {
+    content: "\E270";
+}
+
+/* 🔹 Icono grid-edit */
+.isb-grid-edit:before {
+    content: "\E271";
+}
+
+/* 🔹 Icono grid-equal */
+.isb-grid-equal:before {
+    content: "\E272";
+}
+
+/* 🔹 Icono grid-eraser */
+.isb-grid-eraser:before {
+    content: "\E273";
+}
+
+/* 🔹 Icono grid-lock */
+.isb-grid-lock:before {
+    content: "\E274";
+}
+
+/* 🔹 Icono grids-4 */
+.isb-grids-4:before {
+    content: "\E275";
+}
+
+/* 🔹 Icono layout-adjust */
+.isb-layout-adjust:before {
+    content: "\E276";
+}
+
+/* 🔹 Icono left-bar-grid */
+.isb-left-bar-grid:before {
+    content: "\E277";
+}
+
+/* 🔹 Icono left-sidebar-grid */
+.isb-left-sidebar-grid:before {
+    content: "\E278";
+}
+
+/* 🔹 Icono maximize */
+.isb-maximize:before {
+    content: "\E279";
+}
+
+/* 🔹 Icono maximize */
+.isb-maximize:before {
+    content: "\E27A";
+}
+
+/* 🔹 Icono maximize-2 */
+.isb-maximize-2:before {
+    content: "\E27B";
+}
+
+/* 🔹 Icono maximize-3 */
+.isb-maximize-3:before {
+    content: "\E27C";
+}
+
+/* 🔹 Icono maximize-4 */
+.isb-maximize-4:before {
+    content: "\E27D";
+}
+
+/* 🔹 Icono row-horizontal */
+.isb-row-horizontal:before {
+    content: "\E27E";
+}
+
+/* 🔹 Icono row-vertical */
+.isb-row-vertical:before {
+    content: "\E27F";
+}
+
+/* 🔹 Icono slider-horizontal */
+.isb-slider-horizontal:before {
+    content: "\E280";
+}
+
+/* 🔹 Icono slider-horizontal-1 */
+.isb-slider-horizontal-1:before {
+    content: "\E281";
+}
+
+/* 🔹 Icono slider-vertical */
+.isb-slider-vertical:before {
+    content: "\E282";
+}
+
+/* 🔹 Icono slider-vertical-1 */
+.isb-slider-vertical-1:before {
+    content: "\E283";
+}
+
+/* 🔹 Icono top-bottom-grid */
+.isb-top-bottom-grid:before {
+    content: "\E284";
+}
+
+/* 🔹 Icono arrow */
+.isb-arrow:before {
+    content: "\E285";
+}
+
+/* 🔹 Icono arrow-square */
+.isb-arrow-square:before {
+    content: "\E286";
+}
+
+/* 🔹 Icono direct-down */
+.isb-direct-down:before {
+    content: "\E287";
+}
+
+/* 🔹 Icono direct-left */
+.isb-direct-left:before {
+    content: "\E288";
+}
+
+/* 🔹 Icono direct-right */
+.isb-direct-right:before {
+    content: "\E289";
+}
+
+/* 🔹 Icono direct-up */
+.isb-direct-up:before {
+    content: "\E28A";
+}
+
+/* 🔹 Icono global */
+.isb-global:before {
+    content: "\E28B";
+}
+
+/* 🔹 Icono global-edit */
+.isb-global-edit:before {
+    content: "\E28C";
+}
+
+/* 🔹 Icono global-refresh */
+.isb-global-refresh:before {
+    content: "\E28D";
+}
+
+/* 🔹 Icono global-search */
+.isb-global-search:before {
+    content: "\E28E";
+}
+
+/* 🔹 Icono gps */
+.isb-gps:before {
+    content: "\E28F";
+}
+
+/* 🔹 Icono gps-slash */
+.isb-gps-slash:before {
+    content: "\E290";
+}
+
+/* 🔹 Icono location */
+.isb-location:before {
+    content: "\E291";
+}
+
+/* 🔹 Icono location-add */
+.isb-location-add:before {
+    content: "\E292";
+}
+
+/* 🔹 Icono location-cross */
+.isb-location-cross:before {
+    content: "\E293";
+}
+
+/* 🔹 Icono location-minus */
+.isb-location-minus:before {
+    content: "\E294";
+}
+
+/* 🔹 Icono location-slash */
+.isb-location-slash:before {
+    content: "\E295";
+}
+
+/* 🔹 Icono location-tick */
+.isb-location-tick:before {
+    content: "\E296";
+}
+
+/* 🔹 Icono map */
+.isb-map:before {
+    content: "\E297";
+}
+
+/* 🔹 Icono map-1 */
+.isb-map-1:before {
+    content: "\E298";
+}
+
+/* 🔹 Icono picture-frame */
+.isb-picture-frame:before {
+    content: "\E299";
+}
+
+/* 🔹 Icono radar */
+.isb-radar:before {
+    content: "\E29A";
+}
+
+/* 🔹 Icono radar */
+.isb-radar:before {
+    content: "\E29B";
+}
+
+/* 🔹 Icono radar-2 */
+.isb-radar-2:before {
+    content: "\E29C";
+}
+
+/* 🔹 Icono route-square */
+.isb-route-square:before {
+    content: "\E29D";
+}
+
+/* 🔹 Icono routing */
+.isb-routing:before {
+    content: "\E29E";
+}
+
+/* 🔹 Icono routing-2 */
+.isb-routing-2:before {
+    content: "\E29F";
+}
+
+/* 🔹 Icono card */
+.isb-card:before {
+    content: "\E2A0";
+}
+
+/* 🔹 Icono card-add */
+.isb-card-add:before {
+    content: "\E2A1";
+}
+
+/* 🔹 Icono card-edit */
+.isb-card-edit:before {
+    content: "\E2A2";
+}
+
+/* 🔹 Icono card-pos */
+.isb-card-pos:before {
+    content: "\E2A3";
+}
+
+/* 🔹 Icono card-receive */
+.isb-card-receive:before {
+    content: "\E2A4";
+}
+
+/* 🔹 Icono card-remove */
+.isb-card-remove:before {
+    content: "\E2A5";
+}
+
+/* 🔹 Icono card-remove-1 */
+.isb-card-remove-1:before {
+    content: "\E2A6";
+}
+
+/* 🔹 Icono card-send */
+.isb-card-send:before {
+    content: "\E2A7";
+}
+
+/* 🔹 Icono card-slash */
+.isb-card-slash:before {
+    content: "\E2A8";
+}
+
+/* 🔹 Icono card-tick */
+.isb-card-tick:before {
+    content: "\E2A9";
+}
+
+/* 🔹 Icono card-tick-1 */
+.isb-card-tick-1:before {
+    content: "\E2AA";
+}
+
+/* 🔹 Icono cards */
+.isb-cards:before {
+    content: "\E2AB";
+}
+
+/* 🔹 Icono coin */
+.isb-coin:before {
+    content: "\E2AC";
+}
+
+/* 🔹 Icono coin-1 */
+.isb-coin-1:before {
+    content: "\E2AD";
+}
+
+/* 🔹 Icono discount-circle */
+.isb-discount-circle:before {
+    content: "\E2AF";
+}
+
+/* 🔹 Icono discount-shape */
+.isb-discount-shape:before {
+    content: "\E2B0";
+}
+
+/* 🔹 Icono dollar-circle */
+.isb-dollar-circle:before {
+    content: "\E2B1";
+}
+
+/* 🔹 Icono dollar-square */
+.isb-dollar-square:before {
+    content: "\E2B2";
+}
+
+/* 🔹 Icono empty-wallet */
+.isb-empty-wallet:before {
+    content: "\E2B3";
+}
+
+/* 🔹 Icono empty-wallet-add */
+.isb-empty-wallet-add:before {
+    content: "\E2B4";
+}
+
+/* 🔹 Icono empty-wallet-change */
+.isb-empty-wallet-change:before {
+    content: "\E2B5";
+}
+
+/* 🔹 Icono empty-wallet-remove */
+.isb-empty-wallet-remove:before {
+    content: "\E2B6";
+}
+
+/* 🔹 Icono empty-wallet-tick */
+.isb-empty-wallet-tick:before {
+    content: "\E2B7";
+}
+
+/* 🔹 Icono empty-wallet-time */
+.isb-empty-wallet-time:before {
+    content: "\E2B8";
+}
+
+/* 🔹 Icono math */
+.isb-math:before {
+    content: "\E2B9";
+}
+
+/* 🔹 Icono money */
+.isb-money:before {
+    content: "\E2BA";
+}
+
+/* 🔹 Icono money-2 */
+.isb-money-2:before {
+    content: "\E2BB";
+}
+
+/* 🔹 Icono money-3 */
+.isb-money-3:before {
+    content: "\E2BC";
+}
+
+/* 🔹 Icono money-4 */
+.isb-money-4:before {
+    content: "\E2BD";
+}
+
+/* 🔹 Icono money-add */
+.isb-money-add:before {
+    content: "\E2BE";
+}
+
+/* 🔹 Icono money-change */
+.isb-money-change:before {
+    content: "\E2BF";
+}
+
+/* 🔹 Icono money-forbidden */
+.isb-money-forbidden:before {
+    content: "\E2C0";
+}
+
+/* 🔹 Icono money-recive */
+.isb-money-recive:before {
+    content: "\E2C1";
+}
+
+/* 🔹 Icono money-remove */
+.isb-money-remove:before {
+    content: "\E2C2";
+}
+
+/* 🔹 Icono money-send */
+.isb-money-send:before {
+    content: "\E2C3";
+}
+
+/* 🔹 Icono money-tick */
+.isb-money-tick:before {
+    content: "\E2C4";
+}
+
+/* 🔹 Icono money-time */
+.isb-money-time:before {
+    content: "\E2C5";
+}
+
+/* 🔹 Icono moneys */
+.isb-moneys:before {
+    content: "\E2C6";
+}
+
+/* 🔹 Icono percentage-circle */
+.isb-percentage-circle:before {
+    content: "\E2C7";
+}
+
+/* 🔹 Icono percentage-square */
+.isb-percentage-square:before {
+    content: "\E2C8";
+}
+
+/* 🔹 Icono receipt */
+.isb-receipt:before {
+    content: "\E2C9";
+}
+
+/* 🔹 Icono receipt-1 */
+.isb-receipt-1:before {
+    content: "\E2CA";
+}
+
+/* 🔹 Icono receipt-2 */
+.isb-receipt-2:before {
+    content: "\E2CB";
+}
+
+/* 🔹 Icono receipt-2-1 */
+.isb-receipt-2-1:before {
+    content: "\E2CC";
+}
+
+/* 🔹 Icono receipt-add */
+.isb-receipt-add:before {
+    content: "\E2CD";
+}
+
+/* 🔹 Icono receipt-discount */
+.isb-receipt-discount:before {
+    content: "\E2CE";
+}
+
+/* 🔹 Icono receipt-disscount */
+.isb-receipt-disscount:before {
+    content: "\E2CF";
+}
+
+/* 🔹 Icono receipt-edit */
+.isb-receipt-edit:before {
+    content: "\E2D0";
+}
+
+/* 🔹 Icono receipt-item */
+.isb-receipt-item:before {
+    content: "\E2D1";
+}
+
+/* 🔹 Icono receipt-minus */
+.isb-receipt-minus:before {
+    content: "\E2D2";
+}
+
+/* 🔹 Icono receipt-search */
+.isb-receipt-search:before {
+    content: "\E2D3";
+}
+
+/* 🔹 Icono receipt-text */
+.isb-receipt-text:before {
+    content: "\E2D4";
+}
+
+/* 🔹 Icono security-card */
+.isb-security-card:before {
+    content: "\E2D5";
+}
+
+/* 🔹 Icono strongbox */
+.isb-strongbox:before {
+    content: "\E2D6";
+}
+
+/* 🔹 Icono strongbox-2 */
+.isb-strongbox-2:before {
+    content: "\E2D7";
+}
+
+/* 🔹 Icono tag */
+.isb-tag:before {
+    content: "\E2D8";
+}
+
+/* 🔹 Icono tag-2 */
+.isb-tag-2:before {
+    content: "\E2D9";
+}
+
+/* 🔹 Icono ticket */
+.isb-ticket:before {
+    content: "\E2DA";
+}
+
+/* 🔹 Icono ticket-2 */
+.isb-ticket-2:before {
+    content: "\E2DB";
+}
+
+/* 🔹 Icono ticket-discount */
+.isb-ticket-discount:before {
+    content: "\E2DC";
+}
+
+/* 🔹 Icono ticket-expired */
+.isb-ticket-expired:before {
+    content: "\E2DD";
+}
+
+/* 🔹 Icono ticket-star */
+.isb-ticket-star:before {
+    content: "\E2DE";
+}
+
+/* 🔹 Icono transaction-minus */
+.isb-transaction-minus:before {
+    content: "\E2DF";
+}
+
+/* 🔹 Icono wallet */
+.isb-wallet:before {
+    content: "\E2E0";
+}
+
+/* 🔹 Icono wallet-1 */
+.isb-wallet-1:before {
+    content: "\E2E1";
+}
+
+/* 🔹 Icono wallet-2 */
+.isb-wallet-2:before {
+    content: "\E2E2";
+}
+
+/* 🔹 Icono wallet-3 */
+.isb-wallet-3:before {
+    content: "\E2E3";
+}
+
+/* 🔹 Icono wallet-add */
+.isb-wallet-add:before {
+    content: "\E2E4";
+}
+
+/* 🔹 Icono wallet-add-1 */
+.isb-wallet-add-1:before {
+    content: "\E2E5";
+}
+
+/* 🔹 Icono wallet-check */
+.isb-wallet-check:before {
+    content: "\E2E6";
+}
+
+/* 🔹 Icono wallet-minus */
+.isb-wallet-minus:before {
+    content: "\E2E7";
+}
+
+/* 🔹 Icono wallet-money */
+.isb-wallet-money:before {
+    content: "\E2E8";
+}
+
+/* 🔹 Icono wallet-remove */
+.isb-wallet-remove:before {
+    content: "\E2E9";
+}
+
+/* 🔹 Icono wallet-search */
+.isb-wallet-search:before {
+    content: "\E2EA";
+}
+
+/* 🔹 Icono lamp-charge */
+.isb-lamp-charge:before {
+    content: "\E2EB";
+}
+
+/* 🔹 Icono lamp-on */
+.isb-lamp-on:before {
+    content: "\E2EC";
+}
+
+/* 🔹 Icono lamp-slash */
+.isb-lamp-slash:before {
+    content: "\E2ED";
+}
+
+/* 🔹 Icono notification */
+.isb-notification:before {
+    content: "\E2EE";
+}
+
+/* 🔹 Icono notification-2 */
+.isb-notification-2:before {
+    content: "\E2EF";
+}
+
+/* 🔹 Icono notification-bing */
+.isb-notification-bing:before {
+    content: "\E2F0";
+}
+
+/* 🔹 Icono notification-circle */
+.isb-notification-circle:before {
+    content: "\E2F1";
+}
+
+/* 🔹 Icono notification-favorite */
+.isb-notification-favorite:before {
+    content: "\E2F2";
+}
+
+/* 🔹 Icono notification-status */
+.isb-notification-status:before {
+    content: "\E2F3";
+}
+
+/* 🔹 Icono code */
+.isb-code:before {
+    content: "\E2F4";
+}
+
+/* 🔹 Icono code-1 */
+.isb-code-1:before {
+    content: "\E2F5";
+}
+
+/* 🔹 Icono code-circle */
+.isb-code-circle:before {
+    content: "\E2F6";
+}
+
+/* 🔹 Icono command */
+.isb-command:before {
+    content: "\E2F7";
+}
+
+/* 🔹 Icono command-square */
+.isb-command-square:before {
+    content: "\E2F8";
+}
+
+/* 🔹 Icono data */
+.isb-data:before {
+    content: "\E2F9";
+}
+
+/* 🔹 Icono document-code */
+.isb-document-code:before {
+    content: "\E2FF";
+}
+
+/* 🔹 Icono document-code-2 */
+.isb-document-code-2:before {
+    content: "\E300";
+}
+
+/* 🔹 Icono hashtag-down */
+.isb-hashtag-down:before {
+    content: "\E301";
+}
+
+/* 🔹 Icono hashtag-up */
+.isb-hashtag-up:before {
+    content: "\E302";
+}
+
+/* 🔹 Icono hierarchy */
+.isb-hierarchy:before {
+    content: "\E303";
+}
+
+/* 🔹 Icono hierarchy-2 */
+.isb-hierarchy-2:before {
+    content: "\E304";
+}
+
+/* 🔹 Icono hierarchy-3 */
+.isb-hierarchy-3:before {
+    content: "\E305";
+}
+
+/* 🔹 Icono hierarchy-square */
+.isb-hierarchy-square:before {
+    content: "\E306";
+}
+
+/* 🔹 Icono hierarchy-square-2 */
+.isb-hierarchy-square-2:before {
+    content: "\E307";
+}
+
+/* 🔹 Icono hierarchy-square-3 */
+.isb-hierarchy-square-3:before {
+    content: "\E308";
+}
+
+/* 🔹 Icono message-programming */
+.isb-message-programming:before {
+    content: "\E309";
+}
+
+/* 🔹 Icono mobile-programming */
+.isb-mobile-programming:before {
+    content: "\E30A";
+}
+
+/* 🔹 Icono programming-arrow */
+.isb-programming-arrow:before {
+    content: "\E30B";
+}
+
+/* 🔹 Icono programming-arrows */
+.isb-programming-arrows:before {
+    content: "\E30C";
+}
+
+/* 🔹 Icono scroll */
+.isb-scroll:before {
+    content: "\E30D";
+}
+
+/* 🔹 Icono sidebar-bottom */
+.isb-sidebar-bottom:before {
+    content: "\E30E";
+}
+
+/* 🔹 Icono sidebar-left */
+.isb-sidebar-left:before {
+    content: "\E30F";
+}
+
+/* 🔹 Icono sidebar-right */
+.isb-sidebar-right:before {
+    content: "\E310";
+}
+
+/* 🔹 Icono sidebar-top */
+.isb-sidebar-top:before {
+    content: "\E311";
+}
+
+/* 🔹 Icono award */
+.isb-award:before {
+    content: "\E312";
+}
+
+/* 🔹 Icono book */
+.isb-book:before {
+    content: "\E313";
+}
+
+/* 🔹 Icono book-open */
+.isb-book-open:before {
+    content: "\E314";
+}
+
+/* 🔹 Icono bookmark */
+.isb-bookmark:before {
+    content: "\E315";
+}
+
+/* 🔹 Icono bookmark-2 */
+.isb-bookmark-2:before {
+    content: "\E316";
+}
+
+/* 🔹 Icono briefcase */
+.isb-briefcase:before {
+    content: "\E317";
+}
+
+/* 🔹 Icono brifecase-cross */
+.isb-brifecase-cross:before {
+    content: "\E318";
+}
+
+/* 🔹 Icono brifecase-tick */
+.isb-brifecase-tick:before {
+    content: "\E319";
+}
+
+/* 🔹 Icono brifecase-timer */
+.isb-brifecase-timer:before {
+    content: "\E31A";
+}
+
+/* 🔹 Icono calculator */
+.isb-calculator:before {
+    content: "\E31B";
+}
+
+/* 🔹 Icono clipboard */
+.isb-clipboard:before {
+    content: "\E31C";
+}
+
+/* 🔹 Icono gift */
+.isb-gift:before {
+    content: "\E31D";
+}
+
+/* 🔹 Icono note-2 */
+.isb-note-2:before {
+    content: "\E31E";
+}
+
+/* 🔹 Icono teacher */
+.isb-teacher:before {
+    content: "\E31F";
+}
+
+/* 🔹 Icono search */
+.isb-search:before {
+    content: "\E320";
+}
+
+/* 🔹 Icono search-favorite */
+.isb-search-favorite:before {
+    content: "\E321";
+}
+
+/* 🔹 Icono search-favorite-1 */
+.isb-search-favorite-1:before {
+    content: "\E322";
+}
+
+/* 🔹 Icono search-normal */
+.isb-search-normal:before {
+    content: "\E323";
+}
+
+/* 🔹 Icono search-status */
+.isb-search-status:before {
+    content: "\E324";
+}
+
+/* 🔹 Icono search-status-1 */
+.isb-search-status-1:before {
+    content: "\E325";
+}
+
+/* 🔹 Icono search-zoom-in */
+.isb-search-zoom-in:before {
+    content: "\E326";
+}
+
+/* 🔹 Icono search-zoom-in-1 */
+.isb-search-zoom-in-1:before {
+    content: "\E327";
+}
+
+/* 🔹 Icono search-zoom-out */
+.isb-search-zoom-out:before {
+    content: "\E328";
+}
+
+/* 🔹 Icono search-zoom-out-1 */
+.isb-search-zoom-out-1:before {
+    content: "\E329";
+}
+
+/* 🔹 Icono alarm */
+.isb-alarm:before {
+    content: "\E32A";
+}
+
+/* 🔹 Icono check */
+.isb-check:before {
+    content: "\E32B";
+}
+
+/* 🔹 Icono eye */
+.isb-eye:before {
+    content: "\E32C";
+}
+
+/* 🔹 Icono eye-slash */
+.isb-eye-slash:before {
+    content: "\E32D";
+}
+
+/* 🔹 Icono finger-circle */
+.isb-finger-circle:before {
+    content: "\E32E";
+}
+
+/* 🔹 Icono finger-scan */
+.isb-finger-scan:before {
+    content: "\E32F";
+}
+
+/* 🔹 Icono key */
+.isb-key:before {
+    content: "\E330";
+}
+
+/* 🔹 Icono key-square */
+.isb-key-square:before {
+    content: "\E331";
+}
+
+/* 🔹 Icono lock */
+.isb-lock:before {
+    content: "\E332";
+}
+
+/* 🔹 Icono lock-circle */
+.isb-lock-circle:before {
+    content: "\E333";
+}
+
+/* 🔹 Icono lock-slash */
+.isb-lock-slash:before {
+    content: "\E334";
+}
+
+/* 🔹 Icono padlock */
+.isb-padlock:before {
+    content: "\E335";
+}
+
+/* 🔹 Icono password-check */
+.isb-password-check:before {
+    content: "\E336";
+}
+
+/* 🔹 Icono scan */
+.isb-scan:before {
+    content: "\E337";
+}
+
+/* 🔹 Icono scan-barcode */
+.isb-scan-barcode:before {
+    content: "\E338";
+}
+
+/* 🔹 Icono scanner */
+.isb-scanner:before {
+    content: "\E339";
+}
+
+/* 🔹 Icono scanning */
+.isb-scanning:before {
+    content: "\E33A";
+}
+
+/* 🔹 Icono security */
+.isb-security:before {
+    content: "\E33B";
+}
+
+/* 🔹 Icono security-safe */
+.isb-security-safe:before {
+    content: "\E33C";
+}
+
+/* 🔹 Icono security-user */
+.isb-security-user:before {
+    content: "\E33D";
+}
+
+/* 🔹 Icono shield */
+.isb-shield:before {
+    content: "\E33E";
+}
+
+/* 🔹 Icono shield-cross */
+.isb-shield-cross:before {
+    content: "\E33F";
+}
+
+/* 🔹 Icono shield-search */
+.isb-shield-search:before {
+    content: "\E340";
+}
+
+/* 🔹 Icono shield-security */
+.isb-shield-security:before {
+    content: "\E341";
+}
+
+/* 🔹 Icono shield-slash */
+.isb-shield-slash:before {
+    content: "\E342";
+}
+
+/* 🔹 Icono shield-tick */
+.isb-shield-tick:before {
+    content: "\E343";
+}
+
+/* 🔹 Icono unlock */
+.isb-unlock:before {
+    content: "\E344";
+}
+
+/* 🔹 Icono 3-dots-more */
+.isb-3-dots-more:before {
+    content: "\E345";
+}
+
+/* 🔹 Icono candle */
+.isb-candle:before {
+    content: "\E346";
+}
+
+/* 🔹 Icono candle-2 */
+.isb-candle-2:before {
+    content: "\E347";
+}
+
+/* 🔹 Icono category */
+.isb-category:before {
+    content: "\E348";
+}
+
+/* 🔹 Icono category-2 */
+.isb-category-2:before {
+    content: "\E349";
+}
+
+/* 🔹 Icono setting-2 */
+.isb-setting-2:before {
+    content: "\E34B";
+}
+
+/* 🔹 Icono setting-3 */
+.isb-setting-3:before {
+    content: "\E34C";
+}
+
+/* 🔹 Icono setting-4 */
+.isb-setting-4:before {
+    content: "\E34D";
+}
+
+/* 🔹 Icono setting-5 */
+.isb-setting-5:before {
+    content: "\E34E";
+}
+
+/* 🔹 Icono settings */
+.isb-settings:before {
+    content: "\E34F";
+}
+
+/* 🔹 Icono settings */
+.isb-settings:before {
+    content: "\E350";
+}
+
+/* 🔹 Icono toggle-off */
+.isb-toggle-off:before {
+    content: "\E351";
+}
+
+/* 🔹 Icono toggle-off-circle */
+.isb-toggle-off-circle:before {
+    content: "\E352";
+}
+
+/* 🔹 Icono toggle-on */
+.isb-toggle-on:before {
+    content: "\E353";
+}
+
+/* 🔹 Icono toggle-on-circle */
+.isb-toggle-on-circle:before {
+    content: "\E354";
+}
+
+/* 🔹 Icono bag */
+.isb-bag:before {
+    content: "\E355";
+}
+
+/* 🔹 Icono bag-2 */
+.isb-bag-2:before {
+    content: "\E356";
+}
+
+/* 🔹 Icono bag-cross */
+.isb-bag-cross:before {
+    content: "\E357";
+}
+
+/* 🔹 Icono bag-cross-1 */
+.isb-bag-cross-1:before {
+    content: "\E358";
+}
+
+/* 🔹 Icono bag-happy */
+.isb-bag-happy:before {
+    content: "\E359";
+}
+
+/* 🔹 Icono bag-tick */
+.isb-bag-tick:before {
+    content: "\E35A";
+}
+
+/* 🔹 Icono bag-tick-2 */
+.isb-bag-tick-2:before {
+    content: "\E35B";
+}
+
+/* 🔹 Icono bag-timer */
+.isb-bag-timer:before {
+    content: "\E35C";
+}
+
+/* 🔹 Icono barcode */
+.isb-barcode:before {
+    content: "\E35D";
+}
+
+/* 🔹 Icono shop */
+.isb-shop:before {
+    content: "\E35E";
+}
+
+/* 🔹 Icono shop-add */
+.isb-shop-add:before {
+    content: "\E35F";
+}
+
+/* 🔹 Icono shop-remove */
+.isb-shop-remove:before {
+    content: "\E360";
+}
+
+/* 🔹 Icono shopping-bag */
+.isb-shopping-bag:before {
+    content: "\E361";
+}
+
+/* 🔹 Icono shopping-cart */
+.isb-shopping-cart:before {
+    content: "\E362";
+}
+
+/* 🔹 Icono 24-support */
+.isb-24-support:before {
+    content: "\E363";
+}
+
+/* 🔹 Icono dislike */
+.isb-dislike:before {
+    content: "\E364";
+}
+
+/* 🔹 Icono heart */
+.isb-heart:before {
+    content: "\E365";
+}
+
+/* 🔹 Icono heart-add */
+.isb-heart-add:before {
+    content: "\E366";
+}
+
+/* 🔹 Icono heart-circle */
+.isb-heart-circle:before {
+    content: "\E367";
+}
+
+/* 🔹 Icono heart-edit */
+.isb-heart-edit:before {
+    content: "\E368";
+}
+
+/* 🔹 Icono heart-remove */
+.isb-heart-remove:before {
+    content: "\E369";
+}
+
+/* 🔹 Icono heart-search */
+.isb-heart-search:before {
+    content: "\E36A";
+}
+
+/* 🔹 Icono heart-slash */
+.isb-heart-slash:before {
+    content: "\E36B";
+}
+
+/* 🔹 Icono heart-tick */
+.isb-heart-tick:before {
+    content: "\E36C";
+}
+
+/* 🔹 Icono like */
+.isb-like:before {
+    content: "\E36D";
+}
+
+/* 🔹 Icono like-1 */
+.isb-like-1:before {
+    content: "\E36E";
+}
+
+/* 🔹 Icono like-dislike */
+.isb-like-dislike:before {
+    content: "\E36F";
+}
+
+/* 🔹 Icono like-shapes */
+.isb-like-shapes:before {
+    content: "\E370";
+}
+
+/* 🔹 Icono like-tag */
+.isb-like-tag:before {
+    content: "\E371";
+}
+
+/* 🔹 Icono lovely */
+.isb-lovely:before {
+    content: "\E372";
+}
+
+/* 🔹 Icono magic-star */
+.isb-magic-star:before {
+    content: "\E373";
+}
+
+/* 🔹 Icono medal */
+.isb-medal:before {
+    content: "\E374";
+}
+
+/* 🔹 Icono medal-star */
+.isb-medal-star:before {
+    content: "\E375";
+}
+
+/* 🔹 Icono message-question */
+.isb-message-question:before {
+    content: "\E376";
+}
+
+/* 🔹 Icono ranking-2 */
+.isb-ranking-2:before {
+    content: "\E377";
+}
+
+/* 🔹 Icono smileys */
+.isb-smileys:before {
+    content: "\E378";
+}
+
+/* 🔹 Icono star */
+.isb-star:before {
+    content: "\E379";
+}
+
+/* 🔹 Icono star-slash */
+.isb-star-slash:before {
+    content: "\E37A";
+}
+
+/* 🔹 Icono unlimited */
+.isb-unlimited:before {
+    content: "\E37B";
+}
+
+/* 🔹 Icono calendar */
+.isb-calendar:before {
+    content: "\E37C";
+}
+
+/* 🔹 Icono calendar-2 */
+.isb-calendar-2:before {
+    content: "\E37D";
+}
+
+/* 🔹 Icono calendar-add */
+.isb-calendar-add:before {
+    content: "\E37E";
+}
+
+/* 🔹 Icono calendar-circle */
+.isb-calendar-circle:before {
+    content: "\E37F";
+}
+
+/* 🔹 Icono calendar-date */
+.isb-calendar-date:before {
+    content: "\E380";
+}
+
+/* 🔹 Icono calendar-edit */
+.isb-calendar-edit:before {
+    content: "\E381";
+}
+
+/* 🔹 Icono calendar-remove */
+.isb-calendar-remove:before {
+    content: "\E382";
+}
+
+/* 🔹 Icono calendar-search */
+.isb-calendar-search:before {
+    content: "\E383";
+}
+
+/* 🔹 Icono calendar-tick */
+.isb-calendar-tick:before {
+    content: "\E384";
+}
+
+/* 🔹 Icono hourglass */
+.isb-hourglass:before {
+    content: "\E385";
+}
+
+/* 🔹 Icono security-time */
+.isb-security-time:before {
+    content: "\E386";
+}
+
+/* 🔹 Icono timer */
+.isb-timer:before {
+    content: "\E387";
+}
+
+/* 🔹 Icono timer-pause */
+.isb-timer-pause:before {
+    content: "\E388";
+}
+
+/* 🔹 Icono timer-start */
+.isb-timer-start:before {
+    content: "\E389";
+}
+
+/* 🔹 Icono attach-square */
+.isb-attach-square:before {
+    content: "\E38B";
+}
+
+/* 🔹 Icono firstline */
+.isb-firstline:before {
+    content: "\E38C";
+}
+
+/* 🔹 Icono language-circle */
+.isb-language-circle:before {
+    content: "\E38D";
+}
+
+/* 🔹 Icono language-square */
+.isb-language-square:before {
+    content: "\E38E";
+}
+
+/* 🔹 Icono link */
+.isb-link:before {
+    content: "\E38F";
+}
+
+/* 🔹 Icono link-2 */
+.isb-link-2:before {
+    content: "\E390";
+}
+
+/* 🔹 Icono link-3 */
+.isb-link-3:before {
+    content: "\E391";
+}
+
+/* 🔹 Icono link-4 */
+.isb-link-4:before {
+    content: "\E392";
+}
+
+/* 🔹 Icono link-circle */
+.isb-link-circle:before {
+    content: "\E393";
+}
+
+/* 🔹 Icono link-square */
+.isb-link-square:before {
+    content: "\E394";
+}
+
+/* 🔹 Icono paperclip */
+.isb-paperclip:before {
+    content: "\E395";
+}
+
+/* 🔹 Icono paperclip-2 */
+.isb-paperclip-2:before {
+    content: "\E396";
+}
+
+/* 🔹 Icono pharagraphspacing */
+.isb-pharagraphspacing:before {
+    content: "\E397";
+}
+
+/* 🔹 Icono quote-down */
+.isb-quote-down:before {
+    content: "\E398";
+}
+
+/* 🔹 Icono quote-down-circle */
+.isb-quote-down-circle:before {
+    content: "\E399";
+}
+
+/* 🔹 Icono quote-down-square */
+.isb-quote-down-square:before {
+    content: "\E39A";
+}
+
+/* 🔹 Icono quote-up */
+.isb-quote-up:before {
+    content: "\E39B";
+}
+
+/* 🔹 Icono quote-up-circle */
+.isb-quote-up-circle:before {
+    content: "\E39C";
+}
+
+/* 🔹 Icono quote-up-square */
+.isb-quote-up-square:before {
+    content: "\E39D";
+}
+
+/* 🔹 Icono smallcaps */
+.isb-smallcaps:before {
+    content: "\E39E";
+}
+
+/* 🔹 Icono text */
+.isb-text:before {
+    content: "\E39F";
+}
+
+/* 🔹 Icono text-block */
+.isb-text-block:before {
+    content: "\E3A0";
+}
+
+/* 🔹 Icono text-bold */
+.isb-text-bold:before {
+    content: "\E3A1";
+}
+
+/* 🔹 Icono text-italic */
+.isb-text-italic:before {
+    content: "\E3A2";
+}
+
+/* 🔹 Icono text-underline */
+.isb-text-underline:before {
+    content: "\E3A3";
+}
+
+/* 🔹 Icono textalign-center */
+.isb-textalign-center:before {
+    content: "\E3A4";
+}
+
+/* 🔹 Icono textalign-justifycenter */
+.isb-textalign-justifycenter:before {
+    content: "\E3A5";
+}
+
+/* 🔹 Icono textalign-justifyleft */
+.isb-textalign-justifyleft:before {
+    content: "\E3A6";
+}
+
+/* 🔹 Icono textalign-justifyright */
+.isb-textalign-justifyright:before {
+    content: "\E3A7";
+}
+
+/* 🔹 Icono textalign-left */
+.isb-textalign-left:before {
+    content: "\E3A8";
+}
+
+/* 🔹 Icono textalign-right */
+.isb-textalign-right:before {
+    content: "\E3A9";
+}
+
+/* 🔹 Icono translate */
+.isb-translate:before {
+    content: "\E3AA";
+}
+
+/* 🔹 Icono people */
+.isb-people:before {
+    content: "\E3AB";
+}
+
+/* 🔹 Icono profile */
+.isb-profile:before {
+    content: "\E3AC";
+}
+
+/* 🔹 Icono profile-2user */
+.isb-profile-2user:before {
+    content: "\E3AD";
+}
+
+/* 🔹 Icono profile-add */
+.isb-profile-add:before {
+    content: "\E3AE";
+}
+
+/* 🔹 Icono profile-circle */
+.isb-profile-circle:before {
+    content: "\E3AF";
+}
+
+/* 🔹 Icono profile-delete */
+.isb-profile-delete:before {
+    content: "\E3B0";
+}
+
+/* 🔹 Icono profile-remove */
+.isb-profile-remove:before {
+    content: "\E3B1";
+}
+
+/* 🔹 Icono profile-tick */
+.isb-profile-tick:before {
+    content: "\E3B2";
+}
+
+/* 🔹 Icono tag-user */
+.isb-tag-user:before {
+    content: "\E3B3";
+}
+
+/* 🔹 Icono user */
+.isb-user:before {
+    content: "\E3B4";
+}
+
+/* 🔹 Icono user-add */
+.isb-user-add:before {
+    content: "\E3B5";
+}
+
+/* 🔹 Icono user-circle-add */
+.isb-user-circle-add:before {
+    content: "\E3B6";
+}
+
+/* 🔹 Icono user-edit */
+.isb-user-edit:before {
+    content: "\E3B7";
+}
+
+/* 🔹 Icono user-hexagon */
+.isb-user-hexagon:before {
+    content: "\E3B8";
+}
+
+/* 🔹 Icono user-minus */
+.isb-user-minus:before {
+    content: "\E3B9";
+}
+
+/* 🔹 Icono user-remove */
+.isb-user-remove:before {
+    content: "\E3BA";
+}
+
+/* 🔹 Icono user-search */
+.isb-user-search:before {
+    content: "\E3BB";
+}
+
+/* 🔹 Icono user-square */
+.isb-user-square:before {
+    content: "\E3BC";
+}
+
+/* 🔹 Icono user-tag */
+.isb-user-tag:before {
+    content: "\E3BD";
+}
+
+/* 🔹 Icono user-tick */
+.isb-user-tick:before {
+    content: "\E3BE";
+}
+
+/* 🔹 Icono audio-square */
+.isb-audio-square:before {
+    content: "\E3BF";
+}
+
+/* 🔹 Icono backward */
+.isb-backward:before {
+    content: "\E3C0";
+}
+
+/* 🔹 Icono backward-10-seconds */
+.isb-backward-10-seconds:before {
+    content: "\E3C1";
+}
+
+/* 🔹 Icono backward-15-seconds */
+.isb-backward-15-seconds:before {
+    content: "\E3C2";
+}
+
+/* 🔹 Icono backward-5-seconds */
+.isb-backward-5-seconds:before {
+    content: "\E3C3";
+}
+
+/* 🔹 Icono camera */
+.isb-camera:before {
+    content: "\E3C4";
+}
+
+/* 🔹 Icono camera-slash */
+.isb-camera-slash:before {
+    content: "\E3C5";
+}
+
+/* 🔹 Icono forward */
+.isb-forward:before {
+    content: "\E3C6";
+}
+
+/* 🔹 Icono forward-10-seconds */
+.isb-forward-10-seconds:before {
+    content: "\E3C7";
+}
+
+/* 🔹 Icono forward-15-seconds */
+.isb-forward-15-seconds:before {
+    content: "\E3C8";
+}
+
+/* 🔹 Icono forward-5-seconds */
+.isb-forward-5-seconds:before {
+    content: "\E3C9";
+}
+
+/* 🔹 Icono gallery */
+.isb-gallery:before {
+    content: "\E3CA";
+}
+
+/* 🔹 Icono gallery-add */
+.isb-gallery-add:before {
+    content: "\E3CB";
+}
+
+/* 🔹 Icono gallery-edit */
+.isb-gallery-edit:before {
+    content: "\E3CC";
+}
+
+/* 🔹 Icono gallery-export */
+.isb-gallery-export:before {
+    content: "\E3CD";
+}
+
+/* 🔹 Icono gallery-favorite */
+.isb-gallery-favorite:before {
+    content: "\E3CE";
+}
+
+/* 🔹 Icono gallery-import */
+.isb-gallery-import:before {
+    content: "\E3CF";
+}
+
+/* 🔹 Icono gallery-remove */
+.isb-gallery-remove:before {
+    content: "\E3D0";
+}
+
+/* 🔹 Icono gallery-slash */
+.isb-gallery-slash:before {
+    content: "\E3D1";
+}
+
+/* 🔹 Icono gallery-tick */
+.isb-gallery-tick:before {
+    content: "\E3D2";
+}
+
+/* 🔹 Icono image */
+.isb-image:before {
+    content: "\E3D3";
+}
+
+/* 🔹 Icono maximize-circle */
+.isb-maximize-circle:before {
+    content: "\E3D4";
+}
+
+/* 🔹 Icono microphone */
+.isb-microphone:before {
+    content: "\E3D5";
+}
+
+/* 🔹 Icono microphone-2 */
+.isb-microphone-2:before {
+    content: "\E3D6";
+}
+
+/* 🔹 Icono microphone-slash */
+.isb-microphone-slash:before {
+    content: "\E3D7";
+}
+
+/* 🔹 Icono microphone-slash-1 */
+.isb-microphone-slash-1:before {
+    content: "\E3D8";
+}
+
+/* 🔹 Icono music */
+.isb-music:before {
+    content: "\E3DC";
+}
+
+/* 🔹 Icono music-circle */
+.isb-music-circle:before {
+    content: "\E3DD";
+}
+
+/* 🔹 Icono music-dashboard */
+.isb-music-dashboard:before {
+    content: "\E3DE";
+}
+
+/* 🔹 Icono music-filter */
+.isb-music-filter:before {
+    content: "\E3DF";
+}
+
+/* 🔹 Icono music-library-2 */
+.isb-music-library-2:before {
+    content: "\E3E0";
+}
+
+/* 🔹 Icono music-playlist */
+.isb-music-playlist:before {
+    content: "\E3E1";
+}
+
+/* 🔹 Icono music-square */
+.isb-music-square:before {
+    content: "\E3E2";
+}
+
+/* 🔹 Icono music-square-add */
+.isb-music-square-add:before {
+    content: "\E3E3";
+}
+
+/* 🔹 Icono music-square-remove */
+.isb-music-square-remove:before {
+    content: "\E3E4";
+}
+
+/* 🔹 Icono music-square-search */
+.isb-music-square-search:before {
+    content: "\E3E5";
+}
+
+/* 🔹 Icono musicnote */
+.isb-musicnote:before {
+    content: "\E3E6";
+}
+
+/* 🔹 Icono next */
+.isb-next:before {
+    content: "\E3E7";
+}
+
+/* 🔹 Icono note-square */
+.isb-note-square:before {
+    content: "\E3E8";
+}
+
+/* 🔹 Icono pause */
+.isb-pause:before {
+    content: "\E3E9";
+}
+
+/* 🔹 Icono pause-circle */
+.isb-pause-circle:before {
+    content: "\E3EA";
+}
+
+/* 🔹 Icono play */
+.isb-play:before {
+    content: "\E3EB";
+}
+
+/* 🔹 Icono play-add */
+.isb-play-add:before {
+    content: "\E3EC";
+}
+
+/* 🔹 Icono play-circle */
+.isb-play-circle:before {
+    content: "\E3ED";
+}
+
+/* 🔹 Icono play-circle-1 */
+.isb-play-circle-1:before {
+    content: "\E3EE";
+}
+
+/* 🔹 Icono play-remove */
+.isb-play-remove:before {
+    content: "\E3EF";
+}
+
+/* 🔹 Icono previous */
+.isb-previous:before {
+    content: "\E3F0";
+}
+
+/* 🔹 Icono radio */
+.isb-radio:before {
+    content: "\E3F1";
+}
+
+/* 🔹 Icono record */
+.isb-record:before {
+    content: "\E3F2";
+}
+
+/* 🔹 Icono record-circle */
+.isb-record-circle:before {
+    content: "\E3F3";
+}
+
+/* 🔹 Icono repeate-music */
+.isb-repeate-music:before {
+    content: "\E3F4";
+}
+
+/* 🔹 Icono repeate-one */
+.isb-repeate-one:before {
+    content: "\E3F5";
+}
+
+/* 🔹 Icono screenmirroring */
+.isb-screenmirroring:before {
+    content: "\E3F6";
+}
+
+/* 🔹 Icono shuffle */
+.isb-shuffle:before {
+    content: "\E3F7";
+}
+
+/* 🔹 Icono stop */
+.isb-stop:before {
+    content: "\E3F8";
+}
+
+/* 🔹 Icono stop-circle */
+.isb-stop-circle:before {
+    content: "\E3F9";
+}
+
+/* 🔹 Icono subtitle */
+.isb-subtitle:before {
+    content: "\E3FA";
+}
+
+/* 🔹 Icono video */
+.isb-video:before {
+    content: "\E3FB";
+}
+
+/* 🔹 Icono video-add */
+.isb-video-add:before {
+    content: "\E3FC";
+}
+
+/* 🔹 Icono video-circle */
+.isb-video-circle:before {
+    content: "\E3FD";
+}
+
+/* 🔹 Icono video-horizontal */
+.isb-video-horizontal:before {
+    content: "\E3FE";
+}
+
+/* 🔹 Icono video-octagon */
+.isb-video-octagon:before {
+    content: "\E3FF";
+}
+
+/* 🔹 Icono video-play */
+.isb-video-play:before {
+    content: "\E400";
+}
+
+/* 🔹 Icono video-remove */
+.isb-video-remove:before {
+    content: "\E401";
+}
+
+/* 🔹 Icono video-square */
+.isb-video-square:before {
+    content: "\E406";
+}
+
+/* 🔹 Icono video-tick */
+.isb-video-tick:before {
+    content: "\E407";
+}
+
+/* 🔹 Icono video-time */
+.isb-video-time:before {
+    content: "\E408";
+}
+
+/* 🔹 Icono video-vertical */
+.isb-video-vertical:before {
+    content: "\E409";
+}
+
+/* 🔹 Icono voice-circle */
+.isb-voice-circle:before {
+    content: "\E40A";
+}
+
+/* 🔹 Icono voice-square */
+.isb-voice-square:before {
+    content: "\E40B";
+}
+
+/* 🔹 Icono volume-cross */
+.isb-volume-cross:before {
+    content: "\E40C";
+}
+
+/* 🔹 Icono volume-high */
+.isb-volume-high:before {
+    content: "\E40D";
+}
+
+/* 🔹 Icono volume-low */
+.isb-volume-low:before {
+    content: "\E40E";
+}
+
+/* 🔹 Icono volume-low-1 */
+.isb-volume-low-1:before {
+    content: "\E40F";
+}
+
+/* 🔹 Icono volume-mute */
+.isb-volume-mute:before {
+    content: "\E410";
+}
+
+/* 🔹 Icono volume-slash */
+.isb-volume-slash:before {
+    content: "\E411";
+}
+
+/* 🔹 Icono volume-up */
+.isb-volume-up:before {
+    content: "\E412";
+}
+
+/* 🔹 Icono cloud */
+.isb-cloud:before {
+    content: "\E413";
+}
+
+/* 🔹 Icono cloud-cross */
+.isb-cloud-cross:before {
+    content: "\E414";
+}
+
+/* 🔹 Icono cloud-drizzle */
+.isb-cloud-drizzle:before {
+    content: "\E415";
+}
+
+/* 🔹 Icono cloud-fog */
+.isb-cloud-fog:before {
+    content: "\E416";
+}
+
+/* 🔹 Icono cloud-lightning */
+.isb-cloud-lightning:before {
+    content: "\E417";
+}
+
+/* 🔹 Icono cloud-minus */
+.isb-cloud-minus:before {
+    content: "\E418";
+}
+
+/* 🔹 Icono cloud-notif */
+.isb-cloud-notif:before {
+    content: "\E419";
+}
+
+/* 🔹 Icono cloud-plus */
+.isb-cloud-plus:before {
+    content: "\E41A";
+}
+
+/* 🔹 Icono cloud-snow */
+.isb-cloud-snow:before {
+    content: "\E41B";
+}
+
+/* 🔹 Icono cloud-sunny */
+.isb-cloud-sunny:before {
+    content: "\E41C";
+}
+
+/* 🔹 Icono drop */
+.isb-drop:before {
+    content: "\E41D";
+}
+
+/* 🔹 Icono moon */
+.isb-moon:before {
+    content: "\E41E";
+}
+
+/* 🔹 Icono snowflake */
+.isb-snowflake:before {
+    content: "\E41F";
+}
+
+/* 🔹 Icono sun */
+.isb-sun:before {
+    content: "\E420";
+}
+
+/* 🔹 Icono sun-fog */
+.isb-sun-fog:before {
+    content: "\E421";
+}
+
+/* 🔹 Icono wind */
+.isb-wind:before {
+    content: "\E422";
+}
+
+/* 🔹 Icono wind-2 */
+.isb-wind-2:before {
+    content: "\E423";
+}
+
+/* 🔹 Icono hex-(hex) */
+.isb-hex-(hex) {
+    position: relative;
+    display: inline-block;
+}
+
+.isb-hex-(hex) .path1:before {
+    content: "\E140";
+    opacity: 0.13;
+}
+
+.isb-hex-(hex) .path2:before {
+    content: "\E141";
+    margin-left: -1em;
+}
+
+.isb-hex-(hex) .path3:before {
+    content: "\E142";
+    margin-left: -1em;
+}
+
+.isb-hex-(hex) .path4:before {
+    content: "\E143";
+    margin-left: -1em;
+}
+
+/* 🔹 Icono data-2 */
+.isb-data-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.isb-data-2 .path1:before {
+    content: "\E2FA";
+}
+
+.isb-data-2 .path2:before {
+    content: "\E2FB";
+    margin-left: -1em;
+}
+
+.isb-data-2 .path3:before {
+    content: "\E2FC";
+    margin-left: -1em;
+}
+
+.isb-data-2 .path4:before {
+    content: "\E2FD";
+    opacity: 0.96;
+    margin-left: -1em;
+}
+
+.isb-data-2 .path5:before {
+    content: "\E2FE";
+    margin-left: -1em;
+}
+
+/* 🔹 Icono more */
+.isb-more {
+    position: relative;
+    display: inline-block;
+}
+
+.isb-more .path1:before {
+    content: "\E34A";
+    opacity: 0.97;
+}
+
+/* 🔹 Icono attach-circle */
+.isb-attach-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.isb-attach-circle .path1:before {
+    content: "\E38A";
+    opacity: 0.93;
+}
+
+/* 🔹 Icono mini-music-square */
+.isb-mini-music-square {
+    position: relative;
+    display: inline-block;
+}
+
+.isb-mini-music-square .path1:before {
+    content: "\E3D9";
+    opacity: 0.4;
+}
+
+.isb-mini-music-square .path2:before {
+    content: "\E3DA";
+    margin-left: -1em;
+}
+
+.isb-mini-music-square .path3:before {
+    content: "\E3DB";
+    margin-left: -1em;
+}
+
+/* 🔹 Icono video-slash */
+.isb-video-slash {
+    position: relative;
+    display: inline-block;
+}
+
+.isb-video-slash .path1:before {
+    content: "\E402";
+    opacity: 0.4;
+}
+
+.isb-video-slash .path2:before {
+    content: "\E403";
+    margin-left: -1em;
+}
+
+.isb-video-slash .path3:before {
+    content: "\E404";
+    margin-left: -1em;
+}
+
+.isb-video-slash .path4:before {
+    content: "\E405";
+    margin-left: -1em;
+}
+
+/* 🔹 Icono bank */
+.isb-bank:before {
+    content: "\E08B";
+}
+
+/* 🔹 Icono card-coin */
+.isb-card-coin:before {
+    content: "\E185";
+}
+
+/* 🔹 Icono convert-card */
+.isb-convert-card:before {
+    content: "\E2AE";
+}

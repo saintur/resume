@@ -26,7 +26,7 @@ const setter = function () {
         document.querySelector(`.${key}`).innerHTML = `${user[key]}`;
       } else if (key === 'web') {
         document.getElementById(key).href = user[key];
-        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+        document.getElementById(key).innerHTML = `${user[key]}`;
       } else {
         document.getElementById(key).innerText = user[key];
       }
@@ -36,18 +36,21 @@ const setter = function () {
   experiences.forEach(e => {
     const card = document.createElement('div');
     card.className = 'experiences';
-    appender(card, 'strong', e.as);
-    appender(card, 'span', `${e.from} - ${e.to}`);
+    const row = document.createElement('div');
+    row.classList.add('row');
+    appender(row, 'strong', e.as);
+    appender(row, 'span', `${e.from} - ${e.to}`);
+    card.appendChild(row);
     appender(card, 'p', e.description);
     const tags = document.createElement('div');
     tags.className = 'tags';
-    appender(tags, 'i', e.tags.map(t => `#${t}`).join(', '));
+    appender(tags, 'span', e.tags.map(t => `#${t}`).join(', '));
     card.appendChild(tags);
     const link = document.createElement('div');
     link.className = 'forward'
     const anchor = document.createElement('a');
-    anchor.href=`/experience.html?id=${e.id}`
-    anchor.innerHTML = `View more <span>&rarr;</span>`;
+    anchor.href = `/experience.html?id=${e.id}`
+    anchor.innerHTML = `View more`;
     link.appendChild(anchor);
     card.appendChild(link);
     experiencesHTML.appendChild(card);

@@ -1,9 +1,9 @@
-const detectMob = function() {
-  return ( window.innerWidth <= 800 );
+const detectMob = function () {
+  return (window.innerWidth <= 800);
 }
-const isMobile = function() {
-  try{ document.createEvent("TouchEvent"); return true; }
-  catch(e){ return false; }
+const isMobile = function () {
+  try { document.createEvent("TouchEvent"); return true; }
+  catch (e) { return false; }
 }
 const appender = (parent, elementName, innerHTML) => {
   let child = document.createElement(elementName);
@@ -22,7 +22,7 @@ const letter = function () {
         document.getElementById(key).href = user[key];
       }
       if (['web', 'phone', 'email'].includes(key)) {
-        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+        document.getElementById(key).innerHTML = `${user[key]}`;
       } else {
         document.getElementById(key).innerText = user[key];
       }
@@ -33,7 +33,7 @@ const letter = function () {
 
   const params = new URLSearchParams(location.search);
   const letter = letters.find(l => l.id == params.get('letter'));
-  
+
   Object.keys(letter).forEach((key) => {
     if (document.getElementById(key)) {
       document.getElementById(key).innerText = letter[key];

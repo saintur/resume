@@ -1,9 +1,9 @@
-const detectMob = function() {
-  return ( window.innerWidth <= 800 );
+const detectMob = function () {
+  return (window.innerWidth <= 800);
 }
-const isMobile = function() {
-  try{ document.createEvent("TouchEvent"); return true; }
-  catch(e){ return false; }
+const isMobile = function () {
+  try { document.createEvent("TouchEvent"); return true; }
+  catch (e) { return false; }
 }
 const appender = (parent, elementName, innerHTML, className) => {
   let child = document.createElement(elementName);
@@ -25,7 +25,7 @@ const experience = function () {
         document.getElementById(key).href = user[key];
       }
       if (['web', 'phone', 'email'].includes(key)) {
-        document.getElementById(key).innerHTML = `&rarr; ${user[key]}`;
+        document.getElementById(key).innerHTML = `${user[key]}`;
       } else {
         document.getElementById(key).innerText = user[key];
       }
@@ -38,10 +38,10 @@ const experience = function () {
   const detail = document.createElement('p')
   const id = +params.get('id')
   const exp = experiences.find(e => e.id === id)
-  detail.textContent = appender(projectsHTML, 'p', exp.description)
+  // detail.textContent = appender(projectsHTML, 'p', exp.description)
 
   projects.filter(p => p.expid === id).forEach(e => {
-  
+
     const content = document.createElement('div');
     content.className = 'project-content';
     appender(content, 'strong', `${e.name} `);
