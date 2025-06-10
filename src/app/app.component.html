@@ -1,104 +1,118 @@
 <div class="artificial-bg">
-  <div class="gradient-blur">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+    <div class="gradient-blur">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </div>
+
 <div class="sidebar card sticky">
-  <div class="border"></div>
-  <div class="sidebar-content flex justify-content-center gap-16">
-    <div class="avatar">
-      <img width="64" height="64" src="/images/unnamed.jpg"/>
+    <div class="border"></div>
+    <div class="sidebar-content flex justify-content-center gap-16">
+        <div class="avatar">
+            <img width="64" height="64" src="/images/unnamed.jpg"/>
+        </div>
+        <div class="flex column gap-8 flex-1">
+            <div>
+                <div>{{ user.firstname }} {{ user.lastname }}</div>
+                <small class="secondary-text ">{{ user.position }}</small>
+            </div>
+            <div class="flex align-item-center gap-16">
+                <a href="mailto:saintur.batkhuu@gmail.com"><i class="isb-sms icon-md gradient-text"></i></a>
+                <a href="phone:+1(646)238-8558"><i class="isb-call icon-md gradient-text"></i></a>
+            </div>
+        </div>
     </div>
-    <div class="flex column gap-8 flex-1">
-      <div>
-        <div>{{ user.firstname }} {{ user.lastname }}</div>
-        <small class="secondary-text ">{{ user.position }}</small>
-      </div>
-      <div class="flex align-item-center gap-16">
-        <a href="mailto:saintur.batkhuu@gmail.com"><i class="isb-sms icon-md gradient-text"></i></a>
-        <a href="phone:+1(646)238-8558"><i class="isb-call icon-md gradient-text"></i></a>
-      </div>
-    </div>
-  </div>
 </div>
 <div class="main-layout">
-  <div class="flex column gap-16 p-16">
-    <div class="sidebar main">
-      <div class="border"></div>
-      <div class="sidebar-content">
-        <h4>About me</h4>
-        <p>
-          {{ user.detail }}
-        </p>
-        <h4>Skills</h4>
-        <div class="skills">
-          @for (skill of skills; track skill) {
-            <span class="skill">{{ skill }}</span>
-          }
-        </div>
-        <br/>
-        <br/>
-        <div class="flex gap-8">
-          <a class="flex gap-4" [attr.href]="user.github" target="_blank"><i
-            class="ist-programming-arrow secondary-text"></i><small class="secondary-text">github</small></a>
-          <!--        <i class="isb-instagram gradient-text icon-md"></i>-->
-          <!--        <i class="isb-linkedin gradient-text icon-md"></i>-->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content">
-    <div class="flex column">
-      <ul>
-        <li>
-          <div class="flex column">
-            <div class="flex align-item-center gap-8">
-              <i class="isb-briefcase icon-md gradient-text"></i>Experiences
-            </div>
-            <div class="space"></div>
-            <div  class="items">
-              @for(item of experiences; track item) {
-                <div  class="item">
-                  <div><strong>{{item.as}}</strong>&nbsp;&nbsp;<label class="light">{{item.from}} - {{item.to}}</label></div>
-                  <p class="light">{{item.description}}</p>
+    <div class="flex column gap-16 p-16">
+        <div class="sidebar main">
+            <div class="border"></div>
+            <div class="sidebar-content">
+                <h4>About me</h4>
+                <p>
+                    {{ user.detail }}
+                </p>
+                <h4>Skills</h4>
+                <div class="skills">
+                    @for (skill of skills; track skill) {
+                        <span class="skill">{{ skill }}</span>
+                    }
                 </div>
-              }
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex column">
-            <div class="space"></div>
-            <div class="flex align-item-center gap-8">
-              <i class="isb-teacher icon-md gradient-text"></i>Educations
-            </div>
-
-            <div class="space"></div>
-            <div  class="items">
-              @for(item of educations; track item) {
-                <div  class="item">
-                  <div><strong>{{item.as}} at {{item.where}} in {{item.location}}</strong>&nbsp;&nbsp;<label class="light">{{item.from}} - {{item.to}}</label></div>
+                <br/>
+                <br/>
+                <div class="flex gap-8">
+                    <a class="flex gap-4" [attr.href]="user.github" target="_blank"><i
+                            class="ist-programming-arrow secondary-text"></i><small
+                            class="secondary-text">github</small></a>
+                    <!--        <i class="isb-instagram gradient-text icon-md"></i>-->
+                    <!--        <i class="isb-linkedin gradient-text icon-md"></i>-->
                 </div>
-              }
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex column">
-
-            <div class="space"></div>
-            <div class="flex align-item-center gap-8">
-              <i class="isb-code-1 icon-md gradient-text"></i>Works
-            </div>
-            <div class="space"></div>
-          </div>
-        </li>
-      </ul>
+        </div>
     </div>
-  </div>
+    <div class="content">
+        <div class="top-cards">
+            @for (item of works; track item) {
+                <div class="top-card">
+                    <div class="border"></div>
+                    <img height="24" [src]="item.cover"/>
+                    <p class="light"><small>{{ item.description }}</small></p>
+                </div>
+            }
+        </div>
+        <div class="flex column">
+            <ul>
+                <li>
+                    <div class="flex column">
+                        <div class="flex align-item-center gap-8">
+                            <i class="isb-briefcase icon-md gradient-text"></i>Experiences
+                        </div>
+                        <div class="space"></div>
+                        <div class="items">
+                            @for (item of experiences; track item) {
+                                <div class="item">
+                                    <div><strong>{{ item.as }}</strong>&nbsp;&nbsp;<label
+                                            class="light">{{ item.period }}
+                                        since {{ item.from | date : 'yyyy' }}</label></div>
+                                    <h4>{{ item.where }}</h4>
+                                    <p class="light">{{ item.description }}</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex column">
+                        <div class="space"></div>
+                        <div class="flex align-item-center gap-8">
+                            <i class="isb-teacher icon-md gradient-text"></i>Educations
+                        </div>
+
+                        <div class="space"></div>
+                        <div class="items">
+                            @for (item of educations; track item) {
+                                <div class="item">
+                                    <div><strong>{{ item.as }} at {{ item.where }} in {{ item.location }}</strong>&nbsp;&nbsp;<label
+                                            class="light">{{ item.from }} - {{ item.to }}</label></div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </li>
+                <!--        <li>-->
+                <!--          <div class="flex column">-->
+                <!--            <div class="space"></div>-->
+                <!--            <div class="flex align-item-center gap-8">-->
+                <!--              <i class="isb-code-1 icon-md gradient-text"></i>Works-->
+                <!--            </div>-->
+                <!--            <div class="space"></div>-->
+                <!--          </div>-->
+                <!--        </li>-->
+            </ul>
+        </div>
+    </div>
 </div>

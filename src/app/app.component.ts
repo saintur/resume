@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DatePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -20,7 +21,7 @@ export class AppComponent {
     web: 'https://www.linkedin.com/in/saintur',
     github: 'https://www.github.com/saintur',
     phone: '+1(646)238-8558',
-    position: 'Software Engineer 6+ years',
+    position: `Software Engineer ${new Date().getFullYear() - new Date('Feb/2017').getFullYear()} years`,
     detail: 'Experienced Software Engineer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Proficient in an assortment of technologies, including Java, Angular, Kafka, and Micro-services architecture.'
   };
   experiences = [
@@ -28,8 +29,9 @@ export class AppComponent {
       id: 4,
       as: 'Software Engineer',
       where: 'John Deere via BHSG',
-      from: 'Apr/2023',
-      to: 'Present',
+      from: new Date('Apr/2023'),
+      period: `${new Date().getFullYear() - new Date('Apr/2023').getFullYear()} years`,
+      to: '',
       description: 'Working on an effort to modernize existing financial related systems with cutting-edge technologies. ',
       tags: ['Javascript', 'NextJS', 'NodeJS', 'AWS Lambda', 'AWS Services', 'Kafka', 'Real-Time']
     },
@@ -37,7 +39,8 @@ export class AppComponent {
       id: 1,
       as: 'Senior Full-Stack Developer',
       where: 'Novelsoft LLC',
-      from: 'Dec/2019',
+      from: new Date('Dec/2019'),
+      period: `${new Date('Apr/2023').getFullYear() - new Date('Dec/2019').getFullYear()} years`,
       to: 'Apr/2023',
       description: 'Managed multiple development team in the company\n' +
         'Mainly focused on web application development using Micro-services architecture\n' +
@@ -46,22 +49,24 @@ export class AppComponent {
     },
     {
       id: 2,
-      as: 'Senior Software Developer',
+      as: 'Software Developer',
       where: 'IT Zone LLC',
-      from: 'Oct/2018',
+      from: 'Feb/2017',
+      period: `${new Date('Dec/2019').getFullYear() - new Date('Feb/2017').getFullYear()} years`,
       to: 'Dec/2019',
       description: 'Managed a product development team which is responsible for developing Document Management system and Car Parking system. ',
       tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'Dahua Technology', 'Tesseract']
     },
-    {
-      id: 3,
-      as: 'Front-end Developer',
-      where: 'IT Zone LLC',
-      from: 'Feb/2017',
-      to: 'Oct/2018',
-      description: 'Participated front-end development in the company\'s Location Tracking system, Form Survey Web application, and Content Management system.',
-      tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'C#', 'AmChart', 'D3.js']
-    }
+    // {
+    //   id: 3,
+    //   as: 'Front-end Developer',
+    //   where: 'IT Zone LLC',
+    //   from: 'Feb/2017',
+    //   period: `${new Date('Oct/2018').getFullYear() - new Date('Feb/2017').getFullYear()} years`,
+    //   to: 'Oct/2018',
+    //   description: 'Participated front-end development in the company\'s Location Tracking system, Form Survey Web application, and Content Management system.',
+    //   tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'C#', 'AmChart', 'D3.js']
+    // }
   ];
   projects = [
     {
@@ -179,7 +184,7 @@ export class AppComponent {
       ]
     },
     {
-      expid: 3,
+      expid: 2,
       name: 'OT Drive',
       image: '/assets/images/ndaatgal.png',
       client: 'Oyu-tolgoi LLC',
@@ -196,7 +201,7 @@ export class AppComponent {
       ]
     },
     {
-      expid: 3,
+      expid: 2,
       name: 'Compassmate',
       image: '/assets/images/ndaatgal.png',
       client: 'Software Team',
@@ -294,6 +299,24 @@ export class AppComponent {
     'terraform',
     'kubernetes',
   ];
+
+  works = [
+    {
+      title: 'Daaluu',
+      cover: 'https://saintur.github.io/cdn.daaluu/assets/icons/daaluu.svg',
+      description: 'Real-time traditional game of Domino'
+    },
+    {
+      title: 'Hoome',
+      cover: 'https://hoome.mn/hoome-logo.25bf8bc6d7b49c1a.svg',
+      description: 'Social platform for Homeowners Association'
+    },
+    {
+      title: 'Coach Niana',
+      cover: 'https://coach-niana.web.app/images/logov3.png',
+      description: 'Online shopping and training course app'
+    }
+  ]
 
 
   letters = [
