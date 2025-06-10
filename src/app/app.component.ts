@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DatePipe],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -21,7 +19,7 @@ export class AppComponent {
     web: 'https://www.linkedin.com/in/saintur',
     github: 'https://www.github.com/saintur',
     phone: '+1(646)238-8558',
-    position: `Software Engineer ${new Date().getFullYear() - new Date('Feb/2017').getFullYear()} years`,
+    position: `Software Engineer ${new Date().getFullYear() - 2017} years`,
     detail: 'Experienced Software Engineer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Proficient in an assortment of technologies, including Java, Angular, Kafka, and Micro-services architecture.'
   };
   experiences = [
@@ -29,8 +27,9 @@ export class AppComponent {
       id: 4,
       as: 'Software Engineer',
       where: 'John Deere via BHSG',
-      from: new Date('Apr/2023'),
-      period: `${new Date().getFullYear() - new Date('Apr/2023').getFullYear()} years`,
+      from: 'Apr/2023',
+      since: 2023,
+      period: `${new Date().getFullYear() - 2023} years`,
       to: '',
       description: 'Working on an effort to modernize existing financial related systems with cutting-edge technologies. ',
       tags: ['Javascript', 'NextJS', 'NodeJS', 'AWS Lambda', 'AWS Services', 'Kafka', 'Real-Time']
@@ -39,8 +38,9 @@ export class AppComponent {
       id: 1,
       as: 'Senior Full-Stack Developer',
       where: 'Novelsoft LLC',
-      from: new Date('Dec/2019'),
-      period: `${new Date('Apr/2023').getFullYear() - new Date('Dec/2019').getFullYear()} years`,
+      from: 'Dec/2019',
+      since: 2019,
+      period: `4 years`,
       to: 'Apr/2023',
       description: 'Managed multiple development team in the company\n' +
         'Mainly focused on web application development using Micro-services architecture\n' +
@@ -51,8 +51,9 @@ export class AppComponent {
       id: 2,
       as: 'Software Developer',
       where: 'IT Zone LLC',
-      from: 'Feb/2017',
-      period: `${new Date('Dec/2019').getFullYear() - new Date('Feb/2017').getFullYear()} years`,
+      from: new Date('Feb/2017'),
+      since: 2017,
+      period: `${2019 - 2017} years`,
       to: 'Dec/2019',
       description: 'Managed a product development team which is responsible for developing Document Management system and Car Parking system. ',
       tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'Dahua Technology', 'Tesseract']
