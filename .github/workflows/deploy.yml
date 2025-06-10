@@ -29,11 +29,9 @@ jobs:
         run: npm ci # Use 'npm ci' for clean installs in CI environments
 
       - name: Build Angular application
-        # Replace 'your-repo-name' with your actual GitHub repository name
-        # The --output-path must match the 'path' in the 'upload-pages-artifact' step
-        run: ng build --base-href=/${{ github.event.repository.name }}/ --configuration production
+        # run: ng build --base-href=/${{ github.event.repository.name }}/ --configuration production
         # If your GitHub Pages is served from the root (e.g., username.github.io):
-        # run: ng build --base-href=/ --configuration production
+        run: npm run build --base-href=/ --configuration production
         
       - name: Add .nojekyll file (important for SPAs)
         run: touch ./dist/resume/browser/.nojekyll
