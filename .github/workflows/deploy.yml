@@ -31,7 +31,7 @@ jobs:
       - name: Build Angular application
         # run: ng build --base-href=/${{ github.event.repository.name }}/ --configuration production
         # If your GitHub Pages is served from the root (e.g., username.github.io):
-        run: npm run build --base-href=/ --configuration production
+        run: npm run build
         
       - name: Add .nojekyll file (important for SPAs)
         run: touch ./dist/resume/browser/.nojekyll
