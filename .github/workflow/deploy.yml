@@ -4,7 +4,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages # Change this to your main branch name if it's not 'main'
+      - main # Change this to your main branch name if it's not 'main'
 
 # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
 permissions:
