@@ -1,9 +1,22 @@
 @font-face {
-    font-family: "icons-bold";
-    src: url("../fonts/icons-bold.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: "icons-bold";
+  src: url("/fonts/icons-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+.icon-md {
+  font-size: 24px;
+}
+
+.icon-lg {
+  font-size: 30px;
+}
+
+.icon-xlg {
+  font-size: 36px;
 }
 
 /* 🔧 Estilos base */
