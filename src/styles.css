@@ -61,6 +61,8 @@
         .top-card:first-child img {
             filter: invert(1);
         }
+
+
     }
 }
 
@@ -102,18 +104,47 @@ a {
     z-index: 9;
     padding: 16px 8px;
     display: flex;
-    flex: 1;
-    gap: 16px;
-    width: calc(100% - 48px);
+    /*flex: 1;*/
+    /*gap: 16px;*/
+    /*width: calc(100% - 48px);*/
     min-height: 100px;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     /*overflow: hidden;*/
+    &:before {
+        content: "";
+        display: block;
+        position: sticky;
+        top: 0;
+        left: -8px;
+        bottom: 0;
+        z-index: 12;
+        width: 12px;
+        min-width: 12px;
+        background: linear-gradient(92deg,  var(--background), transparent, transparent);
+        height: 108%;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: sticky;
+        top: 0;
+        right: -8px;
+        bottom: 0;
+        z-index: 12;
+        width: 12px;
+        min-width: 12px;
+        background: linear-gradient(to left, var(--background), transparent, transparent);
+        height: 108%;
+    }
 
     &::-webkit-scrollbar {
         display: none;
     }
 
     .top-card {
+        margin-right: 12px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
         padding: 16px;
         border-radius: 24px;
@@ -133,6 +164,15 @@ a {
 
         p {
             margin: 0;
+        }
+
+        &:first-child img{
+            height: 18px;
+            padding: 3px 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
@@ -263,6 +303,7 @@ a {
     display: flex;
     position: absolute;
     height: 100%;
+    max-width: 920px;
 }
 
 ul {
@@ -498,6 +539,10 @@ p.light {
             width: calc(100% - 32px);
             padding: 16px;
             z-index: 4;
+            &:before, &:after {
+                display: none;
+                width: 0;
+            }
         }
 
         .content {

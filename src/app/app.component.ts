@@ -314,9 +314,15 @@ export class AppComponent {
     },
     {
       title: 'Coach Niana',
-      cover: 'https://coach-niana.web.app/images/logov3.png',
+      cover: '/images/docmine.svg',
+      description: 'Document management system'
+    },
+    {
+      title: 'Coach Niana',
+      cover: 'https://niana-coach-qa.web.app/images/logov3.png',
       description: 'Online shopping and training course app'
-    }
+    },
+
   ]
 
 
