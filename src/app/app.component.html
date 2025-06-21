@@ -59,7 +59,7 @@
             @for (item of works; track item) {
                 <div class="top-card">
                     <div class="border"></div>
-                    <img height="24" [src]="item.cover"/>
+                    <img height="24" [src]="item.cover" [attr.alt]="item.title"/>
                     <p class="light"><small>{{ item.description }}</small></p>
                 </div>
             }

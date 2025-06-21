@@ -322,7 +322,11 @@ export class AppComponent {
       cover: 'https://niana-coach-qa.web.app/images/logov3.png',
       description: 'Online shopping and training course app'
     },
-
+    {
+      title: 'mn-address',
+      cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png',
+      description: 'Mongolian zipcode and address lookup package'
+    }
   ]
 
 
