@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,16 @@ export class AppComponent {
       period: `${new Date().getFullYear() - 2023} years`,
       to: '',
       description: 'Working on an effort to modernize existing financial related systems with cutting-edge technologies. ',
-      tags: ['Javascript', 'NextJS', 'NodeJS', 'AWS Lambda', 'AWS Services', 'Kafka', 'Real-Time']
+      tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
+        type: 'framework',
+        value: 'NestJS'
+      }, {type: 'framework', value: 'NextJS'}, {type: 'framework', value: 'Spring Boot'}, {
+        type: 'infrastructure',
+        value: 'AWS Lambda'
+      }, {type: 'infrastructure', value: 'AWS Services'}, {
+        type: 'tool',
+        value: 'Jenkins'
+      }]
     },
     {
       id: 1,
@@ -45,7 +54,25 @@ export class AppComponent {
       description: 'Managed multiple development team in the company\n' +
         'Mainly focused on web application development using Micro-services architecture\n' +
         'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
-      tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'RabbitMQ', 'Kafka', 'Real-Time']
+      tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
+        type: 'language',
+        value: 'Dart'
+      }, {
+        type: 'framework',
+        value: 'Angular'
+      }, {type: 'framework', value: 'Spring Boot'}, {type: 'framework', value: 'Flutter'}, {
+        type: 'infrastructure',
+        value: 'RabbitMQ'
+      }, {
+        type: 'infrastructure',
+        value: 'Kafka'
+      }, {type: 'infrastructure', value: 'AWS Lightsail'}, {
+        type: 'tool',
+        value: 'JHipster'
+      }, {
+        type: 'tool',
+        value: 'Bitbucket Pipeline'
+      }]
     },
     {
       id: 2,
@@ -56,7 +83,13 @@ export class AppComponent {
       period: `${2019 - 2017} years`,
       to: 'Dec/2019',
       description: 'Managed a product development team which is responsible for developing Document Management system and Car Parking system. ',
-      tags: ['Java', 'Javascript', 'Angular', 'Spring Boot', 'Dahua Technology', 'Tesseract']
+      tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
+        type: 'framework',
+        value: 'Angular'
+      }, {type: 'framework', value: 'Spring Boot'}, {type: 'tool', value: 'Dahua Technology'}, {
+        type: 'tool',
+        value: 'Tesseract'
+      }]
     },
     // {
     //   id: 3,
@@ -226,9 +259,7 @@ export class AppComponent {
       position: 'Software Engineer',
       where: 'John Deere Financial',
       logo: 'https://1000logos.net/wp-content/uploads/2017/03/John-Deere-Logo.png',
-      technologies: [
-
-      ],
+      technologies: [],
       responsibilities: [
         'Developing and implementing front web application using React JS, HTML5, CSS, SASS, SCSS, Javascript, NodeJS, Express with version control like Bitbucket, GitHub, Gitlab, IDEs like Visual Studio Code and Linux terminal interface. ',
         'Understanding state management patterns like Redux, Hooks and other patterns related to Javascript Frameworks',

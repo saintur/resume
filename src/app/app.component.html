@@ -80,7 +80,23 @@
                                         since {{ item.since }}</label></div>
                                     <h4>{{ item.where }}</h4>
                                     <p class="light">{{ item.description }}</p>
+                                    <br/>
+                                    <div class="tags">
+                                        @for(tag of item.tags; track tag) {
+                                            <span class="tag {{tag.type}}">
+                                            @switch (tag.type) {
+                                                @case ('language') { <i class="ist-code-1"></i> }
+                                                @case ('framework') { <i class="ist-code"></i> }
+                                                @case ('infrastructure') { <i class="ist-external-drive"></i> }
+                                                @case ('tool') { <i class="ist-shapes"></i> }
+                                                @default { <i class="ist-tag"></i> }
+                                            }
+                                                {{tag.value}}
+                                        </span>
+                                        }
+                                    </div>
                                 </div>
+
                             }
                         </div>
                     </div>

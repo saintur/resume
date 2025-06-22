@@ -559,3 +559,40 @@ p.light {
     }
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    .tag {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 13px;
+        /*border: 1px solid;*/
+        padding: 0 6px;
+        border-radius: 8px;
+        line-height: 22px;
+        font-weight: 300;
+
+        &.tool {
+            color: rgba(222, 140, 0, 0.8);
+            background: rgba(255, 165, 0, 0.03);
+        }
+
+        &.framework {
+            color: rgba(0, 133, 224, 0.8);
+            background: rgba(24, 159, 255, 0.03);
+        }
+
+        &.language {
+            color: rgba(0, 155, 96, 0.8);
+            background: rgba(0, 180, 87, 0.03);
+        }
+
+        &.infrastructure {
+            color: rgba(213, 1, 97, 0.8);
+            background: rgba(255, 12, 123, 0.03);
+        }
+    }
+}
+
