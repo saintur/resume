@@ -1,4 +1,14 @@
-import {Component} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, NgZone, OnDestroy, ViewChild, inject, OnInit} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
+interface NewsItem {
+  title: string;
+  url: string;
+  by: string;
+  source: string;
+  date: string;
+  summary: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -7,8 +17,100 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   title = 'resume';
+
+  private http = inject(HttpClient);
+  private zone = inject(NgZone);
+
+  @ViewChild('workRow') workRow?: ElementRef<HTMLElement>;
+
+  private cleanupParallax?: () => void;
+
+  news: NewsItem[] = [];
+  newsLoading = true;
+
+  ngOnInit(): void {
+  }
+
+  ngAfterViewInit(): void {
+    const row = this.workRow?.nativeElement;
+    if (!row) {
+      return;
+    }
+
+    const reduceMotion =
+      typeof matchMedia !== 'undefined' &&
+      matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+      return;
+    }
+
+    let frame = 0;
+    const schedule = () => {
+      if (frame) {
+        return;
+      }
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        this.updateWorkParallax(row);
+      });
+    };
+
+    this.zone.runOutsideAngular(() => {
+      row.addEventListener('scroll', schedule, {passive: true});
+      window.addEventListener('resize', schedule);
+      // Initial pass, plus a delayed one once logo images have loaded/laid out.
+      schedule();
+      const warmup = setTimeout(schedule, 300);
+
+      this.cleanupParallax = () => {
+        row.removeEventListener('scroll', schedule);
+        window.removeEventListener('resize', schedule);
+        clearTimeout(warmup);
+        if (frame) {
+          cancelAnimationFrame(frame);
+        }
+      };
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.cleanupParallax?.();
+  }
+
+  private updateWorkParallax(row: HTMLElement): void {
+    // 0 at the start of the scroll, 1 when scrolled fully to the right.
+    const maxScroll = row.scrollWidth - row.clientWidth;
+    const progress = maxScroll > 0 ? Math.min(1, Math.max(0, row.scrollLeft / maxScroll)) : 0;
+    const positionX = `${progress * 100}%`;
+
+    const logos = row.querySelectorAll<HTMLElement>('.work-logo');
+    logos.forEach(logo => {
+      logo.style.backgroundPositionX = positionX;
+    });
+  }
+
+  private decodeHtml(input: string): string {
+    const stripped = input.replace(/<[^>]*>/g, ' ');
+    const entities: Record<string, string> = {
+      '&amp;': '&',
+      '&lt;': '<',
+      '&gt;': '>',
+      '&quot;': '"',
+      '&#x27;': "'",
+      '&#x2F;': '/',
+      '&nbsp;': ' '
+    };
+    return stripped
+      .replace(/&amp;|&lt;|&gt;|&quot;|&#x27;|&#x2F;|&nbsp;/g, match => entities[match])
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  private truncate(text: string, max: number): string {
+    return text.length > max ? `${text.slice(0, max).trimEnd()}…` : text;
+  }
 
   user = {
     firstname: 'Saintur',
@@ -19,8 +121,9 @@ export class AppComponent {
     web: 'https://www.linkedin.com/in/saintur',
     github: 'https://www.github.com/saintur',
     phone: '+1(646)238-8558',
-    position: `Software Engineer ${new Date().getFullYear() - 2017} years`,
-    detail: 'Experienced Software Engineer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Proficient in an assortment of technologies, including Java, Angular, Kafka, and Micro-services architecture.'
+    position: `Software Engineer · ${new Date().getFullYear() - 2017} years`,
+    location: 'United States',
+    detail: `Software engineer with ${new Date().getFullYear() - 2017}+ years building and shipping web applications end to end — from clean, considered interfaces to resilient, distributed back ends. I work across Java, Spring Boot, Angular, and micro-service architectures, and I use AI tools every day to design, write, review, and ship code faster — so I can spend more time on the problems that actually matter.`
   };
   experiences = [
     {
@@ -51,7 +154,7 @@ export class AppComponent {
       since: 2019,
       period: `4 years`,
       to: 'Apr/2023',
-      description: 'Managed multiple development team in the company\n' +
+      description: 'Managed multiple development teams in the company\n' +
         'Mainly focused on web application development using Micro-services architecture\n' +
         'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
       tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
@@ -315,48 +418,56 @@ export class AppComponent {
     // }
   ];
   skills = [
-    'java',
-    'spring boot',
-    'angular',
-    'reactjs',
-    'nextjs',
-    'nestjs',
-    'node.js',
-    'flutter',
-    'aws',
-    'micro-services',
-    'kafka',
-    'rabbitMQ',
-    'docker',
-    'terraform',
-    'kubernetes',
+    'Java',
+    'Spring Boot',
+    'Angular',
+    'Reactjs',
+    'Nextjs',
+    'Nestjs',
+    'Node.js',
+    'Flutter',
+    'AWS',
+    'Micro-Services',
+    'Kafka',
+    'RabbitMQ',
+    'Docker',
+    'Terraform',
+    'Kubernetes',
+    'AI-Assisted development',
+    'Cursor',
+    'LLM integration',
   ];
 
   works = [
     {
       title: 'Daaluu',
       cover: 'https://saintur.github.io/cdn.daaluu/assets/icons/daaluu.svg',
-      description: 'Real-time traditional game of Domino'
+      description: 'Real-time traditional game of Domino',
+      link: 'https://daaluu.mn'
     },
     {
       title: 'Hoome',
       cover: 'https://hoome.mn/hoome-logo.25bf8bc6d7b49c1a.svg',
-      description: 'Social platform for Homeowners Association'
+      description: 'Social platform for Homeowners Association',
+      link: ''
     },
     {
       title: 'Coach Niana',
       cover: '/images/docmine.svg',
-      description: 'Document management system'
+      description: 'Document management system',
+      link: ''
     },
     {
       title: 'Coach Niana',
-      cover: 'https://niana-coach-qa.web.app/images/logov3.png',
-      description: 'Online shopping and training course app'
+      cover: '/images/niana.png',
+      description: 'Online shopping and training course app',
+      link: ''
     },
     {
       title: 'mn-address',
-      cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png',
-      description: 'Mongolian zipcode and address lookup package'
+      cover: '/images/NPM.png',
+      description: 'Mongolian zipcode and address lookup package',
+      link: 'https://www.npmjs.com/package/mn-address'
     }
   ]
 
