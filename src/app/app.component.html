@@ -1,148 +1,200 @@
 <header class="nav">
-    <div class="nav-inner">
-        <span class="nav-name">{{ user.firstname }} {{ user.lastname }}</span>
-        <nav class="nav-links">
-            <a href="mailto:saintur.batkhuu@gmail.com">Email</a>
-            <a href="tel:+1(646)238-8558">Call</a>
-            <a [attr.href]="user.github" target="_blank" rel="noopener">GitHub</a>
-            <a [attr.href]="user.web" target="_blank" rel="noopener">LinkedIn</a>
-        </nav>
-    </div>
+  <div class="nav-inner">
+    <span class="nav-name">{{ user.firstname }} {{ user.lastname }}</span>
+    <nav class="nav-links">
+      <a href="mailto:saintur.batkhuu@gmail.com">Email</a>
+      <a href="tel:+1(646)238-8558">Call</a>
+      <a [attr.href]="user.github" target="_blank" rel="noopener">GitHub</a>
+      <a [attr.href]="user.web" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
 </header>
 
 <main class="page">
-    <section class="hero">
-        <div class="avatar">
-            <img width="88" height="88" src="/images/profile.jpg" [attr.alt]="user.fullname"/>
-        </div>
-        <h1>{{ user.firstname }} {{ user.lastname }}</h1>
-        <p class="role">{{ user.position }}</p>
-        <p class="lead">{{ user.detail }}</p>
-        <div class="hero-actions">
-            <a class="btn primary" href="mailto:saintur.batkhuu@gmail.com">
-                <i class="isb-sms"></i> Email
-            </a>
-            <a class="btn" href="tel:+1(646)238-8558">
-                <i class="isb-call"></i> Call
-            </a>
-            <a class="btn" [attr.href]="user.github" target="_blank" rel="noopener">
-                <i class="ist-programming-arrow"></i> GitHub
-            </a>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="avatar">
+      <img width="88" height="88" src="/images/profile.jpg" [attr.alt]="user.fullname"/>
+    </div>
+    <h1>{{ user.firstname }} {{ user.lastname }}</h1>
+    <p class="role">{{ user.position }}</p>
+    <p class="lead">{{ user.detail }}</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="mailto:saintur.batkhuu@gmail.com">
+        <i class="isb-sms"></i> Email
+      </a>
+      <a class="btn" href="tel:+1(646)238-8558">
+        <i class="isb-call"></i> Call
+      </a>
+      <a class="btn" [attr.href]="user.github" target="_blank" rel="noopener">
+        <i class="ist-programming-arrow"></i> GitHub
+      </a>
+    </div>
+  </section>
 
-    <section class="block">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills">
-            @for (skill of skills; track skill) {
-                <span class="skill">{{ skill }}</span>
+  <section class="block">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      @for (skill of skills; track skill) {
+        <span class="skill">{{ skill }}</span>
+      }
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="section-title">Selected work</h2>
+    <div class="work-row" #workRow>
+      @for (item of works; track item) {
+        <div class="work-card">
+          <div class="work-logo" [style.background-image]="'url(' +item.cover+ ')'">
+            <!--                        <img [src]="item.cover" [attr.alt]="item.title"/>-->
+          </div>
+          <div class="work-meta">
+            <span class="work-title">{{ item.title }}</span>
+            <span class="work-desc">{{ item.description }}</span>
+            @if (item.link) {
+              <a class="entry-org" href="{{item.link}}" target="_blank"><small>Link</small></a>
+            } @else {
+              <small>Company property</small>
             }
+          </div>
+
         </div>
-    </section>
+      }
+    </div>
+  </section>
 
-    <section class="block">
-        <h2 class="section-title">Selected work</h2>
-        <div class="work-row" #workRow>
-            @for (item of works; track item) {
-                <div class="work-card">
-                    <div class="work-logo" [style.background-image]="'url(' +item.cover+ ')'">
-<!--                        <img [src]="item.cover" [attr.alt]="item.title"/>-->
-                    </div>
-                    <div class="work-meta">
-                        <span class="work-title">{{ item.title }}</span>
-                        <span class="work-desc">{{ item.description }}</span>
-                        @if(item.link) {
-                          <a class="entry-org" href="{{item.link}}" target="_blank"><small>Link</small></a>
-                        } @else {
-                          <small>Company property</small>
-                        }
-                    </div>
-
-                </div>
+  <section class="block">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      @for (item of experiences; track item) {
+        <article class="entry">
+          <div class="entry-head">
+            <h3>{{ item.as }}</h3>
+            <span class="entry-period">{{ item.period }}</span>
+          </div>
+          <p class="entry-org">{{ item.where }}</p>
+          <p class="entry-desc">{{ item.description }}</p>
+          <div class="tags">
+            @for (tag of item.tags; track tag) {
+              <span class="tag">{{ tag.value }}</span>
             }
-        </div>
-    </section>
+          </div>
 
-    <section class="block">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            @for (item of experiences; track item) {
-                <article class="entry">
-                    <div class="entry-head">
-                        <h3>{{ item.as }}</h3>
-                        <span class="entry-period">{{ item.period }}</span>
+          @if (projectsByExperience[item.id]?.length) {
+            <button
+                    type="button"
+                    class="accordion-toggle"
+                    [class.open]="isExperienceExpanded(item.id)"
+                    [attr.aria-expanded]="isExperienceExpanded(item.id)"
+                    (click)="toggleExperience(item.id)">
+                            <span>{{ isExperienceExpanded(item.id) ? 'Hide' : 'Show' }}
+                              {{ projectsByExperience[item.id].length }}
+                              project{{ projectsByExperience[item.id].length === 1 ? '' : 's' }}</span>
+              <span class="chevron" aria-hidden="true">›</span>
+            </button>
+
+            <div class="accordion" [class.open]="isExperienceExpanded(item.id)">
+              <div class="accordion-inner">
+                @for (project of projectsByExperience[item.id]; track project.name) {
+                  <div class="project">
+                    <div class="project-head">
+                      <strong class="project-name">{{ project.name }}</strong>
+                      <span class="project-meta">{{ project.position }}<span class="dot">·</span>{{ project.duration }}</span>
                     </div>
-                    <p class="entry-org">{{ item.where }}</p>
-                    <p class="entry-desc">{{ item.description }}</p>
-                    <div class="tags">
-                        @for (tag of item.tags; track tag) {
-                            <span class="tag">{{ tag.value }}</span>
-                        }
-                    </div>
-                </article>
-            }
-        </div>
-    </section>
+                    <ul class="responsibilities">
+                      @for (task of project.responsibilities; track task) {
+                        <li>{{ task }}</li>
+                      }
+                    </ul>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+        </article>
+      }
+    </div>
+  </section>
 
-    <section class="block">
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-            @for (item of educations; track item) {
-                <article class="entry">
-                    <div class="entry-head">
-                        <h3>{{ item.as }}</h3>
-                        <span class="entry-period">{{ item.from }} — {{ item.to }}</span>
-                    </div>
-                    <p class="entry-org">{{ item.where }}, {{ item.location }}</p>
-                </article>
-            }
-        </div>
-    </section>
+  <section class="block">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      @for (item of educations; track item) {
+        <article class="entry">
+          <div class="entry-head">
+            <h3>{{ item.as }}</h3>
+            <span class="entry-period">{{ item.from }} — {{ item.to }}</span>
+          </div>
+          <p class="entry-org">{{ item.where }}, {{ item.location }}</p>
+        </article>
+      }
+    </div>
+  </section>
 
-<!--    <section class="block news">-->
-<!--        <div class="news-head">-->
-<!--            <h2 class="section-title">Daily tech news</h2>-->
-<!--            <span class="news-source">via MacRumors Forums</span>-->
-<!--        </div>-->
-<!--        @if (newsLoading) {-->
-<!--            <div class="news-list">-->
-<!--                @for (i of [1,2,3,4]; track i) {-->
-<!--                    <div class="news-skeleton"></div>-->
-<!--                }-->
-<!--            </div>-->
-<!--        } @else if (news.length === 0) {-->
-<!--            <p class="news-empty">Couldn't reach the news feed right now — check back later.</p>-->
-<!--        } @else {-->
-<!--            <ul class="news-list">-->
-<!--                @for (item of news; track item.url) {-->
-<!--                    <li class="news-item">-->
-<!--                        <a [attr.href]="item.url" target="_blank" rel="noopener">-->
-<!--                            <span class="news-title">{{ item.title }}</span>-->
-<!--                            <span class="news-summary">{{ item.summary }}</span>-->
-<!--                            <span class="news-meta">-->
-<!--                                <span class="news-domain">{{ item.source }}</span>-->
-<!--                                @if (item.date) {-->
-<!--                                    <span class="dot">·</span>-->
-<!--                                    <span>{{ item.date }}</span>-->
-<!--                                }-->
-<!--                                <span class="dot">·</span>-->
-<!--                                <span>{{ item.by }}</span>-->
-<!--                            </span>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                }-->
-<!--            </ul>-->
-<!--        }-->
-<!--    </section>-->
+  <!--    <section class="block news">-->
+  <!--        <div class="news-head">-->
+  <!--            <h2 class="section-title">Daily tech news</h2>-->
+  <!--            <span class="news-source">via MacRumors Forums</span>-->
+  <!--        </div>-->
+  <!--        @if (newsLoading) {-->
+  <!--            <div class="news-list">-->
+  <!--                @for (i of [1,2,3,4]; track i) {-->
+  <!--                    <div class="news-skeleton"></div>-->
+  <!--                }-->
+  <!--            </div>-->
+  <!--        } @else if (news.length === 0) {-->
+  <!--            <p class="news-empty">Couldn't reach the news feed right now — check back later.</p>-->
+  <!--        } @else {-->
+  <!--            <ul class="news-list">-->
+  <!--                @for (item of news; track item.url) {-->
+  <!--                    <li class="news-item">-->
+  <!--                        <a [attr.href]="item.url" target="_blank" rel="noopener">-->
+  <!--                            <span class="news-title">{{ item.title }}</span>-->
+  <!--                            <span class="news-summary">{{ item.summary }}</span>-->
+  <!--                            <span class="news-meta">-->
+  <!--                                <span class="news-domain">{{ item.source }}</span>-->
+  <!--                                @if (item.date) {-->
+  <!--                                    <span class="dot">·</span>-->
+  <!--                                    <span>{{ item.date }}</span>-->
+  <!--                                }-->
+  <!--                                <span class="dot">·</span>-->
+  <!--                                <span>{{ item.by }}</span>-->
+  <!--                            </span>-->
+  <!--                        </a>-->
+  <!--                    </li>-->
+  <!--                }-->
+  <!--            </ul>-->
+  <!--        }-->
+  <!--    </section>-->
 
-    <footer class="page-footer">
-        <span>{{ user.fullname }}</span>
-        <span class="dot">·</span>
-        <a href="mailto:saintur.batkhuu&#64;gmail.com">saintur.batkhuu&#64;gmail.com</a>
-        <span class="dot">·</span>
-        <a [attr.href]="user.github" target="_blank" rel="noopener">github.com/saintur</a>
-        <span class="dot">·</span>
-        <a [attr.href]="user.web" target="_blank" rel="noopener">linkedin.com/saintur</a>
+  <footer class="page-footer">
+    <span>{{ user.fullname }}</span>
+    <span class="dot">·</span>
+    <a href="mailto:saintur.batkhuu&#64;gmail.com">saintur.batkhuu&#64;gmail.com</a>
+    <span class="dot">·</span>
+    <a [attr.href]="user.github" target="_blank" rel="noopener">github.com/saintur</a>
+    <span class="dot">·</span>
+    <a [attr.href]="user.web" target="_blank" rel="noopener">linkedin.com/saintur</a>
+  </footer>
 
-    </footer>
+  <div class="bottom">
+    <h5 class="page-footer-story"></h5>
+    <ul>
+      <li>
+        <small class="page-footer-story">
+          Holds IELTS overall 7 band since August 2026 (valid for 2 years)
+        </small>
+      </li>
+      <li>
+        <small class="page-footer-story">
+          Qualified for Software Development of skill assessment from ACS since August 2025 (valid for 2 years)
+        </small>
+      </li>
+      <li>
+        <small class="page-footer-story">
+          Obtained Java Programming Certificate in Bangalore, India
+        </small>
+      </li>
+    </ul>
+  </div>
 </main>

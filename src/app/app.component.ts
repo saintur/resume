@@ -30,7 +30,28 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   news: NewsItem[] = [];
   newsLoading = true;
 
+  /** Projects grouped by their parent experience id (expid). */
+  projectsByExperience: Record<number, any[]> = {};
+  private expandedExperiences = new Set<number>();
+
+  toggleExperience(id: number): void {
+    if (this.expandedExperiences.has(id)) {
+      this.expandedExperiences.delete(id);
+    } else {
+      this.expandedExperiences.add(id);
+    }
+  }
+
+  isExperienceExpanded(id: number): boolean {
+    return this.expandedExperiences.has(id);
+  }
+
   ngOnInit(): void {
+    this.projectsByExperience = this.projects.reduce((groups, project) => {
+      (groups[project.expid] ??= []).push(project);
+      return groups;
+    }, {} as Record<number, any[]>);
+
   }
 
   ngAfterViewInit(): void {
@@ -134,7 +155,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       since: 2023,
       period: `${new Date().getFullYear() - 2023} years`,
       to: '',
-      description: 'Working on an effort to modernize existing financial related systems with cutting-edge technologies. ',
+      description: 'Working on an effort to modernize existing financial related legacy systems with cutting-edge technologies. Improving current workflow by AI-assisted development for fast delivery and quality result',
       tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
         type: 'framework',
         value: 'NestJS'
@@ -154,8 +175,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       since: 2019,
       period: `4 years`,
       to: 'Apr/2023',
-      description: 'Managed multiple development teams in the company\n' +
-        'Mainly focused on web application development using Micro-services architecture\n' +
+      description: 'Managed multiple development teams in the company ' +
+        'Mainly focused on web application development using Micro-services architecture ' +
         'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
       tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
         type: 'language',
@@ -391,6 +412,17 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       tags: ['Office', 'Windows 7']
     },
   ];
+  miscellaneous = [{
+    description: 'Certified Java Programming in India',
+    year: 'Oct/2012',
+    score: '',
+    tags: ['Java', 'Object oriented programming', 'Web app', 'Aptech Education Center']
+  },{
+    description: 'IELTS',
+    year: 'Aug/2026',
+    score: '7 overall',
+    tags: ['English', 'British Council']
+  },];
   educations = [
     {
       as: 'Software Development',

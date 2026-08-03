@@ -420,6 +420,117 @@ img {
     white-space: pre-line;
 }
 
+/* ---- Experience projects accordion ---- */
+
+.accordion-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 18px;
+    padding: 7px 14px 7px 15px;
+    border-radius: 980px;
+    border: 1px solid var(--hairline-strong);
+    background: var(--bg-elev);
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.accordion-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.accordion-toggle .chevron {
+    font-size: 16px;
+    line-height: 1;
+    transform: rotate(90deg);
+    transition: transform 0.25s var(--ease);
+}
+
+.accordion-toggle.open .chevron {
+    transform: rotate(-90deg);
+}
+
+.accordion {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s var(--ease);
+}
+
+.accordion.open {
+    grid-template-rows: 1fr;
+}
+
+.accordion-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.project {
+    padding: 18px 0 4px;
+    border-top: 1px solid var(--hairline);
+    margin-top: 16px;
+}
+
+.project:first-child {
+    margin-top: 18px;
+}
+
+.project-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 10px;
+}
+
+.project-name {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
+}
+
+.project-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+
+.responsibilities {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.responsibilities li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.responsibilities li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.6;
+}
+
 /* ---- Tags ---- */
 
 .tags {
@@ -594,6 +705,22 @@ img {
     opacity: 0.5;
 }
 
+
+
+
+
+.bottom {
+    .page-footer-story {
+        color: var(--text-tertiary);
+    }
+    h5 {
+        margin: 12px 0 0;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+}
 /* ==========================================================================
    Responsive
    ========================================================================== */
