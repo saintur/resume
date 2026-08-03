@@ -3,7 +3,7 @@
     <span class="nav-name">{{ user.firstname }} {{ user.lastname }}</span>
     <nav class="nav-links">
       <a href="mailto:saintur.batkhuu@gmail.com">Email</a>
-      <a href="tel:+1(646)238-8558">Call</a>
+      <a class="green" href="tel:+1(646)238-8558">Call</a>
       <a [attr.href]="user.github" target="_blank" rel="noopener">GitHub</a>
       <a [attr.href]="user.web" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
@@ -22,7 +22,7 @@
       <a class="btn primary" href="mailto:saintur.batkhuu@gmail.com">
         <i class="isb-sms"></i> Email
       </a>
-      <a class="btn" href="tel:+1(646)238-8558">
+      <a class="btn green" href="tel:+1(646)238-8558">
         <i class="isb-call"></i> Call
       </a>
       <a class="btn" [attr.href]="user.github" target="_blank" rel="noopener">

@@ -19,6 +19,9 @@
     --accent: #0071e3;
     --accent-soft: rgba(0, 113, 227, 0.1);
 
+    --green: #05c60e;
+    --green-soft: rgb(30 227 0 / 0.1);
+
     --nav-bg: rgba(251, 251, 253, 0.72);
 
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -47,6 +50,9 @@
 
         --accent: #2997ff;
         --accent-soft: rgba(41, 151, 255, 0.14);
+
+        --green: #13df1d;
+        --green-soft: rgb(30 227 0 / 0.1);
 
         --nav-bg: rgba(0, 0, 0, 0.72);
 
@@ -234,6 +240,12 @@ img {
     color: #fff;
     background: var(--accent);
     border-color: transparent;
+}
+
+.btn.green {
+    color: #fff;
+    background-color: var(--green);
+    border-color: var(--green-soft);
 }
 
 .btn.primary i {
