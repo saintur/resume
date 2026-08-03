@@ -484,7 +484,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       link: ''
     },
     {
-      title: 'Coach Niana',
+      title: 'Docmine',
       cover: '/images/docmine.svg',
       description: 'Document management system',
       link: ''
