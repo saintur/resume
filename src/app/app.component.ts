@@ -426,7 +426,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   educations = [
     {
       as: 'Software Development',
-      where: 'Master of Software Development at MIU',
+      where: "Master's in Computer Science at MIU",
       location: 'USA ',
       from: 'Apr/2022',
       to: 'Dec/2024',
