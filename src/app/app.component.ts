@@ -473,19 +473,19 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   works = [
     {
       title: 'Daaluu',
-      cover: 'https://saintur.github.io/cdn.daaluu/assets/icons/daaluu.svg',
+      cover: '/images/daaluu-bg.png',
       description: 'Real-time traditional game of Domino',
       link: 'https://daaluu.mn'
     },
     {
       title: 'Hoome',
-      cover: 'https://hoome.mn/hoome-logo.25bf8bc6d7b49c1a.svg',
+      cover: '/images/hoome-bg.png',
       description: 'Social platform for Homeowners Association',
       link: ''
     },
     {
-      title: 'Docmine',
-      cover: '/images/docmine.svg',
+      title: 'DocMine',
+      cover: '/images/docmine-bg.png',
       description: 'Document management system',
       link: ''
     },

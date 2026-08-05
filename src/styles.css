@@ -341,7 +341,7 @@ img {
 .work-logo {
     width: 100%;
     height: 150px;
-    background-color: var(--tile);
+    /*background-color: var(--tile);*/
     background-repeat: no-repeat;
     /* cover crops wide images horizontally; the scroll handler in the component
        pans background-position-x to reveal the hidden left/right portions. */
