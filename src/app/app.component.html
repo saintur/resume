@@ -48,7 +48,10 @@
     <div class="timeline">
       @for (item of experiences; track item) {
         <article class="entry">
-          <img height="24" width="24" [src]="item.logo" />
+          <div class="logo">
+              <img height="24" width="24" [src]="item.logo" />
+          </div>
+
           <div class="entry-head">
             <h3>{{ item.as }}</h3>
             <span class="entry-period">{{ item.from }} - {{ item.to }}</span>
@@ -102,7 +105,9 @@
     <div class="timeline">
       @for (item of educations; track item) {
         <article class="entry">
-            <img height="24" width="24" [src]="item.logo"/>
+            <div class="logo">
+                <img height="24" width="24" [src]="item.logo" [alt]="item.where"/>
+            </div>
           <div class="entry-head">
             <h3>{{ item.as }}</h3>
             <span class="entry-period">{{ item.from }} — {{ item.to }}</span>

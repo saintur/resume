@@ -167,7 +167,7 @@ img {
 
 .avatar {
     /*width: 88px;*/
-    width: 100%;
+    /*width: 100%;*/
     height: 88px;
     /*border-radius: 50%;*/
     overflow: hidden;
@@ -194,7 +194,7 @@ img {
 }
 
 .hero .role {
-    margin: 10px 0 0;
+    margin: 4px 0 0;
     font-size: 19px;
     color: var(--text-tertiary);
     font-weight: 400;
@@ -386,16 +386,26 @@ img {
 
 .entry {
     position: relative;
-    padding: 0 0 32px 28px;
+    padding: 0 0 32px 72px;
     /*border-left: 1px solid var(--hairline-strong);*/
 }
 
-.entry img {
+.logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    border: 1px solid var(--hairline);
     position: absolute;
     left: -3px;
     top: 3px;
     z-index: 2;
     background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
     /*border: 1px solid var(--hairline);*/
     /*border-radius: 50%;*/
 }
@@ -421,7 +431,8 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    gap: 16px;
+    gap: 12px;
+    margin-top: 6px;
 }
 
 .entry-head h3 {
@@ -438,9 +449,9 @@ img {
 }
 
 .entry-org {
-    margin: 4px 0 0;
+    margin: 0;
     font-size: 15px;
-    color: var(--accent);
+    /*color: var(--accent);*/
     font-weight: 500;
 }
 
