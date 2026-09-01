@@ -166,19 +166,23 @@ img {
 }
 
 .avatar {
-    width: 88px;
+    /*width: 88px;*/
+    width: 100%;
     height: 88px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--hairline);
-    margin-bottom: 28px;
+    /*box-shadow: var(--shadow-sm);*/
+    /*border: 1px solid var(--hairline);*/
+    /*margin-bottom: 28px;*/
+    display: flex;
+    gap: 16px
 }
 
 .avatar img {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .hero h1 {
@@ -198,11 +202,14 @@ img {
 
 .hero .lead {
     margin: 28px 0 0;
-    font-size: 21px;
     line-height: 1.48;
     color: var(--text-secondary);
     letter-spacing: -0.01em;
-    max-width: 40ch;
+}
+
+.lead {
+    font-size: 17px;
+    max-width: 50ch;
 }
 
 .hero-actions {
@@ -258,7 +265,7 @@ img {
 /* ---- Sections ---- */
 
 .block {
-    margin-top: 64px;
+    margin-top: 36px;
 }
 
 .section-title {
@@ -380,7 +387,17 @@ img {
 .entry {
     position: relative;
     padding: 0 0 32px 28px;
-    border-left: 1px solid var(--hairline-strong);
+    /*border-left: 1px solid var(--hairline-strong);*/
+}
+
+.entry img {
+    position: absolute;
+    left: -3px;
+    top: 3px;
+    z-index: 2;
+    background-color: var(--bg);
+    /*border: 1px solid var(--hairline);*/
+    /*border-radius: 50%;*/
 }
 
 .entry:last-child {
@@ -389,15 +406,15 @@ img {
 }
 
 .entry::before {
-    content: "";
-    position: absolute;
-    left: -5px;
-    top: 6px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 0 4px var(--bg);
+    /*content: "";*/
+    /*position: absolute;*/
+    /*left: -5px;*/
+    /*top: 6px;*/
+    /*width: 9px;*/
+    /*height: 9px;*/
+    /*border-radius: 50%;*/
+    /*background: var(--accent);*/
+    /*box-shadow: 0 0 0 4px var(--bg);*/
 }
 
 .entry-head {

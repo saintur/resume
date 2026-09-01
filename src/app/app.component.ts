@@ -154,7 +154,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       from: 'Apr/2023',
       since: 2023,
       period: `${new Date().getFullYear() - 2023} years`,
-      to: '',
+      to: 'Present',
+      logo: '/images/johndeere.png',
       description: 'Working on an effort to modernize existing financial related legacy systems with cutting-edge technologies. Improving current workflow by AI-assisted development for fast delivery and quality result',
       tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
         type: 'framework',
@@ -175,6 +176,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       since: 2019,
       period: `4 years`,
       to: 'Apr/2023',
+      logo: '/images/novelsoft-logo.svg',
       description: 'Managed multiple development teams in the company ' +
         'Mainly focused on web application development using Micro-services architecture ' +
         'Developed Real-Time Chat applications which can carry a vast number of user and provide video conference all across the platform',
@@ -202,10 +204,11 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       id: 2,
       as: 'Software Developer',
       where: 'IT Zone LLC',
-      from: new Date('Feb/2017'),
+      from: 'Feb/2017',
       since: 2017,
       period: `${2019 - 2017} years`,
       to: 'Dec/2019',
+      logo: '/images/itzone.ico',
       description: 'Managed a product development team which is responsible for developing Document Management system and Car Parking system. ',
       tags: [{type: 'language', value: 'Java'}, {type: 'language', value: 'Typescript'}, {
         type: 'framework',
@@ -427,6 +430,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       as: 'Software Development',
       where: "Master's in Computer Science at MIU",
+      logo: '/images/miu.png',
       location: 'USA ',
       from: 'Apr/2022',
       to: 'Dec/2024',
@@ -435,6 +439,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       as: 'Information system',
       where: 'Bachelor of Information System at MUST',
+      logo: '/images/shutis.svg',
       location: 'Mongolia ',
       from: 'Jan/2013',
       to: 'Jan/2017',

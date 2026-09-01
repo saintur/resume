@@ -14,9 +14,12 @@
   <section class="hero">
     <div class="avatar">
       <img width="88" height="88" src="/images/profile.jpg" [attr.alt]="user.fullname"/>
+        <div>
+            <h1>{{ user.firstname }} {{ user.lastname }}</h1>
+            <p class="role">{{ user.position }}</p>
+        </div>
     </div>
-    <h1>{{ user.firstname }} {{ user.lastname }}</h1>
-    <p class="role">{{ user.position }}</p>
+
     <p class="lead">{{ user.detail }}</p>
     <div class="hero-actions">
       <a class="btn primary" href="mailto:saintur.batkhuu@gmail.com">
@@ -31,54 +34,32 @@
     </div>
   </section>
 
-  <section class="block">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills">
-      @for (skill of skills; track skill) {
-        <span class="skill">{{ skill }}</span>
-      }
-    </div>
-  </section>
-
-  <section class="block">
-    <h2 class="section-title">Selected work</h2>
-    <div class="work-row" #workRow>
-      @for (item of works; track item) {
-        <div class="work-card">
-          <div class="work-logo" [style.background-image]="'url(' +item.cover+ ')'">
-            <!--                        <img [src]="item.cover" [attr.alt]="item.title"/>-->
-          </div>
-          <div class="work-meta">
-            <span class="work-title">{{ item.title }}</span>
-            <span class="work-desc">{{ item.description }}</span>
-            @if (item.link) {
-              <a class="entry-org" href="{{item.link}}" target="_blank"><small>Link</small></a>
-            } @else {
-              <small>Company property</small>
-            }
-          </div>
-
-        </div>
-      }
-    </div>
-  </section>
+<!--  <section class="block">-->
+<!--    <h2 class="section-title">Skills</h2>-->
+<!--    <div class="skills">-->
+<!--      @for (skill of skills; track skill) {-->
+<!--        <span class="skill">{{ skill }}</span>-->
+<!--      }-->
+<!--    </div>-->
+<!--  </section>-->
 
   <section class="block">
     <h2 class="section-title">Experience</h2>
     <div class="timeline">
       @for (item of experiences; track item) {
         <article class="entry">
+          <img height="24" width="24" [src]="item.logo" />
           <div class="entry-head">
             <h3>{{ item.as }}</h3>
-            <span class="entry-period">{{ item.period }}</span>
+            <span class="entry-period">{{ item.from }} - {{ item.to }}</span>
           </div>
           <p class="entry-org">{{ item.where }}</p>
           <p class="entry-desc">{{ item.description }}</p>
-          <div class="tags">
-            @for (tag of item.tags; track tag) {
-              <span class="tag">{{ tag.value }}</span>
-            }
-          </div>
+<!--          <div class="tags">-->
+<!--            @for (tag of item.tags; track tag) {-->
+<!--              <span class="tag">{{ tag.value }}</span>-->
+<!--            }-->
+<!--          </div>-->
 
           @if (projectsByExperience[item.id]?.length) {
             <button
@@ -121,6 +102,7 @@
     <div class="timeline">
       @for (item of educations; track item) {
         <article class="entry">
+            <img height="24" width="24" [src]="item.logo"/>
           <div class="entry-head">
             <h3>{{ item.as }}</h3>
             <span class="entry-period">{{ item.from }} — {{ item.to }}</span>
@@ -166,6 +148,29 @@
   <!--            </ul>-->
   <!--        }-->
   <!--    </section>-->
+
+    <section class="block">
+        <h2 class="section-title">Selected work</h2>
+        <div class="work-row" #workRow>
+            @for (item of works; track item) {
+                <div class="work-card">
+                    <div class="work-logo" [style.background-image]="'url(' +item.cover+ ')'">
+                        <!--                        <img [src]="item.cover" [attr.alt]="item.title"/>-->
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-title">{{ item.title }}</span>
+                        <span class="work-desc">{{ item.description }}</span>
+                        @if (item.link) {
+                            <a class="entry-org" href="{{item.link}}" target="_blank"><small>Link</small></a>
+                        } @else {
+                            <small>Company property</small>
+                        }
+                    </div>
+
+                </div>
+            }
+        </div>
+    </section>
 
   <footer class="page-footer">
     <span>{{ user.fullname }}</span>
